@@ -542,7 +542,7 @@ export function CaseDetailView({ caseStudy }: { caseStudy: CaseStudy }) {
             <div><dt>Repository</dt><dd>{caseStudy.source}</dd></div>
             <div><dt>Analysis ID</dt><dd>{caseStudy.analysisId}</dd></div>
           </dl>
-          <p className="source-caveat">The hosted prototype records exact filenames and pages. Original PDFs will be embedded after the 200-pair evidence package is transferred.</p>
+          <p className="source-caveat">The site records exact filenames and page locators for source verification. Original PDFs are intentionally not hosted in this repository.</p>
         </div>
       </aside>
 

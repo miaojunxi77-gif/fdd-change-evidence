@@ -218,6 +218,8 @@ function EvidenceSide({
 }
 
 function ComparisonDetail({ row }: { row: ComparisonRow }) {
+  const statedReason = row.statedReason.trim();
+
   return (
     <div className="comparison-detail-body">
       <div className="comparison-detail-meta">
@@ -250,7 +252,12 @@ function ComparisonDetail({ row }: { row: ComparisonRow }) {
         <div>
           <span className={`outcome-chip ${resultClass(row)}`}>{resultLabel(row)}</span>
           <h3>{row.summary}</h3>
-          {row.statedReason ? <p><strong>Stated reason:</strong> {row.statedReason}</p> : null}
+          <div className={`stated-reason-block ${statedReason ? "has-reason" : "no-reason"}`}>
+            <span>REASON STATED IN FDD · 原文明示原因</span>
+            <p>
+              {statedReason || "The compared Item text does not explicitly state a reason for this change; no cause is inferred.（对比文本未明确说明原因，本站不作推断。）"}
+            </p>
+          </div>
         </div>
         <dl>
           <div><dt>Direction</dt><dd>{row.direction.replaceAll("_", " ")}</dd></div>

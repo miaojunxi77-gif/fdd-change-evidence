@@ -31,8 +31,8 @@ export default function MethodPage() {
           <p className="eyebrow">DESIGN A</p>
           <h2>Consecutive-Year Variation</h2>
           <ul>
-            <li>200 randomly selected consecutive-year brand pairs.</li>
-            <li>The same 200 pairs are evaluated for every Item 1–23.</li>
+            <li>A randomized 200-pair core defines 200 target slots for every Item 1–23.</li>
+            <li>1,703 Item slots required pre-outcome text-quality replacement; the realized data span 261 distinct companies and pairs.</li>
             <li>4,600 comparisons; 100% scored.</li>
             <li>No preselected outcome variable: rank Items first, then read high-change cases.</li>
           </ul>
@@ -43,10 +43,45 @@ export default function MethodPage() {
           <ul>
             <li>Items 3, 5, 6, 7, 10, 11, 17, 19 and 21.</li>
             <li>150 quality-ready comparisons per Item; 1,350 total.</li>
+            <li>233 distinct companies and company-year pairs are represented after Item-specific replacement.</li>
             <li>Time-gap strata: annual, 4–6 years and 7+ years.</li>
             <li>Item-specific replacement occurs before LLM scoring and is fully logged.</li>
           </ul>
         </article>
+      </section>
+
+      <section className="sample-footprint shell">
+        <div className="sample-footprint-heading">
+          <div>
+            <p className="eyebrow">SAMPLE FOOTPRINT</p>
+            <h2>How many companies are represented?</h2>
+          </div>
+          <p>公司数按发布数据中的 company 字段精确去重；公司—年份对按公司、旧年份与新年份三者去重。</p>
+        </div>
+        <div className="sample-footprint-layout">
+          <div className="sample-footprint-total">
+            <strong>474</strong>
+            <span>distinct companies / brands</span>
+            <p>连续年度设计为 261 家，跨期设计为 233 家；其中 20 家同时出现在两个设计中。</p>
+          </div>
+          <div className="sample-footprint-metrics">
+            <div><strong>261</strong><span>Design A 公司与公司—年份对</span></div>
+            <div><strong>233</strong><span>Design B 公司与公司—年份对</span></div>
+            <div><strong>490</strong><span>两个设计合并后的去重公司—年份对</span></div>
+            <div><strong>494</strong><span>保留设计归属的 route-specific case IDs</span></div>
+          </div>
+        </div>
+        <p className="sample-footprint-note">
+          494 个 route-specific case IDs 中，有 4 个在两个设计里对应同一公司与同一对年份，因此合并去重后是 490 个公司—年份对。
+          Design A 的“200”是每个 Item 的目标槽位数；质量替换会让最终出现的公司总数高于 200。
+        </p>
+        <aside className="reason-coding-note">
+          <div><strong>122 / 5,950</strong><span>comparisons with an explicit source-stated reason</span></div>
+          <p>
+            其中连续年度样本 81 条、跨期样本 41 条。案例页只在 `statedReason` 有记录时展示原文明示原因；
+            其余 5,828 条明确标注“原文未说明”，不根据变化方向或发生时间自行推断原因。
+          </p>
+        </aside>
       </section>
 
       <section className="quality-panel shell">
