@@ -163,6 +163,71 @@ function resultClass(row: ComparisonRow) {
   return "outcome-minor";
 }
 
+type QualityReviewKind = "evidence" | "financing" | "text" | "segmentation" | "ambiguity";
+
+function qualityReviewInfo(row: ComparisonRow): {
+  kind: QualityReviewKind;
+  label: string;
+  detail: string;
+} {
+  const recordedReason = row.reviewReason.trim();
+  const normalizedReason = recordedReason.toLowerCase();
+
+  if (!row.evidenceGatePass || row.evidenceStatus === "no_verified_evidence") {
+    return {
+      kind: "evidence",
+      label: "引文未通过自动核验",
+      detail: "模型判断不一定错误，但引文未能精确匹配回提取文本或页码；正式使用前应核对旧、新 FDD 的指定页码。",
+    };
+  }
+
+  if (["wrong exhibit", "assembly", "different sections", "segmentation", "misaligned", "category mismatch", "table-of-contents"].some((term) => normalizedReason.includes(term))) {
+    return {
+      kind: "segmentation",
+      label: "Item 切分或文档错位",
+      detail: recordedReason || "提取内容可能来自错误的 Item、附件或页面，不能直接作为条款变化使用。",
+    };
+  }
+
+  if (["ocr", "corrupt", "unintelligible", "garbled", "typo"].some((term) => normalizedReason.includes(term))) {
+    return {
+      kind: "text",
+      label: "OCR 或数字识别歧义",
+      detail: recordedReason || "提取文字或数字可能被 OCR 错误识别，需要查看原始页面。",
+    };
+  }
+
+  if (["incomplete", "truncated", "missing", "only a header", "zero text"].some((term) => normalizedReason.includes(term))) {
+    return {
+      kind: "text",
+      label: "文本缺失或截断",
+      detail: recordedReason || "至少一侧 Item 文本不完整，需要重新提取或查看原始页面。",
+    };
+  }
+
+  if (recordedReason) {
+    return {
+      kind: "ambiguity",
+      label: "内容含义需要确认",
+      detail: recordedReason,
+    };
+  }
+
+  if (row.item === 10 && !row.financingGuardrailPass) {
+    return {
+      kind: "financing",
+      label: "Item 10 融资判定保护规则",
+      detail: "文本可能涉及个人担保、银行或第三方融资，而非特许人或其关联方直接提供融资；需要按原文确认融资提供者。",
+    };
+  }
+
+  return {
+    kind: "ambiguity",
+    label: "内容含义需要确认",
+    detail: recordedReason || "结构化质量检查触发了保守复核标记；该标记不等于结果已被判定错误。",
+  };
+}
+
 function pageRangeLabel(range: [number | null, number | null]) {
   const [start, end] = range;
   if (start == null) return "Item pages unavailable";
@@ -219,6 +284,7 @@ function EvidenceSide({
 
 function ComparisonDetail({ row }: { row: ComparisonRow }) {
   const statedReason = row.statedReason.trim();
+  const reviewInfo = qualityReviewInfo(row);
 
   return (
     <div className="comparison-detail-body">
@@ -265,11 +331,14 @@ function ComparisonDetail({ row }: { row: ComparisonRow }) {
           <div><dt>Contractual</dt><dd>{row.contractual ? "Yes" : "No"}</dd></div>
           <div><dt>Routine update</dt><dd>{row.routine ? "Yes" : "No"}</dd></div>
           <div><dt>Evidence</dt><dd>{row.evidenceStatus.replaceAll("_", " ")}</dd></div>
-          <div><dt>Review</dt><dd>{row.needsReview ? "Required" : "Not flagged"}</dd></div>
+          <div><dt>Quality review</dt><dd>{row.needsReview ? reviewInfo.label : "Not flagged"}</dd></div>
         </dl>
       </div>
-      {row.needsReview && row.reviewReason ? (
-        <p className="review-warning"><strong>Human review flag:</strong> {row.reviewReason}</p>
+      {row.needsReview ? (
+        <div className={`review-warning review-${reviewInfo.kind}`}>
+          <strong>QUALITY REVIEW FLAG · {reviewInfo.label}</strong>
+          <p>{reviewInfo.detail}</p>
+        </div>
       ) : null}
     </div>
   );
@@ -315,6 +384,7 @@ export function ItemDrilldown() {
   const substantiveCount = rows.filter((row) => row.substantive).length;
   const noChangeCount = rows.filter((row) => row.score === 0).length;
   const majorCount = rows.filter((row) => row.substantive && row.contractual && row.score >= 4).length;
+  const reviewCount = rows.filter((row) => row.needsReview).length;
 
   return (
     <section className="item-drilldown-shell">
@@ -345,7 +415,7 @@ export function ItemDrilldown() {
             <option value="substantive">实质变化</option>
             <option value="major">重大合同变化</option>
             <option value="routine">例行年度更新</option>
-            <option value="review">需要人工复核</option>
+            <option value="review">质量复核标记（当前 Item {reviewCount}）</option>
           </select>
         </label>
         <label className="select-control">
@@ -361,6 +431,13 @@ export function ItemDrilldown() {
       {pairFilter ? (
         <div className="active-filter-note">
           Showing one selected company-year pair. <Link href={`/items?route=${selectedRoute}&item=${item}`}>Clear company filter</Link>
+        </div>
+      ) : null}
+
+      {outcome === "review" ? (
+        <div className="quality-review-filter-note">
+          <strong>质量复核标记不是“已经判定错误”</strong>
+          <p>它表示引文核验、OCR/文本完整性、Item 切分或 Item 10 融资判定触发了保守警示。展开记录即可查看具体类型；正式研究中可核对原页，或在 clean-only sensitivity analysis 中暂时排除。</p>
         </div>
       ) : null}
 

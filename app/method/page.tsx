@@ -82,6 +82,21 @@ export default function MethodPage() {
             其余 5,828 条明确标注“原文未说明”，不根据变化方向或发生时间自行推断原因。
           </p>
         </aside>
+        <aside className="quality-review-method-note">
+          <div className="quality-review-method-total">
+            <strong>96 / 5,950</strong>
+            <span>quality-review flags · 1.6% of comparisons</span>
+          </div>
+          <div className="quality-review-method-breakdown">
+            <div><strong>36</strong><span>引文未通过自动核验</span></div>
+            <div><strong>48</strong><span>OCR、文本完整性或 Item 切分问题</span></div>
+            <div><strong>12</strong><span>Item 10 融资判定保护规则</span></div>
+          </div>
+          <p>
+            “质量复核标记”是保守的审计提示，不代表记录已经被判定错误。其中 29 条被初步编码为实质变化、23 条为合同性变化，
+            可优先核对；其余记录可以在 clean-only sensitivity analysis 中暂时排除。
+          </p>
+        </aside>
       </section>
 
       <section className="quality-panel shell">

@@ -2112,6 +2112,33 @@ select:focus-visible {
 .reason-coding-note span { margin-top: 6px; color: var(--muted); font-size: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
 .reason-coding-note p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.65; }
 
+.quality-review-method-note {
+  margin-top: 12px;
+  padding: 20px 22px;
+  display: grid;
+  grid-template-columns: minmax(210px, 0.46fr) minmax(360px, 0.9fr) minmax(300px, 1fr);
+  gap: 24px;
+  align-items: center;
+  border-left: 3px solid var(--amber);
+  background: #fffaf0;
+}
+
+.quality-review-method-total { display: flex; flex-direction: column; }
+.quality-review-method-total strong { color: #73560d; font-family: Georgia, serif; font-size: 29px; font-weight: 500; }
+.quality-review-method-total span { margin-top: 6px; color: var(--muted); font-size: 8px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+.quality-review-method-breakdown {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #ead9aa;
+}
+
+.quality-review-method-breakdown div { min-height: 78px; padding: 12px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.quality-review-method-breakdown div + div { border-left: 1px solid #ead9aa; }
+.quality-review-method-breakdown strong { color: #73560d; font-family: Georgia, serif; font-size: 24px; font-weight: 500; }
+.quality-review-method-breakdown span { margin-top: 5px; color: var(--muted); font-size: 8px; line-height: 1.45; }
+.quality-review-method-note > p { margin: 0; color: var(--muted); font-size: 10px; line-height: 1.65; }
+
 .quality-panel {
   margin-bottom: 36px;
   display: grid;
@@ -2525,12 +2552,29 @@ select:focus-visible {
 
 .review-warning {
   margin: 12px 0 0;
-  padding: 10px 12px;
+  padding: 12px 14px;
   border-left: 3px solid var(--amber);
   background: #fbf3df;
   color: #73560d;
   font-size: 10px;
 }
+
+.review-warning > strong { display: block; font-size: 8px; letter-spacing: 0.08em; }
+.review-warning > p { margin: 6px 0 0; line-height: 1.65; }
+.review-warning.review-evidence { border-left-color: #b47b10; }
+.review-warning.review-financing { border-left-color: var(--blue); background: #eef2fb; color: #2e477e; }
+.review-warning.review-segmentation { border-left-color: #9a4f3f; background: #f9ece7; color: #733e32; }
+
+.quality-review-filter-note {
+  margin-top: 12px;
+  padding: 13px 15px;
+  border-left: 3px solid var(--amber);
+  background: #fffaf0;
+  color: #73560d;
+}
+
+.quality-review-filter-note strong { font-size: 10px; }
+.quality-review-filter-note p { margin: 5px 0 0; color: var(--muted); font-size: 10px; line-height: 1.65; }
 
 .load-more-button {
   width: 100%;
@@ -2619,6 +2663,7 @@ select:focus-visible {
   .overview-findings-heading { gap: 22px; }
   .sample-footprint-heading { gap: 18px; }
   .sample-footprint-total { border-right: 0; border-bottom: 1px solid var(--border); }
+  .quality-review-method-note { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 880px) {
@@ -2637,4 +2682,6 @@ select:focus-visible {
   .sample-footprint-metrics { grid-template-columns: 1fr; }
   .sample-footprint-metrics div { border-left: 0 !important; border-top: 1px solid var(--border); }
   .sample-footprint-metrics div:first-child { border-top: 0; }
+  .quality-review-method-breakdown { grid-template-columns: 1fr; }
+  .quality-review-method-breakdown div + div { border-left: 0; border-top: 1px solid #ead9aa; }
 }
