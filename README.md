@@ -6,10 +6,11 @@ The public dataset contains derived research results only: company, comparison y
 
 ## Coverage
 
-- Consecutive-year change: all 23 FDD Items, 200 quality-ready comparisons per Item (4,600 Item comparisons; 261 route-specific company-year pairs).
+- Consecutive-year change: DeepSeek v4.3 cleaned results across all 23 FDD Items. The production set contains 4,557 prepared jobs, 4,352 complete comparisons, 1,661 comparisons with an included conservative change, and 7,705 included atomic changes.
 - Cross-period substantive change: nine research-priority Items, 150 quality-ready comparisons per Item (1,350 Item comparisons; 233 route-specific company-year pairs).
-- Score-0 and no-change comparisons are retained.
-- Item rows open into company-level evidence with old/new quotations and PDF page references.
+- The consecutive row-level explorer contains included change jobs only; complete no-change comparisons remain in the aggregate denominator. The retained cross-period dataset still includes score-0 cases.
+- Consecutive evidence quotations and page locators come from the cleaned DeepSeek export and are explicitly labeled when source-PDF page verification remains pending.
+- `scripts/generate_consecutive_deepseek_data.py` reproducibly rebuilds the 23 consecutive Item shards from `FDD_consecutive_results_cleaned_2026-08-17.xlsx`.
 
 ## Local development
 

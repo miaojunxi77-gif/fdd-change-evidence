@@ -369,9 +369,19 @@ export function ResultsExplorer({
       </div>
 
       <div className="results-legend">
-        <span><i className="legend-substantive" /> 实质变化（score ≥ 3）</span>
-        <span><i className="legend-major" /> 重大合同变化（score ≥ 4 且 contractual）</span>
-        <span><i className="legend-routine" /> 例行年度更新</span>
+        {mode === "consecutive" ? (
+          <>
+            <span><i className="legend-substantive" /> 保守实质变化（DeepSeek 清洗后）</span>
+            <span><i className="legend-major" /> 高影响变化（至少一条 score 4–5）</span>
+            <span>分母仅包括两年 Item 范围完整的比较</span>
+          </>
+        ) : (
+          <>
+            <span><i className="legend-substantive" /> 实质变化（score ≥ 3）</span>
+            <span><i className="legend-major" /> 重大合同变化（score ≥ 4 且 contractual）</span>
+            <span><i className="legend-routine" /> 例行年度更新</span>
+          </>
+        )}
       </div>
 
       <div className="result-table" role="table" aria-label={`${mode} Item results`}>
@@ -379,7 +389,7 @@ export function ResultsExplorer({
           <span>Rank</span>
           <span>Item</span>
           <span>条款</span>
-          <span>加权比例</span>
+          <span>{mode === "consecutive" ? "完整比较中的比例" : "加权比例"}</span>
           <span>结果分解</span>
         </div>
         {visible.map((row, index) => (
@@ -394,7 +404,13 @@ export function ResultsExplorer({
             <span className="item-number">{String(row.item).padStart(2, "0")}</span>
             <div className="result-title">
               <strong>{row.title}</strong>
-              {row.ci ? <small>95% CI {row.ci[0].toFixed(1)}–{row.ci[1].toFixed(1)}%</small> : <small>n = 200 consecutive-year comparisons</small>}
+              {row.ci ? (
+                <small>95% CI {row.ci[0].toFixed(1)}–{row.ci[1].toFixed(1)}%</small>
+              ) : row.n ? (
+                <small>n = {row.n} complete comparisons{row.incomplete ? ` · ${row.incomplete} incomplete excluded` : ""}</small>
+              ) : (
+                <small>{row.incomplete ?? 0} incomplete comparisons excluded; no analysis denominator</small>
+              )}
               <small className="result-drill-link">查看公司与原文证据 →</small>
             </div>
             <div className="primary-result">
@@ -402,9 +418,9 @@ export function ResultsExplorer({
               <div className="bar-track"><span style={{ width: `${row.share}%` }} /></div>
             </div>
             <div className="result-breakdown">
-              <span title="Major contractual change"><i className="break-major" style={{ width: `${row.major ?? 0}%` }} /></span>
-              <span title="Routine annual update"><i className="break-routine" style={{ width: `${row.routine ?? 0}%` }} /></span>
-              <small>Major {(row.major ?? 0).toFixed(1)}% · Routine {(row.routine ?? 0).toFixed(1)}%</small>
+              <span title={mode === "consecutive" ? "High-impact change job" : "Major contractual change"}><i className="break-major" style={{ width: `${row.major ?? 0}%` }} /></span>
+              {mode === "cross-period" ? <span title="Routine annual update"><i className="break-routine" style={{ width: `${row.routine ?? 0}%` }} /></span> : null}
+              <small>{mode === "consecutive" ? `High-impact ${(row.major ?? 0).toFixed(1)}%` : `Major ${(row.major ?? 0).toFixed(1)}% · Routine ${(row.routine ?? 0).toFixed(1)}%`}</small>
             </div>
           </Link>
         ))}

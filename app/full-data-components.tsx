@@ -53,6 +53,9 @@ export type ComparisonRow = {
   financingWarnings: string;
   scoringSource: string;
   model: string;
+  atomicChangeCount?: number;
+  highImpactAtomicChanges?: number;
+  inferenceLimit?: string;
 };
 
 type Dataset = {
@@ -63,6 +66,14 @@ type Dataset = {
     items: number[];
     rowsPerItem: Record<string, number>;
     includesNoChange: boolean;
+    unit?: string;
+    preparedJobs?: number;
+    exportedJobs?: number;
+    completeComparisons?: number;
+    atomicChanges?: number;
+    highImpactChangeJobs?: number;
+    model?: string;
+    note?: string;
   };
   rows: ComparisonRow[];
 };
@@ -75,6 +86,7 @@ type DatasetIndex = {
 const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 function applyHumanValidation(row: ComparisonRow): ComparisonRow {
+  if (row.model.startsWith("deepseek")) return row;
   const curatedCase = cases.find((entry) => entry.analysisId === row.pairId);
   const curatedItem = curatedCase?.items.find((entry) => entry.item === row.item);
   if (!curatedCase || !curatedItem) return row;
@@ -103,7 +115,7 @@ function applyHumanValidation(row: ComparisonRow): ComparisonRow {
   };
 }
 
-function useDataset(route: "consecutive" | "cross-period") {
+function useDataset(route: "consecutive" | "cross-period", selectedItem?: number) {
   const [dataset, setDataset] = useState<Dataset | null>(null);
   const [error, setError] = useState("");
 
@@ -116,7 +128,10 @@ function useDataset(route: "consecutive" | "cross-period") {
         return response.json() as Promise<DatasetIndex>;
       })
       .then(async (index) => {
-        const parts = await Promise.all(index.files.map(async (filename) => {
+        const files = selectedItem
+          ? index.files.filter((filename) => filename.startsWith(`item-${String(selectedItem).padStart(2, "0")}`))
+          : index.files;
+        const parts = await Promise.all(files.map(async (filename) => {
           const response = await fetch(`${BASE_PATH}/data/${directory}/${filename}`);
           if (!response.ok) throw new Error(`HTTP ${response.status}`);
           return response.json() as Promise<{ rows: ComparisonRow[] }>;
@@ -132,7 +147,7 @@ function useDataset(route: "consecutive" | "cross-period") {
     return () => {
       active = false;
     };
-  }, [route]);
+  }, [route, selectedItem]);
 
   return { dataset, error };
 }
@@ -149,6 +164,7 @@ function ScoreScale({ score }: { score: number }) {
 
 function resultLabel(row: ComparisonRow) {
   if (row.score === 0) return "No change";
+  if (row.route === "consecutive" && row.score >= 4) return "High-impact";
   if (row.substantive && row.contractual && row.score >= 4) return "Major contractual";
   if (row.substantive) return "Substantive";
   if (row.routine) return "Routine update";
@@ -157,6 +173,7 @@ function resultLabel(row: ComparisonRow) {
 
 function resultClass(row: ComparisonRow) {
   if (row.score === 0) return "outcome-none";
+  if (row.route === "consecutive" && row.score >= 4) return "outcome-major";
   if (row.substantive && row.contractual && row.score >= 4) return "outcome-major";
   if (row.substantive) return "outcome-substantive";
   if (row.routine) return "outcome-routine";
@@ -265,7 +282,7 @@ function EvidenceSide({
               <footer>
                 <span>{entry.page != null ? `PDF p. ${entry.page}` : "Page not verified"}</span>
                 <span className={entry.verified ? "verified" : "unverified"}>
-                  {entry.verified ? "✓ exact quote verified" : "○ page check required"}
+                  {entry.verified ? "✓ exact quote verified" : "○ exported page locator; source check pending"}
                 </span>
               </footer>
             </blockquote>
@@ -292,7 +309,8 @@ function ComparisonDetail({ row }: { row: ComparisonRow }) {
         <span>{row.id}</span>
         <span>{row.oldSource === row.newSource ? row.oldSource : `${row.oldSource} → ${row.newSource}`}</span>
         <span>{row.yearGap}-year gap</span>
-        <span>{row.inSbaDirectory ? "SBA-linked" : "non-SBA"}</span>
+        <span>{row.route === "consecutive" && row.model.startsWith("deepseek") ? "SBA status not exported" : row.inSbaDirectory ? "SBA-linked" : "non-SBA"}</span>
+        {row.atomicChangeCount ? <span>{row.atomicChangeCount} included atomic changes</span> : null}
         {row.replacement ? <span>quality replacement</span> : null}
       </div>
       <div className="drill-document-grid">
@@ -340,6 +358,12 @@ function ComparisonDetail({ row }: { row: ComparisonRow }) {
           <p>{reviewInfo.detail}</p>
         </div>
       ) : null}
+      {row.inferenceLimit ? (
+        <div className="review-warning review-ambiguity">
+          <strong>INFERENCE LIMIT</strong>
+          <p>{row.inferenceLimit}</p>
+        </div>
+      ) : null}
     </div>
   );
 }
@@ -350,13 +374,11 @@ export function ItemDrilldown() {
   const item = Number(searchParams.get("item") ?? 6);
   const pairFilter = searchParams.get("case") ?? "";
   const selectedRoute = route === "consecutive" ? "consecutive" : "cross-period";
-  const { dataset, error } = useDataset(selectedRoute);
+  const { dataset, error } = useDataset(selectedRoute, item);
   const [query, setQuery] = useState("");
   const [outcome, setOutcome] = useState("all");
   const [sort, setSort] = useState("score-desc");
   const [shown, setShown] = useState(30);
-
-  useEffect(() => setShown(30), [item, pairFilter, query, outcome, sort]);
 
   if (error) return <p className="empty-state">{error}</p>;
   if (!dataset) return <p className="empty-state">Loading all Item comparisons…</p>;
@@ -369,7 +391,7 @@ export function ItemDrilldown() {
     .filter((row) => {
       if (outcome === "none") return row.score === 0;
       if (outcome === "substantive") return row.substantive;
-      if (outcome === "major") return row.substantive && row.contractual && row.score >= 4;
+      if (outcome === "major") return selectedRoute === "consecutive" ? row.score >= 4 : row.substantive && row.contractual && row.score >= 4;
       if (outcome === "routine") return row.routine;
       if (outcome === "review") return row.needsReview;
       return true;
@@ -383,8 +405,10 @@ export function ItemDrilldown() {
   const itemTitle = itemLabels[item] ?? rows[0]?.itemTitle ?? "FDD Item";
   const substantiveCount = rows.filter((row) => row.substantive).length;
   const noChangeCount = rows.filter((row) => row.score === 0).length;
-  const majorCount = rows.filter((row) => row.substantive && row.contractual && row.score >= 4).length;
+  const majorCount = rows.filter((row) => selectedRoute === "consecutive" ? row.score >= 4 : row.substantive && row.contractual && row.score >= 4).length;
   const reviewCount = rows.filter((row) => row.needsReview).length;
+  const atomicCount = rows.reduce((sum, row) => sum + (row.atomicChangeCount ?? 0), 0);
+  const isConsecutive = selectedRoute === "consecutive";
 
   return (
     <section className="item-drilldown-shell">
@@ -392,35 +416,37 @@ export function ItemDrilldown() {
         <div>
           <p className="eyebrow">COMPANY-LEVEL EVIDENCE</p>
           <h1>Item {String(item).padStart(2, "0")} · {itemTitle}</h1>
-          <p>Every quality-ready {selectedRoute === "consecutive" ? "consecutive-year" : "cross-period"} comparison is included, including score 0 and no-change cases. Open any company row to see the exact evidence quotes and PDF page locators.</p>
+          <p>{isConsecutive
+            ? "This DeepSeek explorer contains every analysis-ready comparison with at least one included conservative change. Denominator counts, including complete comparisons without an included change, remain in the aggregate table."
+            : "Every quality-ready cross-period comparison is included, including score 0 and no-change cases. Open any company row to see the exact evidence quotes and PDF page locators."}</p>
         </div>
         <div className="drilldown-metrics">
-          <div><strong>{rows.length}</strong><span>all comparisons</span></div>
-          <div><strong>{substantiveCount}</strong><span>substantive</span></div>
-          <div><strong>{majorCount}</strong><span>major contractual</span></div>
-          <div><strong>{noChangeCount}</strong><span>score 0</span></div>
+          <div><strong>{rows.length}</strong><span>{isConsecutive ? "included change jobs" : "all comparisons"}</span></div>
+          <div><strong>{isConsecutive ? atomicCount : substantiveCount}</strong><span>{isConsecutive ? "atomic changes" : "substantive"}</span></div>
+          <div><strong>{majorCount}</strong><span>{isConsecutive ? "high-impact jobs" : "major contractual"}</span></div>
+          <div><strong>{isConsecutive ? dataset.metadata.completeComparisons ?? "—" : noChangeCount}</strong><span>{isConsecutive ? "complete route-wide comparisons" : "score 0"}</span></div>
         </div>
       </div>
 
       <div className="drilldown-controls">
         <label className="search-box results-search">
           <span aria-hidden="true">⌕</span>
-          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search company, summary or analysis ID" aria-label="Search company comparisons" />
+          <input value={query} onChange={(event) => { setQuery(event.target.value); setShown(30); }} placeholder="Search company, summary or analysis ID" aria-label="Search company comparisons" />
         </label>
         <label className="select-control">
           <span>结果类型</span>
-          <select value={outcome} onChange={(event) => setOutcome(event.target.value)}>
-            <option value="all">全部（含无变化）</option>
-            <option value="none">Score 0 / 无变化</option>
+          <select value={outcome} onChange={(event) => { setOutcome(event.target.value); setShown(30); }}>
+            <option value="all">{isConsecutive ? "全部纳入变化" : "全部（含无变化）"}</option>
+            {!isConsecutive ? <option value="none">Score 0 / 无变化</option> : null}
             <option value="substantive">实质变化</option>
-            <option value="major">重大合同变化</option>
-            <option value="routine">例行年度更新</option>
+            <option value="major">{isConsecutive ? "高影响变化（score 4–5）" : "重大合同变化"}</option>
+            {!isConsecutive ? <option value="routine">例行年度更新</option> : null}
             <option value="review">质量复核标记（当前 Item {reviewCount}）</option>
           </select>
         </label>
         <label className="select-control">
           <span>排序</span>
-          <select value={sort} onChange={(event) => setSort(event.target.value)}>
+          <select value={sort} onChange={(event) => { setSort(event.target.value); setShown(30); }}>
             <option value="score-desc">评分从高到低</option>
             <option value="company">公司名称</option>
             <option value="year">较新年份</option>
@@ -441,7 +467,7 @@ export function ItemDrilldown() {
         </div>
       ) : null}
 
-      <div className="comparison-count"><strong>{visible.length}</strong> of {rows.length} comparisons match</div>
+      <div className="comparison-count"><strong>{visible.length}</strong> of {rows.length} {isConsecutive ? "included change jobs" : "comparisons"} match</div>
       <div className="comparison-accordion">
         {visible.slice(0, shown).map((row) => (
           <details className="comparison-detail" key={row.id}>
@@ -524,8 +550,6 @@ export function FullCaseLibrary() {
     });
   }, [consecutiveDataset, crossPeriodDataset]);
 
-  useEffect(() => setShown(30), [query, route, item, score]);
-
   if (consecutiveError || crossPeriodError) return <p className="empty-state">{consecutiveError || crossPeriodError}</p>;
   if (!consecutiveDataset || !crossPeriodDataset) return <p className="empty-state">Loading all company cases…</p>;
 
@@ -545,11 +569,11 @@ export function FullCaseLibrary() {
       <div className="library-controls">
         <label className="search-box results-search">
           <span aria-hidden="true">⌕</span>
-          <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="搜索公司、条款或 analysis ID" aria-label="Search company cases" />
+          <input value={query} onChange={(event) => { setQuery(event.target.value); setShown(30); }} placeholder="搜索公司、条款或 analysis ID" aria-label="Search company cases" />
         </label>
-        <label className="select-control"><span>分析类型</span><select value={route} onChange={(event) => setRoute(event.target.value)}><option value="all">全部</option><option value="consecutive">连续年变化</option><option value="cross-period">跨期实质变化</option></select></label>
-        <label className="select-control"><span>Item</span><select value={item} onChange={(event) => setItem(event.target.value)}><option value="all">全部 Item</option>{itemOptions.map((value) => <option key={value} value={value}>Item {value}</option>)}</select></label>
-        <label className="select-control"><span>最低评分</span><select value={score} onChange={(event) => setScore(event.target.value)}><option value="0">全部（含无变化）</option><option value="1">1+</option><option value="3">3+</option><option value="4">4+</option><option value="5">5</option></select></label>
+        <label className="select-control"><span>分析类型</span><select value={route} onChange={(event) => { setRoute(event.target.value); setShown(30); }}><option value="all">全部</option><option value="consecutive">连续年变化</option><option value="cross-period">跨期实质变化</option></select></label>
+        <label className="select-control"><span>Item</span><select value={item} onChange={(event) => { setItem(event.target.value); setShown(30); }}><option value="all">全部 Item</option>{itemOptions.map((value) => <option key={value} value={value}>Item {value}</option>)}</select></label>
+        <label className="select-control"><span>最低评分</span><select value={score} onChange={(event) => { setScore(event.target.value); setShown(30); }}><option value="0">全部（跨期含无变化）</option><option value="1">1+</option><option value="3">3+</option><option value="4">4+</option><option value="5">5</option></select></label>
       </div>
 
       <div className="library-count">
