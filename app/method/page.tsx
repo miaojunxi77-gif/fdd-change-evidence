@@ -5,12 +5,12 @@ export default function MethodPage() {
         <div>
           <p className="eyebrow">METHOD & QUALITY</p>
           <h1>An evidence-preserving design, not a keyword count.</h1>
-          <p>抽样、文本提取、LLM 评分、引文验证和人工复核彼此分开记录，使每个结果都可以回到具体公司、年份、Item 与 PDF 页码。</p>
+          <p>连续年度页面使用本次 DeepSeek 清洗结果；跨期页面暂留既有生产版本。两条路线分开标注，避免把不同模型与清洗口径混在同一估计中。</p>
         </div>
         <div className="quality-seal">
           <span>QUALITY GATE</span>
           <strong>PASS</strong>
-          <small>Cross-period final sample</small>
+          <small>DeepSeek consecutive clean set</small>
         </div>
       </section>
 
@@ -31,10 +31,10 @@ export default function MethodPage() {
           <p className="eyebrow">DESIGN A</p>
           <h2>Consecutive-Year Variation</h2>
           <ul>
-            <li>A randomized 200-pair core defines 200 target slots for every Item 1–23.</li>
-            <li>1,703 Item slots required pre-outcome text-quality replacement; the realized data span 261 distinct companies and pairs.</li>
-            <li>4,600 comparisons; 100% scored.</li>
-            <li>No preselected outcome variable: rank Items first, then read high-change cases.</li>
+            <li>4,557 prepared DeepSeek jobs across Items 1–23; 4,556 exported successfully.</li>
+            <li>4,352 comparisons retain complete Item scope on both years; 204 incomplete comparisons are excluded from denominators.</li>
+            <li>7,705 conservative atomic changes remain after machine gates, source holds and manual rejections.</li>
+            <li>Those changes occur in 1,661 complete brand–Item–year comparisons; 1,080 comparisons contain a score 4–5 change.</li>
           </ul>
         </article>
         <article className="method-card">
@@ -54,47 +54,46 @@ export default function MethodPage() {
         <div className="sample-footprint-heading">
           <div>
             <p className="eyebrow">SAMPLE FOOTPRINT</p>
-            <h2>How many companies are represented?</h2>
+            <h2>What is loaded in the public evidence browser?</h2>
           </div>
-          <p>公司数按发布数据中的 company 字段精确去重；公司—年份对按公司、旧年份与新年份三者去重。</p>
+          <p>连续年度浏览器只发布含至少一条最终纳入变化的比较；跨期浏览器暂时保留全部 1,350 条既有比较。</p>
         </div>
         <div className="sample-footprint-layout">
           <div className="sample-footprint-total">
-            <strong>474</strong>
-            <span>distinct companies / brands</span>
-            <p>连续年度设计为 261 家，跨期设计为 233 家；其中 20 家同时出现在两个设计中。</p>
+            <strong>476</strong>
+            <span>route-specific company–year cases</span>
+            <p>其中 243 个连续年案例至少含一条 DeepSeek 保守变化；233 个是当前保留的跨期案例。</p>
           </div>
           <div className="sample-footprint-metrics">
-            <div><strong>261</strong><span>Design A 公司与公司—年份对</span></div>
+            <div><strong>243</strong><span>Design A 含纳入变化的 pair IDs</span></div>
             <div><strong>233</strong><span>Design B 公司与公司—年份对</span></div>
-            <div><strong>490</strong><span>两个设计合并后的去重公司—年份对</span></div>
-            <div><strong>494</strong><span>保留设计归属的 route-specific case IDs</span></div>
+            <div><strong>1,661</strong><span>连续年 row-level change jobs</span></div>
+            <div><strong>3,011</strong><span>两条路线合计网站明细行</span></div>
           </div>
         </div>
         <p className="sample-footprint-note">
-          494 个 route-specific case IDs 中，有 4 个在两个设计里对应同一公司与同一对年份，因此合并去重后是 490 个公司—年份对。
-          Design A 的“200”是每个 Item 的目标槽位数；质量替换会让最终出现的公司总数高于 200。
+          连续年度的 4,352 个完整比较仍是汇总比例的分母；其中没有纳入变化的比较不会伪造为 score 0 明细，
+          因为这次清洗工作簿只导出了最终纳入的 7,705 条原子变化。
         </p>
         <aside className="reason-coding-note">
-          <div><strong>122 / 5,950</strong><span>comparisons with an explicit source-stated reason</span></div>
+          <div><strong>41 / 3,011</strong><span>website rows with an explicit source-stated reason</span></div>
           <p>
-            其中连续年度样本 81 条、跨期样本 41 条。案例页只在 `statedReason` 有记录时展示原文明示原因；
-            其余 5,828 条明确标注“原文未说明”，不根据变化方向或发生时间自行推断原因。
+            这 41 条来自当前保留的跨期版本。DeepSeek 连续年度清洗工作簿没有导出单独的 `statedReason` 字段，
+            因此网站不会根据变化方向或发生时间自行推断原因。
           </p>
         </aside>
         <aside className="quality-review-method-note">
           <div className="quality-review-method-total">
-            <strong>96 / 5,950</strong>
-            <span>quality-review flags · 1.6% of comparisons</span>
+            <strong>30 / 3,011</strong>
+            <span>quality-review flags in the combined website rows</span>
           </div>
           <div className="quality-review-method-breakdown">
-            <div><strong>36</strong><span>引文未通过自动核验</span></div>
-            <div><strong>48</strong><span>OCR、文本完整性或 Item 切分问题</span></div>
-            <div><strong>12</strong><span>Item 10 融资判定保护规则</span></div>
+            <div><strong>0</strong><span>DeepSeek 连续年最终纳入行</span></div>
+            <div><strong>30</strong><span>当前跨期明细中的复核标记</span></div>
+            <div><strong>3,504</strong><span>连续年机器复核原子行已在发布前暂缓</span></div>
           </div>
           <p>
-            “质量复核标记”是保守的审计提示，不代表记录已经被判定错误。其中 29 条被初步编码为实质变化、23 条为合同性变化，
-            可优先核对；其余记录可以在 clean-only sensitivity analysis 中暂时排除。
+            连续年度网站只加载最终 `INCLUDE_CONSERVATIVE` 行；机器复核、来源待核验和人工拒绝行不会混入 7,705 条发布变化。
           </p>
         </aside>
       </section>
@@ -107,8 +106,9 @@ export default function MethodPage() {
           <div><strong>0</strong><span>final failures</span></div>
         </div>
         <div className="quality-copy">
-          <p className="eyebrow">QUALITY-SCREENED REPLACEMENT</p>
+          <p className="eyebrow">EXISTING CROSS-PERIOD VERSION</p>
           <h2>Unusable Item text is replaced without looking at model outcomes.</h2>
+          <p>These quality statistics belong to the currently retained cross-period version, not to the new DeepSeek consecutive-year results. The cross-period section will be replaced only after the new production run is complete.</p>
           <p>647 of 1,350 Item slots required replacement. 642 stayed within the same time-gap × SBA stratum; five retained the same time-gap but changed SBA group because the strict reserve was exhausted. No replacement changed the time-gap category, and selection never used LLM scores.</p>
           <p>Results are weighted to the realized sampling cells. A clean-only sensitivity analysis produces estimates close to the full-sample results.</p>
         </div>
@@ -128,12 +128,12 @@ export default function MethodPage() {
       </section>
 
       <section className="manual-corrections shell">
-        <p className="eyebrow">HUMAN ADJUDICATION EXAMPLES</p>
-        <h2>Manual reading narrows over-broad model claims.</h2>
+        <p className="eyebrow">DEEPSEEK CONSERVATIVE GATES</p>
+        <h2>The published consecutive-year results are narrower than the raw model output.</h2>
         <div>
-          <article><strong>Bumble Bee Blinds · Item 6</strong><p>Liquidated damages existed in 2024; it was removed from the “newly introduced” change code.</p></article>
-          <article><strong>Bumble Bee Blinds · Item 11</strong><p>Training existed in 2024; 2025 newly specifies duration and format. The evidence does not establish that training became longer.</p></article>
-          <article><strong>Bumble Bee Blinds · Item 17</strong><p>Mediation, arbitration and Bucks County were already present. The confirmed new obligation is in-person travel to Omaha.</p></article>
+          <article><strong>Scope gate</strong><p>Only comparisons with complete old- and new-year Item scope enter the rate denominator; excerpt-only jobs are excluded.</p></article>
+          <article><strong>Outcome gate</strong><p>Routine reporting rolls, unsupported legal interpretation and rows carrying unresolved review warnings do not enter the 7,705-change clean set.</p></article>
+          <article><strong>Inference limit</strong><p>Changes in disclosed fees, financing or performance figures do not establish actual payment, uptake, enforcement or causal effects.</p></article>
         </div>
       </section>
     </main>

@@ -10,6 +10,7 @@ export default function SubstantivePage() {
           <p className="eyebrow">CROSS-PERIOD SUBSTANTIVE CHANGE</p>
           <h1>How often do economically important FDD clauses change?</h1>
           <p>针对 9 个重点 Item，每个 Item 单独保留 150 个质量合格品牌对，并覆盖一年、4–6 年和 7 年以上的时间间隔。</p>
+          <p><strong>版本提示：</strong>本页暂时保留既有跨期结果；新的 DeepSeek 跨期生产仍在运行，尚未混入本页数据。</p>
         </div>
         <div className="page-metrics">
           <div><strong>9</strong><span>target Items</span></div>

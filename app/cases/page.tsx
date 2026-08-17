@@ -10,9 +10,9 @@ export default function CasesPage() {
           <p>按公司、年份、分析类型、Item 和评分筛选。进入案例后可以看到旧版与新版英文原文、PDF 页码、研究解释以及人工修正。</p>
         </div>
         <div className="case-scope-card">
-          <strong>494</strong>
+          <strong>476</strong>
           <span>company–year cases currently loaded</span>
-          <p>包括 261 个连续年公司—年份案例和 233 个跨期案例，共 5,950 条 Item 比较；评分为 0 的无变化案例也全部保留。</p>
+          <p>包括 243 个至少含一条 DeepSeek 保守变化的连续年案例，以及 233 个既有跨期案例。连续年无变化比较保留在汇总分母中；跨期明细仍包含 score 0。</p>
         </div>
       </section>
       <div className="shell">

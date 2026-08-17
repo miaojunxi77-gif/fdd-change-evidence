@@ -4,6 +4,8 @@ export type ItemResult = {
   share: number;
   major?: number;
   routine?: number;
+  n?: number;
+  incomplete?: number;
   ci?: [number, number];
   rank?: number;
 };
@@ -44,29 +46,29 @@ export type CaseStudy = {
 };
 
 export const consecutiveItems: ItemResult[] = [
-  { rank: 1, item: 6, title: "Other Fees", share: 66.5, major: 32.3, routine: 10.5 },
-  { rank: 2, item: 7, title: "Estimated Initial Investment", share: 60.2, major: 14.1, routine: 29.2 },
-  { rank: 3, item: 11, title: "Assistance, Systems & Training", share: 55.3, major: 21.6, routine: 27.9 },
-  { rank: 4, item: 5, title: "Initial Fees", share: 54.1, major: 22.4, routine: 17.0 },
-  { rank: 5, item: 19, title: "Financial Performance Representations", share: 51.3, major: 0.4, routine: 38.3 },
-  { rank: 6, item: 17, title: "Renewal, Termination & Disputes", share: 43.2, major: 20.3, routine: 6.9 },
-  { rank: 7, item: 8, title: "Sources of Products & Services", share: 42.8, major: 17.8, routine: 40.8 },
-  { rank: 8, item: 12, title: "Territory", share: 38.7, major: 20.4, routine: 4.8 },
-  { rank: 9, item: 1, title: "Franchisor, Parents & Affiliates", share: 35.4, major: 14.2, routine: 38.7 },
-  { rank: 10, item: 13, title: "Trademarks", share: 32.9, major: 8.4, routine: 10.5 },
-  { rank: 11, item: 2, title: "Business Experience", share: 26.7, major: 0, routine: 29.2 },
-  { rank: 12, item: 20, title: "Outlets & Franchisee Information", share: 25.9, major: 1.5, routine: 87.3 },
-  { rank: 13, item: 3, title: "Litigation", share: 22.1, major: 0, routine: 2.2 },
-  { rank: 14, item: 15, title: "Operation of the Franchise Business", share: 20.0, major: 8.1, routine: 0.4 },
-  { rank: 15, item: 10, title: "Financing", share: 12.8, major: 9.5, routine: 2.5 },
-  { rank: 16, item: 16, title: "Restrictions on Sales", share: 11.9, major: 5.1, routine: 0 },
-  { rank: 17, item: 14, title: "Patents, Copyrights & Proprietary Information", share: 11.1, major: 2.2, routine: 1.0 },
-  { rank: 18, item: 22, title: "Contracts", share: 10.0, major: 7.5, routine: 0.4 },
-  { rank: 19, item: 4, title: "Bankruptcy", share: 9.0, major: 2.8, routine: 2.8 },
-  { rank: 20, item: 21, title: "Financial Statements", share: 7.4, major: 1.1, routine: 89.6 },
-  { rank: 21, item: 9, title: "Franchisee Obligations", share: 6.1, major: 3.5, routine: 7.9 },
-  { rank: 22, item: 23, title: "Receipts", share: 4.2, major: 0.4, routine: 2.0 },
-  { rank: 23, item: 18, title: "Public Figures", share: 1.3, major: 0.5, routine: 0 },
+  { rank: 1, item: 11, title: "Assistance, Advertising, Systems & Training", share: 81.0, major: 67.0, n: 200 },
+  { rank: 2, item: 7, title: "Estimated Initial Investment", share: 79.4, major: 61.8, n: 199 },
+  { rank: 3, item: 6, title: "Other Fees", share: 78.9, major: 71.9, n: 199 },
+  { rank: 4, item: 5, title: "Initial Fees", share: 69.4, major: 60.2, n: 196 },
+  { rank: 5, item: 19, title: "Financial Performance Representations", share: 61.1, major: 23.7, n: 198, incomplete: 1 },
+  { rank: 6, item: 8, title: "Sources of Products & Services", share: 60.3, major: 44.2, n: 199 },
+  { rank: 7, item: 17, title: "Renewal, Termination, Transfer & Disputes", share: 55.4, major: 47.7, n: 195, incomplete: 4 },
+  { rank: 8, item: 1, title: "Franchisor, Parents & Affiliates", share: 55.1, major: 26.3, n: 198 },
+  { rank: 9, item: 20, title: "Outlets & Franchisee Information", share: 52.6, major: 8.2, n: 196, incomplete: 1 },
+  { rank: 10, item: 12, title: "Territory", share: 48.5, major: 39.0, n: 200 },
+  { rank: 11, item: 13, title: "Trademarks", share: 36.7, major: 16.6, n: 199, incomplete: 1 },
+  { rank: 12, item: 21, title: "Financial Statements", share: 28.4, major: 3.6, n: 197, incomplete: 3 },
+  { rank: 13, item: 15, title: "Operation of the Franchise Business", share: 24.1, major: 20.6, n: 199 },
+  { rank: 14, item: 22, title: "Contracts", share: 21.5, major: 6.3, n: 191, incomplete: 7 },
+  { rank: 15, item: 10, title: "Financing", share: 18.7, major: 15.7, n: 198 },
+  { rank: 16, item: 14, title: "Patents, Copyrights & Proprietary Information", share: 17.7, major: 12.1, n: 198 },
+  { rank: 17, item: 16, title: "Restrictions on What the Franchisee May Sell", share: 16.4, major: 13.3, n: 195 },
+  { rank: 18, item: 3, title: "Litigation", share: 16.1, major: 4.0, n: 199 },
+  { rank: 19, item: 2, title: "Business Experience", share: 6.5, major: 1.0, n: 199 },
+  { rank: 20, item: 9, title: "Franchisee Obligations", share: 6.0, major: 1.5, n: 199 },
+  { rank: 21, item: 4, title: "Bankruptcy", share: 4.0, major: 0, n: 199 },
+  { rank: 22, item: 18, title: "Public Figures", share: 1.5, major: 0.5, n: 199 },
+  { rank: 23, item: 23, title: "Receipts", share: 0, major: 0, n: 0, incomplete: 187 },
 ];
 
 export const crossPeriodItems: ItemResult[] = [
@@ -81,7 +83,7 @@ export const crossPeriodItems: ItemResult[] = [
   { item: 10, title: "Financing", share: 13.4, major: 11.0, routine: 1.3, ci: [7.2, 23.6] },
 ];
 
-export const cases: CaseStudy[] = [
+const legacyCases: CaseStudy[] = [
   {
     slug: "element-hotels-2022-2023",
     company: "Element Hotels / Element Residences",
@@ -250,7 +252,104 @@ export const cases: CaseStudy[] = [
   },
 ];
 
+const deepseekCases: CaseStudy[] = [
+  {
+    slug: "deepseek-100-chiropractic-2021-2022",
+    company: "100% Chiropractic",
+    route: "consecutive",
+    oldYear: 2021,
+    newYear: 2022,
+    source: "DeepSeek cleaned export",
+    analysisId: "S3099__2021_2022",
+    oldDocument: "Source filename not included in the cleaned workbook",
+    newDocument: "Source filename not included in the cleaned workbook",
+    featured: "The royalty formula, technology charges, training fees and system-cost estimates were materially restructured.",
+    items: [
+      {
+        item: 6,
+        title: "Other Fees",
+        score: 5,
+        direction: "mixed",
+        substantive: true,
+        contractual: true,
+        status: "review",
+        summary: "The royalty changed from a fixed monthly amount to a percentage formula with a floor and cap, while technology and advertising charges were revised.",
+        interpretation: "The cleaned DeepSeek output contains 17 included conservative atomic changes for this comparison. The row-level explorer preserves the full set; this featured card shows only representative evidence.",
+        oldEvidence: [
+          { quote: "Royalty Fee $2,500 beginning with the first month of operations.", page: 17, verified: false },
+          { quote: "Currently $260 per month for software support and $189 per month for computer equipment technical support and a one-time fee of $599 for the software license.", page: 19, verified: false },
+        ],
+        newEvidence: [
+          { quote: "Royalty Fee (1-A) 6.5% of Gross Revenue from all sources as defined in footnote 3 below.", page: 23, verified: false },
+          { quote: "The amount will not exceed $7,500 per month nor be less than $2,500 per month with $1,500 minimum for the first 3 months.", page: 23, verified: false },
+          { quote: "Technology Fee (4) Currently $1,250 for an assortment of technology processes and services.", page: 24, verified: false },
+        ],
+        note: "DeepSeek analysis-ready result; quotations retain exported page locators but have not been independently page-reverified in this workbook.",
+      },
+      {
+        item: 11,
+        title: "Franchisor Assistance, Advertising, Systems & Training",
+        score: 5,
+        direction: "increase",
+        substantive: true,
+        contractual: true,
+        status: "review",
+        summary: "New technology and placement-program fees were introduced, while training charges, advertising costs and estimated system costs increased.",
+        interpretation: "The cleaned DeepSeek output contains 10 included conservative atomic changes. No inference is made about actual payment, participation or enforcement.",
+        oldEvidence: [
+          { quote: "at the rate of $1,000 per week payable to the hosting office", page: 38, verified: false },
+          { quote: "We estimate the cost of purchasing the Computer System and related software and associated equipment will range from $9,371 to $14,290.", page: 44, verified: false },
+        ],
+        newEvidence: [
+          { quote: "at the rate of $1,500 per week payable by you to the hosting office", page: 42, verified: false },
+          { quote: "cost of purchasing the Computer System and related software and associated equipment will range from $19,000 to $25,000.", page: 49, verified: false },
+          { quote: "You must pay a monthly Technology Fee of $1,250", page: 49, verified: false },
+        ],
+        note: "DeepSeek analysis-ready result; representative quotations shown here are a subset of the row-level evidence.",
+      },
+    ],
+  },
+  {
+    slug: "deepseek-realty-executives-2016-2017",
+    company: "Realty Executives",
+    route: "consecutive",
+    oldYear: 2016,
+    newYear: 2017,
+    source: "DeepSeek cleaned export",
+    analysisId: "S1408__2016_2017",
+    oldDocument: "Source filename not included in the cleaned workbook",
+    newDocument: "Source filename not included in the cleaned workbook",
+    featured: "An explicit no-financing statement was replaced by an optional franchisor financing program.",
+    items: [
+      {
+        item: 10,
+        title: "Financing",
+        score: 5,
+        direction: "mixed",
+        substantive: true,
+        contractual: true,
+        status: "review",
+        summary: "The new FDD introduces discretionary financing, a 6%–7% APR range, repayment terms, guarantees, collateral and default remedies.",
+        interpretation: "The cleaned DeepSeek output contains 16 included conservative atomic changes. It supports a change in disclosed financing terms, not an inference that any franchisee actually received financing.",
+        oldEvidence: [
+          { quote: "We do not offer direct or indirect financing We do not guaranty any of your notes, leases or other obligations", page: 14, verified: false },
+        ],
+        newEvidence: [
+          { quote: "From time to time, we may finance the initial franchise fee as well as certain startup costs", page: 19, verified: false },
+          { quote: "Interest Rate – ranges from 6% to 7%", page: 19, verified: false },
+          { quote: "You must also sign a Security Agreement granting us a security interest in all of your assets", page: 20, verified: false },
+        ],
+        note: "DeepSeek analysis-ready result; page locators are retained from the cleaned export and remain available for source-PDF checking.",
+      },
+    ],
+  },
+];
+
+export const cases: CaseStudy[] = [
+  ...deepseekCases,
+  ...legacyCases.filter((entry) => entry.route === "cross-period"),
+];
+
 export const itemLabels = Object.fromEntries(
   consecutiveItems.map((row) => [row.item, row.title]),
 );
-
