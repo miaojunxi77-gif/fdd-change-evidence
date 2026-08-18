@@ -330,10 +330,7 @@ const deepseekCases: CaseStudy[] = [
   },
 ];
 
-export const cases: CaseStudy[] = [
-  ...deepseekCases,
-  ...legacyCases.filter((entry) => entry.route === "cross-period"),
-];
+export const cases: CaseStudy[] = legacyCases;
 
 export const itemLabels = Object.fromEntries(
   consecutiveItems.map((row) => [row.item, row.title]),
