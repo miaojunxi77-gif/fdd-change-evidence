@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ResultsExplorer } from "../components";
-import { consecutiveItems } from "../data";
+import { ChangeTypeSummary, ResultsExplorer } from "../components";
+import { consecutiveChangeSummary, consecutiveItems } from "../data";
 
 export default function ConsecutivePage() {
   return (
@@ -23,6 +23,10 @@ export default function ConsecutivePage() {
         <div><span>02</span><strong>Items 7 & 6</strong><p>Estimated investment and other fees follow at 79.4% and 78.9%.</p></div>
         <div><span>03</span><strong>Route total</strong><p>1,661 of 4,352 complete comparisons (38.2%) contain at least one included conservative change.</p></div>
       </section>
+
+      <div className="shell">
+        <ChangeTypeSummary summary={consecutiveChangeSummary} />
+      </div>
 
       <div className="shell">
         <ResultsExplorer items={consecutiveItems} mode="consecutive" />

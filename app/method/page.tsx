@@ -5,12 +5,12 @@ export default function MethodPage() {
         <div>
           <p className="eyebrow">METHOD & QUALITY</p>
           <h1>An evidence-preserving design, not a keyword count.</h1>
-          <p>连续年度页面使用本次 DeepSeek 清洗结果；跨期页面暂留既有生产版本。两条路线分开标注，避免把不同模型与清洗口径混在同一估计中。</p>
+          <p>连续年度与跨期页面均使用本轮 DeepSeek 生产结果。两条路线分开标注抽样设计与结果门槛，避免把不同时间跨度和发布口径混在同一估计中。</p>
         </div>
         <div className="quality-seal">
           <span>QUALITY GATE</span>
           <strong>PASS</strong>
-          <small>DeepSeek consecutive clean set</small>
+          <small>DeepSeek consecutive + cross-period</small>
         </div>
       </section>
 
@@ -42,10 +42,10 @@ export default function MethodPage() {
           <h2>Cross-Period Substantive Change</h2>
           <ul>
             <li>Items 3, 5, 6, 7, 10, 11, 17, 19 and 21.</li>
-            <li>150 quality-ready comparisons per Item; 1,350 total.</li>
-            <li>233 distinct companies and company-year pairs are represented after Item-specific replacement.</li>
-            <li>Time-gap strata: annual, 4–6 years and 7+ years.</li>
-            <li>Item-specific replacement occurs before LLM scoring and is fully logged.</li>
+            <li>1,334 production comparisons succeeded; 1,327 retain complete comparison scope.</li>
+            <li>14,505 candidate atomic changes were produced; 6,211 are outcome-ready and 6,934 remain review-required.</li>
+            <li>231 distinct company-year pairs are represented across the nine research-priority Items.</li>
+            <li>The package passed the production-structure audit; outcome-ready rows remain separately identifiable for substantive analysis.</li>
           </ul>
         </article>
       </section>
@@ -56,19 +56,19 @@ export default function MethodPage() {
             <p className="eyebrow">SAMPLE FOOTPRINT</p>
             <h2>What is loaded in the public evidence browser?</h2>
           </div>
-          <p>连续年度浏览器只发布含至少一条最终纳入变化的比较；跨期浏览器暂时保留全部 1,350 条既有比较。</p>
+          <p>连续年度浏览器发布含至少一条最终纳入变化的比较；跨期浏览器加载全部 1,334 个成功的 DeepSeek v4.5 生产比较。</p>
         </div>
         <div className="sample-footprint-layout">
           <div className="sample-footprint-total">
-            <strong>476</strong>
+            <strong>474</strong>
             <span>route-specific company–year cases</span>
-            <p>其中 243 个连续年案例至少含一条 DeepSeek 保守变化；233 个是当前保留的跨期案例。</p>
+            <p>其中 243 个连续年案例至少含一条 DeepSeek 保守变化；231 个来自 DeepSeek 跨期生产包。</p>
           </div>
           <div className="sample-footprint-metrics">
             <div><strong>243</strong><span>Design A 含纳入变化的 pair IDs</span></div>
-            <div><strong>233</strong><span>Design B 公司与公司—年份对</span></div>
+            <div><strong>231</strong><span>Design B 公司与公司—年份对</span></div>
             <div><strong>1,661</strong><span>连续年 row-level change jobs</span></div>
-            <div><strong>3,011</strong><span>两条路线合计网站明细行</span></div>
+            <div><strong>2,995</strong><span>两条路线合计网站明细行</span></div>
           </div>
         </div>
         <p className="sample-footprint-note">
@@ -76,41 +76,28 @@ export default function MethodPage() {
           因为这次清洗工作簿只导出了最终纳入的 7,705 条原子变化。
         </p>
         <aside className="reason-coding-note">
-          <div><strong>41 / 3,011</strong><span>website rows with an explicit source-stated reason</span></div>
-          <p>
-            这 41 条来自当前保留的跨期版本。DeepSeek 连续年度清洗工作簿没有导出单独的 `statedReason` 字段，
-            因此网站不会根据变化方向或发生时间自行推断原因。
-          </p>
+          <div><strong>4 TYPES</strong><span>atomic change classification</span></div>
+          <p>每条原子变化均以新增、修改、删除或重新分类展示；原始 `not_comparable` 标签保留在明细中，并在四类统计里并入“修改”。</p>
         </aside>
         <aside className="quality-review-method-note">
-          <div className="quality-review-method-total">
-            <strong>30 / 3,011</strong>
-            <span>quality-review flags in the combined website rows</span>
-          </div>
-          <div className="quality-review-method-breakdown">
-            <div><strong>0</strong><span>DeepSeek 连续年最终纳入行</span></div>
-            <div><strong>30</strong><span>当前跨期明细中的复核标记</span></div>
-            <div><strong>3,504</strong><span>连续年机器复核原子行已在发布前暂缓</span></div>
-          </div>
-          <p>
-            连续年度网站只加载最终 `INCLUDE_CONSERVATIVE` 行；机器复核、来源待核验和人工拒绝行不会混入 7,705 条发布变化。
-          </p>
+          <div className="quality-review-method-total"><strong>SEPARATE</strong><span>publication and review gates</span></div>
+          <p>连续年度只加载最终 `INCLUDE_CONSERVATIVE` 行；跨期则同时保留候选、outcome-ready 和 review-required 标志，避免把待复核原子变化误作最终分析结果。</p>
         </aside>
       </section>
 
       <section className="quality-panel shell">
         <div className="quality-stats">
-          <div><strong>1,282</strong><span>API comparisons</span></div>
-          <div><strong>68</strong><span>local exact matches</span></div>
-          <div><strong>1.3%</strong><span>evidence-warning rate</span></div>
-          <div><strong>0</strong><span>final failures</span></div>
+          <div><strong>1,334</strong><span>successful production jobs</span></div>
+          <div><strong>1,327</strong><span>complete comparisons</span></div>
+          <div><strong>6,211</strong><span>outcome-ready atomics</span></div>
+          <div><strong>16</strong><span>pre-production unresolved inputs</span></div>
         </div>
         <div className="quality-copy">
-          <p className="eyebrow">EXISTING CROSS-PERIOD VERSION</p>
-          <h2>Unusable Item text is replaced without looking at model outcomes.</h2>
-          <p>These quality statistics belong to the currently retained cross-period version, not to the new DeepSeek consecutive-year results. The cross-period section will be replaced only after the new production run is complete.</p>
-          <p>647 of 1,350 Item slots required replacement. 642 stayed within the same time-gap × SBA stratum; five retained the same time-gap but changed SBA group because the strict reserve was exhausted. No replacement changed the time-gap category, and selection never used LLM scores.</p>
-          <p>Results are weighted to the realized sampling cells. A clean-only sensitivity analysis produces estimates close to the full-sample results.</p>
+          <p className="eyebrow">DEEPSEEK CROSS-PERIOD V4.5</p>
+          <h2>The production package is structurally complete and keeps review status explicit.</h2>
+          <p>All 1,334 expected production jobs in the finalized input set succeeded. Seven comparisons retain incomplete scope, while 16 earlier inputs remain documented outside the production set as unresolved.</p>
+          <p>The final audit approves the package as production output. Candidate generation is complete; substantive analysis should use the 6,211 outcome-ready atomic changes and continue to treat 6,934 review-required changes separately.</p>
+          <p>Evidence matches produced during post-processing are labeled separately from source-PDF page references, and inference-limit notes remain attached to individual atomic changes.</p>
         </div>
       </section>
 

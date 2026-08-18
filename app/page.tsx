@@ -23,19 +23,19 @@ const sampleFindings = [
   {
     route: "cross-period",
     eyebrow: "DESIGN B · CROSS-PERIOD",
-    title: "跨期重点 Item 样本",
-    description: "9 个重点 Item × 每项 150 个对比；比例按实际抽样单元加权。",
-    substantive: "55.4%",
-    contractual: "36.4%",
-    scoreZero: "24.6%",
+    title: "跨期 DeepSeek v4.5 生产结果",
+    description: "1,334 个成功生产比较；变化率按 outcome-ready 原子变化口径计算。",
+    substantive: "57.3%",
+    contractual: "46.0%",
+    scoreZero: "21.1%",
     direction:
-      "在加权后的实质变化中，58.2% 属于条款加强，27.2% 属于新增；削弱占 4.1%，删除占 3.4%。",
+      "14,505 条候选原子变化中：修改 7,606 条、新增 4,941 条、删除 1,405 条、重新分类 553 条；其中 6,211 条通过 outcome-ready 门槛。",
     items: [
-      { item: 6, title: "其他费用", rate: 84.8 },
-      { item: 7, title: "预计初始投资", rate: 79.0 },
-      { item: 5, title: "初始费用", rate: 78.0 },
-      { item: 11, title: "支持、系统与培训", rate: 74.8 },
-      { item: 19, title: "财务业绩陈述", rate: 67.2 },
+      { item: 11, title: "支持、广告、系统与培训", rate: 82.7 },
+      { item: 7, title: "预计初始投资", rate: 82.0 },
+      { item: 6, title: "其他费用", rate: 75.3 },
+      { item: 17, title: "续约、终止、转让与争议解决", rate: 67.3 },
+      { item: 5, title: "初始费用", rate: 65.5 },
     ],
   },
 ];
@@ -51,8 +51,8 @@ export default function Home() {
             Consecutive-Year Variation and Cross-Period Substantive Change
           </p>
           <p className="hero-summary">
-            连续年度结果已更新为 DeepSeek 清洗口径：从总体比例下钻到公司、年份、
-            Item 与英文引文，并明确区分完整比较、保守纳入变化与待核验页码。
+            连续年度与跨期结果现已统一为 DeepSeek 生产输出：从总体比例下钻到公司、年份、
+            Item、每条原子变化与英文证据，并标明新增、修改、删除和重新分类。
           </p>
           <div className="hero-actions">
             <Link className="button primary" href="/cases">
@@ -86,8 +86,8 @@ export default function Home() {
             <h2 id="overview-findings-title">这批样本里，Item 发生了多少实质变化？</h2>
           </div>
           <p>
-            有，而且并非平均分布。连续年度卡片已改为 DeepSeek 保守清洗口径；
-            跨期卡片暂留既有版本，两者不混合计算。
+            有，而且并非平均分布。两条路线均已换为 DeepSeek 生产结果，
+            但因抽样设计和结果门槛不同，仍分别计算与展示。
           </p>
         </div>
 
@@ -100,9 +100,9 @@ export default function Home() {
                 <p>{finding.description}</p>
               </div>
               <div className="overview-rate-grid">
-                <div><strong>{finding.substantive}</strong><span>{finding.route === "consecutive" ? "含保守变化" : "实质变化"}</span></div>
-                <div><strong>{finding.contractual}</strong><span>{finding.route === "consecutive" ? "含 score 4–5" : "合同性变化"}</span></div>
-                <div><strong>{finding.scoreZero}</strong><span>{finding.route === "consecutive" ? "无纳入变化" : "Score 0"}</span></div>
+                <div><strong>{finding.substantive}</strong><span>{finding.route === "consecutive" ? "含保守变化" : "含 outcome-ready 变化"}</span></div>
+                <div><strong>{finding.contractual}</strong><span>{finding.route === "consecutive" ? "含 score 4–5" : "含高影响 ready 变化"}</span></div>
+                <div><strong>{finding.scoreZero}</strong><span>{finding.route === "consecutive" ? "无纳入变化" : "无候选原子变化"}</span></div>
               </div>
               <div className="direction-summary">
                 <span>DOMINANT DIRECTION</span>
@@ -110,7 +110,7 @@ export default function Home() {
               </div>
               <div className="top-item-heading">
                 <strong>实质变化率最高的 Item</strong>
-                <span>{finding.route === "consecutive" ? "完整比较比例" : "加权比例"}</span>
+                <span>{finding.route === "consecutive" ? "完整比较比例" : "outcome-ready 比例"}</span>
               </div>
               <ol className="summary-item-list">
                 {finding.items.map((entry) => (
@@ -130,8 +130,8 @@ export default function Home() {
         </div>
 
         <p className="overview-comparison-note">
-          <strong>如何解读：</strong>连续年度与跨期结果目前来自不同生产版本、模型与清洗规则。
-          两组比例只适合各自描述对应样本，不应当作完全同口径的直接对照；“方向”是变化分类，不是对变化原因的推断。
+          <strong>如何解读：</strong>两条路线均为 DeepSeek 生产结果，但抽样设计、时间跨度与发布门槛不同。
+          两组比例只适合各自描述对应样本，不应当作完全同口径的直接对照；变化类型不是对变化原因的推断。
         </p>
       </section>
 
@@ -151,7 +151,7 @@ export default function Home() {
           <span className="route-number">02</span>
           <p className="eyebrow">TARGETED ROUTE</p>
           <h2>跨期实质变化</h2>
-          <p>针对 9 个重点 Item 的现有结果暂时保留；DeepSeek 跨期生产仍在运行，完成后再单独替换这一部分。</p>
+          <p>DeepSeek v4.5 跨期包已完成结构审计并投入生产展示：1,334 个成功比较、14,505 条候选原子变化，其中 6,211 条为 outcome-ready。</p>
           <Link className="text-link" href="/substantive">查看重点条款结果 →</Link>
         </article>
       </section>

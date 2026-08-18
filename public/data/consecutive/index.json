@@ -6,9 +6,12 @@
     "preparedJobs": 4557,
     "exportedJobs": 4556,
     "completeComparisons": 4352,
+    "incompleteComparisons": 204,
     "comparisons": 1661,
     "includedChangeJobs": 1661,
     "atomicChanges": 7705,
+    "outcomeReadyAtomicChanges": 7705,
+    "reviewRequiredAtomicChanges": 0,
     "highImpactChangeJobs": 1080,
     "highImpactAtomicChanges": 3282,
     "uniquePairs": 243,
@@ -37,6 +40,16 @@
       22,
       23
     ],
+    "includesNoChange": false,
+    "unit": "included_change_job_with_atomic_changes",
+    "source": "FDD_consecutive_results_cleaned_2026-08-17.xlsx",
+    "changeTypeCounts": {
+      "introduced": 2462,
+      "modified": 4356,
+      "removed": 771,
+      "reclassified": 116
+    },
+    "notComparableDisplayedAsModified": 1,
     "rowsPerItem": {
       "1": 109,
       "2": 13,
@@ -61,36 +74,527 @@
       "21": 56,
       "22": 41,
       "23": 0
-    },
-    "includesNoChange": false,
-    "unit": "included_change_job",
-    "source": "FDD_consecutive_results_cleaned_2026-08-17.xlsx",
-    "note": "Row-level explorer contains analysis-ready comparisons with at least one included conservative change; denominator counts and no-change jobs are reported in the aggregate tables."
+    }
   },
+  "changeTypeLabels": {
+    "introduced": "新增",
+    "modified": "修改",
+    "removed": "删除",
+    "reclassified": "重新分类"
+  },
+  "itemStats": [
+    {
+      "item": 11,
+      "title": "Franchisor's Assistance, Advertising, Computer Systems, and Training",
+      "comparisons": 200,
+      "incomplete": 0,
+      "changeJobs": 162,
+      "changeJobRate": 81.0,
+      "highImpactJobs": 134,
+      "highImpactRate": 67.0,
+      "atomicChanges": 1214,
+      "outcomeReadyAtomicChanges": 1214,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 430,
+        "modified": 691,
+        "removed": 84,
+        "reclassified": 9
+      }
+    },
+    {
+      "item": 7,
+      "title": "Estimated Initial Investment",
+      "comparisons": 199,
+      "incomplete": 0,
+      "changeJobs": 158,
+      "changeJobRate": 79.4,
+      "highImpactJobs": 123,
+      "highImpactRate": 61.8,
+      "atomicChanges": 1151,
+      "outcomeReadyAtomicChanges": 1151,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 165,
+        "modified": 927,
+        "removed": 42,
+        "reclassified": 17
+      }
+    },
+    {
+      "item": 6,
+      "title": "Other Fees",
+      "comparisons": 199,
+      "incomplete": 0,
+      "changeJobs": 157,
+      "changeJobRate": 78.9,
+      "highImpactJobs": 143,
+      "highImpactRate": 71.9,
+      "atomicChanges": 1046,
+      "outcomeReadyAtomicChanges": 1046,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 309,
+        "modified": 623,
+        "removed": 96,
+        "reclassified": 18
+      }
+    },
+    {
+      "item": 5,
+      "title": "Initial Fees",
+      "comparisons": 196,
+      "incomplete": 0,
+      "changeJobs": 136,
+      "changeJobRate": 69.4,
+      "highImpactJobs": 118,
+      "highImpactRate": 60.2,
+      "atomicChanges": 554,
+      "outcomeReadyAtomicChanges": 554,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 181,
+        "modified": 300,
+        "removed": 64,
+        "reclassified": 9
+      }
+    },
+    {
+      "item": 19,
+      "title": "Financial Performance Representations",
+      "comparisons": 198,
+      "incomplete": 1,
+      "changeJobs": 121,
+      "changeJobRate": 61.1,
+      "highImpactJobs": 47,
+      "highImpactRate": 23.7,
+      "atomicChanges": 551,
+      "outcomeReadyAtomicChanges": 551,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 206,
+        "modified": 298,
+        "removed": 38,
+        "reclassified": 9
+      }
+    },
+    {
+      "item": 8,
+      "title": "Restrictions on Sources of Products and Services",
+      "comparisons": 199,
+      "incomplete": 0,
+      "changeJobs": 120,
+      "changeJobRate": 60.3,
+      "highImpactJobs": 88,
+      "highImpactRate": 44.2,
+      "atomicChanges": 578,
+      "outcomeReadyAtomicChanges": 578,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 251,
+        "modified": 273,
+        "removed": 48,
+        "reclassified": 6
+      }
+    },
+    {
+      "item": 17,
+      "title": "Renewal, Termination, Transfer, and Dispute Resolution",
+      "comparisons": 195,
+      "incomplete": 4,
+      "changeJobs": 108,
+      "changeJobRate": 55.4,
+      "highImpactJobs": 93,
+      "highImpactRate": 47.7,
+      "atomicChanges": 565,
+      "outcomeReadyAtomicChanges": 565,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 211,
+        "modified": 286,
+        "removed": 60,
+        "reclassified": 8
+      }
+    },
+    {
+      "item": 1,
+      "title": "The Franchisor and Any Parents, Predecessors, and Affiliates",
+      "comparisons": 198,
+      "incomplete": 0,
+      "changeJobs": 109,
+      "changeJobRate": 55.1,
+      "highImpactJobs": 52,
+      "highImpactRate": 26.3,
+      "atomicChanges": 342,
+      "outcomeReadyAtomicChanges": 342,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 127,
+        "modified": 165,
+        "removed": 45,
+        "reclassified": 5
+      }
+    },
+    {
+      "item": 20,
+      "title": "Outlets and Franchisee Information",
+      "comparisons": 196,
+      "incomplete": 1,
+      "changeJobs": 103,
+      "changeJobRate": 52.6,
+      "highImpactJobs": 16,
+      "highImpactRate": 8.2,
+      "atomicChanges": 259,
+      "outcomeReadyAtomicChanges": 259,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 32,
+        "modified": 208,
+        "removed": 13,
+        "reclassified": 6
+      }
+    },
+    {
+      "item": 12,
+      "title": "Territory",
+      "comparisons": 200,
+      "incomplete": 0,
+      "changeJobs": 97,
+      "changeJobRate": 48.5,
+      "highImpactJobs": 78,
+      "highImpactRate": 39.0,
+      "atomicChanges": 401,
+      "outcomeReadyAtomicChanges": 401,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 136,
+        "modified": 191,
+        "removed": 69,
+        "reclassified": 5
+      }
+    },
+    {
+      "item": 13,
+      "title": "Trademarks",
+      "comparisons": 199,
+      "incomplete": 1,
+      "changeJobs": 73,
+      "changeJobRate": 36.7,
+      "highImpactJobs": 33,
+      "highImpactRate": 16.6,
+      "atomicChanges": 187,
+      "outcomeReadyAtomicChanges": 187,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 81,
+        "modified": 76,
+        "removed": 29,
+        "reclassified": 1
+      }
+    },
+    {
+      "item": 21,
+      "title": "Financial Statements",
+      "comparisons": 197,
+      "incomplete": 3,
+      "changeJobs": 56,
+      "changeJobRate": 28.4,
+      "highImpactJobs": 7,
+      "highImpactRate": 3.6,
+      "atomicChanges": 79,
+      "outcomeReadyAtomicChanges": 79,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 24,
+        "modified": 31,
+        "removed": 23,
+        "reclassified": 1
+      }
+    },
+    {
+      "item": 15,
+      "title": "Obligation to Participate in the Actual Operation of the Franchise Business",
+      "comparisons": 199,
+      "incomplete": 0,
+      "changeJobs": 48,
+      "changeJobRate": 24.1,
+      "highImpactJobs": 41,
+      "highImpactRate": 20.6,
+      "atomicChanges": 169,
+      "outcomeReadyAtomicChanges": 169,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 70,
+        "modified": 66,
+        "removed": 28,
+        "reclassified": 5
+      }
+    },
+    {
+      "item": 22,
+      "title": "Contracts",
+      "comparisons": 191,
+      "incomplete": 7,
+      "changeJobs": 41,
+      "changeJobRate": 21.5,
+      "highImpactJobs": 12,
+      "highImpactRate": 6.3,
+      "atomicChanges": 83,
+      "outcomeReadyAtomicChanges": 83,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 32,
+        "modified": 16,
+        "removed": 27,
+        "reclassified": 8
+      }
+    },
+    {
+      "item": 10,
+      "title": "Financing",
+      "comparisons": 198,
+      "incomplete": 0,
+      "changeJobs": 37,
+      "changeJobRate": 18.7,
+      "highImpactJobs": 31,
+      "highImpactRate": 15.7,
+      "atomicChanges": 172,
+      "outcomeReadyAtomicChanges": 172,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 61,
+        "modified": 63,
+        "removed": 47,
+        "reclassified": 1
+      }
+    },
+    {
+      "item": 14,
+      "title": "Patents, Copyrights, and Proprietary Information",
+      "comparisons": 198,
+      "incomplete": 0,
+      "changeJobs": 35,
+      "changeJobRate": 17.7,
+      "highImpactJobs": 24,
+      "highImpactRate": 12.1,
+      "atomicChanges": 98,
+      "outcomeReadyAtomicChanges": 98,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 44,
+        "modified": 38,
+        "removed": 15,
+        "reclassified": 1
+      }
+    },
+    {
+      "item": 16,
+      "title": "Restrictions on What the Franchisee May Sell",
+      "comparisons": 195,
+      "incomplete": 0,
+      "changeJobs": 32,
+      "changeJobRate": 16.4,
+      "highImpactJobs": 26,
+      "highImpactRate": 13.3,
+      "atomicChanges": 121,
+      "outcomeReadyAtomicChanges": 121,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 39,
+        "modified": 48,
+        "removed": 34,
+        "reclassified": 0
+      }
+    },
+    {
+      "item": 3,
+      "title": "Litigation",
+      "comparisons": 199,
+      "incomplete": 0,
+      "changeJobs": 32,
+      "changeJobRate": 16.1,
+      "highImpactJobs": 8,
+      "highImpactRate": 4.0,
+      "atomicChanges": 62,
+      "outcomeReadyAtomicChanges": 62,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 31,
+        "modified": 28,
+        "removed": 3,
+        "reclassified": 0
+      }
+    },
+    {
+      "item": 2,
+      "title": "Business Experience",
+      "comparisons": 199,
+      "incomplete": 0,
+      "changeJobs": 13,
+      "changeJobRate": 6.5,
+      "highImpactJobs": 2,
+      "highImpactRate": 1.0,
+      "atomicChanges": 23,
+      "outcomeReadyAtomicChanges": 23,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 7,
+        "modified": 13,
+        "removed": 3,
+        "reclassified": 0
+      }
+    },
+    {
+      "item": 9,
+      "title": "Franchisee's Obligations",
+      "comparisons": 199,
+      "incomplete": 0,
+      "changeJobs": 12,
+      "changeJobRate": 6.0,
+      "highImpactJobs": 3,
+      "highImpactRate": 1.5,
+      "atomicChanges": 33,
+      "outcomeReadyAtomicChanges": 33,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 15,
+        "modified": 9,
+        "removed": 2,
+        "reclassified": 7
+      }
+    },
+    {
+      "item": 4,
+      "title": "Bankruptcy",
+      "comparisons": 199,
+      "incomplete": 0,
+      "changeJobs": 8,
+      "changeJobRate": 4.0,
+      "highImpactJobs": 0,
+      "highImpactRate": 0.0,
+      "atomicChanges": 10,
+      "outcomeReadyAtomicChanges": 10,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 7,
+        "modified": 2,
+        "removed": 1,
+        "reclassified": 0
+      }
+    },
+    {
+      "item": 18,
+      "title": "Public Figures",
+      "comparisons": 199,
+      "incomplete": 0,
+      "changeJobs": 3,
+      "changeJobRate": 1.5,
+      "highImpactJobs": 1,
+      "highImpactRate": 0.5,
+      "atomicChanges": 7,
+      "outcomeReadyAtomicChanges": 7,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 3,
+        "modified": 4,
+        "removed": 0,
+        "reclassified": 0
+      }
+    },
+    {
+      "item": 23,
+      "title": "Receipts",
+      "comparisons": 0,
+      "incomplete": 187,
+      "changeJobs": 0,
+      "changeJobRate": 0.0,
+      "highImpactJobs": 0,
+      "highImpactRate": 0.0,
+      "atomicChanges": 0,
+      "outcomeReadyAtomicChanges": 0,
+      "reviewRequiredAtomicChanges": 0,
+      "changeTypeCounts": {
+        "introduced": 0,
+        "modified": 0,
+        "removed": 0,
+        "reclassified": 0
+      }
+    }
+  ],
   "files": [
     "item-01.json",
+    "item-01-02.json",
+    "item-01-03.json",
     "item-02.json",
     "item-03.json",
     "item-04.json",
     "item-05.json",
+    "item-05-02.json",
+    "item-05-03.json",
+    "item-05-04.json",
     "item-06.json",
+    "item-06-02.json",
+    "item-06-03.json",
+    "item-06-04.json",
+    "item-06-05.json",
+    "item-06-06.json",
+    "item-06-07.json",
     "item-07.json",
+    "item-07-02.json",
+    "item-07-03.json",
+    "item-07-04.json",
+    "item-07-05.json",
+    "item-07-06.json",
+    "item-07-07.json",
     "item-08.json",
+    "item-08-02.json",
+    "item-08-03.json",
+    "item-08-04.json",
+    "item-08-05.json",
     "item-09.json",
     "item-10.json",
+    "item-10-02.json",
     "item-11.json",
-    "item-11-b.json",
+    "item-11-02.json",
+    "item-11-03.json",
+    "item-11-04.json",
+    "item-11-05.json",
+    "item-11-06.json",
+    "item-11-07.json",
+    "item-11-08.json",
+    "item-11-09.json",
     "item-12.json",
+    "item-12-02.json",
+    "item-12-03.json",
+    "item-12-04.json",
     "item-13.json",
+    "item-13-02.json",
     "item-14.json",
     "item-15.json",
+    "item-15-02.json",
     "item-16.json",
     "item-17.json",
+    "item-17-02.json",
+    "item-17-03.json",
+    "item-17-04.json",
     "item-18.json",
     "item-19.json",
+    "item-19-02.json",
+    "item-19-03.json",
+    "item-19-04.json",
     "item-20.json",
+    "item-20-02.json",
     "item-21.json",
     "item-22.json",
     "item-23.json"
+  ],
+  "caseFiles": [
+    "cases.json",
+    "cases-02.json",
+    "cases-03.json",
+    "cases-04.json",
+    "cases-05.json",
+    "cases-06.json",
+    "cases-07.json"
   ]
 }

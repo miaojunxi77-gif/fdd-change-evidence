@@ -1,3 +1,16 @@
+import {
+  consecutiveItemsGenerated,
+  crossPeriodItemsGenerated,
+  routeSummariesGenerated,
+} from "./generated-results";
+
+export type ChangeTypeCounts = {
+  introduced: number;
+  modified: number;
+  removed: number;
+  reclassified: number;
+};
+
 export type ItemResult = {
   item: number;
   title: string;
@@ -8,6 +21,11 @@ export type ItemResult = {
   incomplete?: number;
   ci?: [number, number];
   rank?: number;
+  atomicChanges?: number;
+  outcomeReadyAtomicChanges?: number;
+  reviewRequiredAtomicChanges?: number;
+  detectedShare?: number | null;
+  changeTypes?: ChangeTypeCounts;
 };
 
 export type Evidence = {
@@ -45,43 +63,10 @@ export type CaseStudy = {
   items: CaseItem[];
 };
 
-export const consecutiveItems: ItemResult[] = [
-  { rank: 1, item: 11, title: "Assistance, Advertising, Systems & Training", share: 81.0, major: 67.0, n: 200 },
-  { rank: 2, item: 7, title: "Estimated Initial Investment", share: 79.4, major: 61.8, n: 199 },
-  { rank: 3, item: 6, title: "Other Fees", share: 78.9, major: 71.9, n: 199 },
-  { rank: 4, item: 5, title: "Initial Fees", share: 69.4, major: 60.2, n: 196 },
-  { rank: 5, item: 19, title: "Financial Performance Representations", share: 61.1, major: 23.7, n: 198, incomplete: 1 },
-  { rank: 6, item: 8, title: "Sources of Products & Services", share: 60.3, major: 44.2, n: 199 },
-  { rank: 7, item: 17, title: "Renewal, Termination, Transfer & Disputes", share: 55.4, major: 47.7, n: 195, incomplete: 4 },
-  { rank: 8, item: 1, title: "Franchisor, Parents & Affiliates", share: 55.1, major: 26.3, n: 198 },
-  { rank: 9, item: 20, title: "Outlets & Franchisee Information", share: 52.6, major: 8.2, n: 196, incomplete: 1 },
-  { rank: 10, item: 12, title: "Territory", share: 48.5, major: 39.0, n: 200 },
-  { rank: 11, item: 13, title: "Trademarks", share: 36.7, major: 16.6, n: 199, incomplete: 1 },
-  { rank: 12, item: 21, title: "Financial Statements", share: 28.4, major: 3.6, n: 197, incomplete: 3 },
-  { rank: 13, item: 15, title: "Operation of the Franchise Business", share: 24.1, major: 20.6, n: 199 },
-  { rank: 14, item: 22, title: "Contracts", share: 21.5, major: 6.3, n: 191, incomplete: 7 },
-  { rank: 15, item: 10, title: "Financing", share: 18.7, major: 15.7, n: 198 },
-  { rank: 16, item: 14, title: "Patents, Copyrights & Proprietary Information", share: 17.7, major: 12.1, n: 198 },
-  { rank: 17, item: 16, title: "Restrictions on What the Franchisee May Sell", share: 16.4, major: 13.3, n: 195 },
-  { rank: 18, item: 3, title: "Litigation", share: 16.1, major: 4.0, n: 199 },
-  { rank: 19, item: 2, title: "Business Experience", share: 6.5, major: 1.0, n: 199 },
-  { rank: 20, item: 9, title: "Franchisee Obligations", share: 6.0, major: 1.5, n: 199 },
-  { rank: 21, item: 4, title: "Bankruptcy", share: 4.0, major: 0, n: 199 },
-  { rank: 22, item: 18, title: "Public Figures", share: 1.5, major: 0.5, n: 199 },
-  { rank: 23, item: 23, title: "Receipts", share: 0, major: 0, n: 0, incomplete: 187 },
-];
-
-export const crossPeriodItems: ItemResult[] = [
-  { item: 6, title: "Other Fees", share: 84.8, major: 50.8, routine: 4.7, ci: [74.3, 91.5] },
-  { item: 7, title: "Estimated Initial Investment", share: 79.0, major: 32.3, routine: 21.6, ci: [67.9, 87.0] },
-  { item: 5, title: "Initial Fees", share: 78.0, major: 41.8, routine: 7.9, ci: [66.8, 86.3] },
-  { item: 11, title: "Assistance, Systems & Training", share: 74.8, major: 41.7, routine: 13.0, ci: [63.3, 83.7] },
-  { item: 19, title: "Financial Performance Representations", share: 67.2, major: 0.3, routine: 23.1, ci: [55.3, 77.2] },
-  { item: 17, title: "Renewal, Termination & Disputes", share: 55.3, major: 34.7, routine: 2.3, ci: [43.5, 66.6] },
-  { item: 3, title: "Litigation", share: 31.1, major: 1.0, routine: 2.8, ci: [21.3, 42.9] },
-  { item: 21, title: "Financial Statements", share: 14.8, major: 2.8, routine: 80.4, ci: [8.2, 25.2] },
-  { item: 10, title: "Financing", share: 13.4, major: 11.0, routine: 1.3, ci: [7.2, 23.6] },
-];
+export const consecutiveItems: ItemResult[] = consecutiveItemsGenerated;
+export const crossPeriodItems: ItemResult[] = crossPeriodItemsGenerated;
+export const consecutiveChangeSummary = routeSummariesGenerated.consecutive;
+export const crossPeriodChangeSummary = routeSummariesGenerated["cross-period"];
 
 const legacyCases: CaseStudy[] = [
   {

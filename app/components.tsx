@@ -6,6 +6,7 @@ import { useMemo, useState } from "react";
 import {
   cases,
   consecutiveItems,
+  type ChangeTypeCounts,
   type CaseItem,
   type CaseStudy,
   type ItemResult,
@@ -311,6 +312,109 @@ export function MiniRanking() {
   );
 }
 
+type ChangeTypeKey = keyof ChangeTypeCounts;
+
+type ChangeTypeItemStat = {
+  item: number;
+  title: string;
+  comparisons: number;
+  atomicChanges: number;
+  outcomeReadyAtomicChanges: number;
+  reviewRequiredAtomicChanges: number;
+  changeTypeCounts: ChangeTypeCounts;
+};
+
+export type ChangeTypeSummaryData = {
+  metadata: {
+    route: string;
+    atomicChanges: number;
+    outcomeReadyAtomicChanges: number;
+    reviewRequiredAtomicChanges: number;
+    changeTypeCounts: ChangeTypeCounts;
+    notComparableDisplayedAsModified: number;
+  };
+  items: ChangeTypeItemStat[];
+};
+
+const changeTypeOrder: ChangeTypeKey[] = ["introduced", "modified", "removed", "reclassified"];
+const changeTypeLabels: Record<ChangeTypeKey, string> = {
+  introduced: "新增",
+  modified: "修改",
+  removed: "删除",
+  reclassified: "重新分类",
+};
+
+export function ChangeTypeSummary({ summary }: { summary: ChangeTypeSummaryData }) {
+  const [activeType, setActiveType] = useState<"all" | ChangeTypeKey>("all");
+  const metadata = summary.metadata;
+  const route = metadata.route;
+  const maxCount = Math.max(
+    1,
+    ...summary.items.map((row) =>
+      activeType === "all" ? row.atomicChanges : row.changeTypeCounts[activeType],
+    ),
+  );
+
+  return (
+    <section className="change-type-summary" aria-labelledby={`${route}-change-type-title`}>
+      <div className="change-type-heading">
+        <div>
+          <p className="eyebrow">ATOMIC CHANGE TYPES</p>
+          <h2 id={`${route}-change-type-title`}>全样本与各 Item 的变化类型</h2>
+        </div>
+        <p>
+          {route === "consecutive"
+            ? "统计口径为最终纳入的 7,705 条保守 atomic changes。选择一种类型后，各 Item 表和下钻链接会同步切换。"
+            : "统计口径为跨期生产包中的全部 candidate atomic changes；outcome-ready 与 review flags 仍单独保留。"}
+        </p>
+      </div>
+
+      <div className="change-type-cards" role="group" aria-label="Filter by atomic change type">
+        <button type="button" className={activeType === "all" ? "selected" : ""} onClick={() => setActiveType("all")}>
+          <span>全部变化</span><strong>{metadata.atomicChanges.toLocaleString()}</strong><small>100.0%</small>
+        </button>
+        {changeTypeOrder.map((type) => {
+          const count = metadata.changeTypeCounts[type];
+          return (
+            <button type="button" key={type} className={`${activeType === type ? "selected " : ""}change-type-${type}`} onClick={() => setActiveType(type)}>
+              <span>{changeTypeLabels[type]}</span>
+              <strong>{count.toLocaleString()}</strong>
+              <small>{(count / metadata.atomicChanges * 100).toFixed(1)}%</small>
+            </button>
+          );
+        })}
+      </div>
+
+      <div className="change-type-item-table" role="table" aria-label="Atomic change type counts by FDD Item">
+        <div className="change-type-item-header" role="row">
+          <span>Item</span><span>条款</span><span>Atomic changes</span><span>变化类型分解</span>
+        </div>
+        {summary.items.map((row) => {
+          const selectedCount = activeType === "all" ? row.atomicChanges : row.changeTypeCounts[activeType];
+          const query = activeType === "all" ? "" : `&changeType=${activeType}`;
+          return (
+            <Link className="change-type-item-row" role="row" key={row.item} href={`/items?route=${route}&item=${row.item}${query}`}>
+              <strong>{String(row.item).padStart(2, "0")}</strong>
+              <span>{row.title}</span>
+              <span><b>{selectedCount.toLocaleString()}</b><small>{activeType === "all" ? " total" : ` ${changeTypeLabels[activeType]}`}</small></span>
+              <span className="change-type-stack" aria-label={`${selectedCount} selected atomic changes`}>
+                {activeType === "all" ? changeTypeOrder.map((type) => (
+                  <i key={type} className={`change-type-${type}`} style={{ width: `${row.atomicChanges ? row.changeTypeCounts[type] / row.atomicChanges * 100 : 0}%` }} title={`${changeTypeLabels[type]} ${row.changeTypeCounts[type]}`} />
+                )) : <i className={`change-type-${activeType}`} style={{ width: `${selectedCount / maxCount * 100}%` }} />}
+              </span>
+            </Link>
+          );
+        })}
+      </div>
+
+      <p className="change-type-footnote">
+        `not_comparable` 表示同一条款的计量单位或口径发生变化，本站将其归入“修改”，同时在 atomic change 明细中保留原始标签。
+        本路线共有 {metadata.notComparableDisplayedAsModified.toLocaleString()} 条按此规则展示。
+      </p>
+    </section>
+  );
+}
+
 export function ResultsExplorer({
   items,
   mode,
@@ -377,9 +481,9 @@ export function ResultsExplorer({
           </>
         ) : (
           <>
-            <span><i className="legend-substantive" /> 实质变化（score ≥ 3）</span>
-            <span><i className="legend-major" /> 重大合同变化（score ≥ 4 且 contractual）</span>
-            <span><i className="legend-routine" /> 例行年度更新</span>
+            <span><i className="legend-substantive" /> 至少一条 outcome-ready atomic change</span>
+            <span><i className="legend-major" /> 至少一条 outcome-ready score 4–5 change</span>
+            <span>分母为该 Item 的成功生产比较</span>
           </>
         )}
       </div>
@@ -389,7 +493,7 @@ export function ResultsExplorer({
           <span>Rank</span>
           <span>Item</span>
           <span>条款</span>
-          <span>{mode === "consecutive" ? "完整比较中的比例" : "加权比例"}</span>
+          <span>{mode === "consecutive" ? "完整比较中的比例" : "Outcome-ready 比例"}</span>
           <span>结果分解</span>
         </div>
         {visible.map((row, index) => (
@@ -404,9 +508,7 @@ export function ResultsExplorer({
             <span className="item-number">{String(row.item).padStart(2, "0")}</span>
             <div className="result-title">
               <strong>{row.title}</strong>
-              {row.ci ? (
-                <small>95% CI {row.ci[0].toFixed(1)}–{row.ci[1].toFixed(1)}%</small>
-              ) : row.n ? (
+              {row.n ? (
                 <small>n = {row.n} complete comparisons{row.incomplete ? ` · ${row.incomplete} incomplete excluded` : ""}</small>
               ) : (
                 <small>{row.incomplete ?? 0} incomplete comparisons excluded; no analysis denominator</small>
@@ -419,8 +521,8 @@ export function ResultsExplorer({
             </div>
             <div className="result-breakdown">
               <span title={mode === "consecutive" ? "High-impact change job" : "Major contractual change"}><i className="break-major" style={{ width: `${row.major ?? 0}%` }} /></span>
-              {mode === "cross-period" ? <span title="Routine annual update"><i className="break-routine" style={{ width: `${row.routine ?? 0}%` }} /></span> : null}
-              <small>{mode === "consecutive" ? `High-impact ${(row.major ?? 0).toFixed(1)}%` : `Major ${(row.major ?? 0).toFixed(1)}% · Routine ${(row.routine ?? 0).toFixed(1)}%`}</small>
+              {mode === "cross-period" && row.detectedShare != null ? <span title="Any detected candidate change"><i className="break-routine" style={{ width: `${row.detectedShare}%` }} /></span> : null}
+              <small>{mode === "consecutive" ? `High-impact ${(row.major ?? 0).toFixed(1)}%` : `High-impact ready ${(row.major ?? 0).toFixed(1)}% · Any detected ${(row.detectedShare ?? 0).toFixed(1)}%`}</small>
             </div>
           </Link>
         ))}
