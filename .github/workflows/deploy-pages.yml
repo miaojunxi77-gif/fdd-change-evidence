@@ -31,6 +31,8 @@ jobs:
         env:
           GITHUB_PAGES: "true"
         run: npm run build:github
+      - name: Remove model-name references from published site
+        run: node scripts/sanitize-published-site.mjs out
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
