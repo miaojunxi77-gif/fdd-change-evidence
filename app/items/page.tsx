@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { ItemDrilldown } from "../full-data-components";
+import { ItemDrilldown } from "../item-drilldown";
 
 export default function ItemCasesPage() {
   return (
