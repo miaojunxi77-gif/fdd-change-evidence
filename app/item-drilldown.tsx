@@ -16,6 +16,7 @@ type EvidenceQuote = {
 type AtomicChangeType = "introduced" | "modified" | "removed" | "reclassified";
 type EconomicBurdenFilter = "all" | "increase" | "decrease";
 type ControlShiftFilter = "all" | "toward_franchisor" | "toward_franchisee";
+type ScoreFilter = "all" | "1" | "2" | "3" | "4" | "5" | "3plus" | "4plus";
 
 type AtomicChange = {
   id: string;
@@ -115,13 +116,28 @@ const changeTypeLabels: Record<AtomicChangeType, string> = {
   reclassified: "重新分类",
 };
 
+function matchesScore(atomic: AtomicChange, score: ScoreFilter) {
+  if (score === "all") return true;
+  if (score === "3plus") return atomic.score >= 3;
+  if (score === "4plus") return atomic.score >= 4;
+  return atomic.score === Number(score);
+}
+
+function scoreFilterLabel(score: ScoreFilter) {
+  if (score === "3plus") return "score ≥ 3";
+  if (score === "4plus") return "score ≥ 4";
+  return score === "all" ? "" : `score = ${score}`;
+}
+
 function matchesAtomic(
   atomic: AtomicChange,
+  score: ScoreFilter,
   changeType: "all" | AtomicChangeType,
   burden: EconomicBurdenFilter,
   control: ControlShiftFilter,
 ) {
-  return (changeType === "all" || atomic.changeType === changeType)
+  return matchesScore(atomic, score)
+    && (changeType === "all" || atomic.changeType === changeType)
     && (burden === "all" || atomic.economicBurdenDirection === burden)
     && (control === "all" || atomic.controlShift === control);
 }
@@ -289,6 +305,7 @@ export function ItemDrilldown() {
   const { dataset, error } = useItemDataset(selectedRoute, item);
   const [query, setQuery] = useState("");
   const [outcome, setOutcome] = useState("all");
+  const [score, setScore] = useState<ScoreFilter>("all");
   const [changeType, setChangeType] = useState<"all" | AtomicChangeType>(initialChangeType);
   const [burden, setBurden] = useState<EconomicBurdenFilter>("all");
   const [control, setControl] = useState<ControlShiftFilter>("all");
@@ -301,24 +318,26 @@ export function ItemDrilldown() {
     const change = { introduced: 0, modified: 0, removed: 0, reclassified: 0 } as Record<AtomicChangeType, number>;
     const burdenCounts = { increase: 0, decrease: 0 };
     const controlCounts = { toward_franchisor: 0, toward_franchisee: 0 };
+    const scoreCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
     let atomic = 0;
     rows.forEach((row) => (row.atomicChanges ?? []).forEach((a) => {
       atomic += 1;
       change[a.changeType] += 1;
+      if (a.score >= 1 && a.score <= 5) scoreCounts[a.score as 1 | 2 | 3 | 4 | 5] += 1;
       if (a.economicBurdenDirection === "increase") burdenCounts.increase += 1;
       if (a.economicBurdenDirection === "decrease") burdenCounts.decrease += 1;
       if (a.controlShift === "toward_franchisor") controlCounts.toward_franchisor += 1;
       if (a.controlShift === "toward_franchisee") controlCounts.toward_franchisee += 1;
     }));
-    return { atomic, change, burden: burdenCounts, control: controlCounts };
+    return { atomic, score: scoreCounts, change, burden: burdenCounts, control: controlCounts };
   }, [rows]);
 
   const visible = useMemo(() => {
     const term = query.trim().toLowerCase();
-    const atomicFilterActive = changeType !== "all" || burden !== "all" || control !== "all";
+    const atomicFilterActive = score !== "all" || changeType !== "all" || burden !== "all" || control !== "all";
     return rows
       .filter((row) => !pairFilter || row.pairId === pairFilter)
-      .filter((row) => !atomicFilterActive || (row.atomicChanges ?? []).some((atomic) => matchesAtomic(atomic, changeType, burden, control)))
+      .filter((row) => !atomicFilterActive || (row.atomicChanges ?? []).some((atomic) => matchesAtomic(atomic, score, changeType, burden, control)))
       .filter((row) => !term
         || row.company.toLowerCase().includes(term)
         || row.id.toLowerCase().includes(term)
@@ -347,7 +366,7 @@ export function ItemDrilldown() {
         if (sort === "year") return b.newYear - a.newYear || a.company.localeCompare(b.company);
         return b.score - a.score || a.company.localeCompare(b.company);
       });
-  }, [rows, pairFilter, query, outcome, changeType, burden, control, sort, selectedRoute]);
+  }, [rows, pairFilter, query, outcome, score, changeType, burden, control, sort, selectedRoute]);
 
   if (error) return <p className="empty-state">{error}</p>;
   if (!dataset) return <p className="empty-state">Loading all Item comparisons…</p>;
@@ -355,7 +374,7 @@ export function ItemDrilldown() {
   const itemTitle = itemLabels[item] ?? rows[0]?.itemTitle ?? "FDD Item";
   const isConsecutive = selectedRoute === "consecutive";
   const reviewCount = rows.filter((row) => row.needsReview || (row.atomicChanges ?? []).some((atomic) => atomic.needsReview)).length;
-  const visibleAtomicCount = visible.reduce((sum, row) => sum + (row.atomicChanges ?? []).filter((atomic) => matchesAtomic(atomic, changeType, burden, control)).length, 0);
+  const visibleAtomicCount = visible.reduce((sum, row) => sum + (row.atomicChanges ?? []).filter((atomic) => matchesAtomic(atomic, score, changeType, burden, control)).length, 0);
   const majorCount = rows.filter((row) => isConsecutive ? row.score >= 4 : row.substantive && row.contractual && row.score >= 4).length;
 
   return (
@@ -364,7 +383,7 @@ export function ItemDrilldown() {
         <div>
           <p className="eyebrow">COMPANY-LEVEL EVIDENCE</p>
           <h1>Item {String(item).padStart(2, "0")} · {itemTitle}</h1>
-          <p>逐条查看公司—年份比较及 atomic changes。变化类型、franchisee economic burden 和 control shift 可组合筛选。</p>
+          <p>逐条查看公司—年份比较及 atomic changes。Score、变化类型、franchisee economic burden 和 control shift 可组合筛选。</p>
         </div>
         <div className="drilldown-metrics">
           <div><strong>{rows.length}</strong><span>{isConsecutive ? "included change jobs" : "all comparisons"}</span></div>
@@ -389,6 +408,20 @@ export function ItemDrilldown() {
             {!isConsecutive ? <option value="ready">至少一条 outcome-ready change</option> : null}
             <option value="major">高影响变化（score 4–5）</option>
             <option value="review">质量复核标记（{reviewCount}）</option>
+          </select>
+        </label>
+
+        <label className="select-control">
+          <span>Score</span>
+          <select value={score} onChange={(event) => { setScore(event.target.value as ScoreFilter); setShown(30); }}>
+            <option value="all">全部评分（{counts.atomic.toLocaleString()}）</option>
+            <option value="1">= 1（{counts.score[1].toLocaleString()}）</option>
+            <option value="2">= 2（{counts.score[2].toLocaleString()}）</option>
+            <option value="3">= 3（{counts.score[3].toLocaleString()}）</option>
+            <option value="4">= 4（{counts.score[4].toLocaleString()}）</option>
+            <option value="5">= 5（{counts.score[5].toLocaleString()}）</option>
+            <option value="3plus">3+（{(counts.score[3] + counts.score[4] + counts.score[5]).toLocaleString()}）</option>
+            <option value="4plus">4+（{(counts.score[4] + counts.score[5]).toLocaleString()}）</option>
           </select>
         </label>
 
@@ -432,9 +465,10 @@ export function ItemDrilldown() {
       </div>
 
       {pairFilter ? <div className="active-filter-note">Showing one selected company-year pair. <Link href={`/items?route=${selectedRoute}&item=${item}`}>Clear company filter</Link></div> : null}
-      {(changeType !== "all" || burden !== "all" || control !== "all") ? (
+      {(score !== "all" || changeType !== "all" || burden !== "all" || control !== "all") ? (
         <div className="active-filter-note change-type-active-note">
           Atomic filters: <strong>{[
+            score !== "all" ? scoreFilterLabel(score) : "",
             changeType !== "all" ? changeTypeLabels[changeType] : "",
             burden !== "all" ? `burden = ${burden}` : "",
             control !== "all" ? `control = ${control}` : "",
@@ -448,8 +482,8 @@ export function ItemDrilldown() {
 
       <div className="comparison-accordion">
         {visible.slice(0, shown).map((row) => {
-          const matchingAtomics = (row.atomicChanges ?? []).filter((atomic) => matchesAtomic(atomic, changeType, burden, control));
-          const displayedAtomics = (changeType === "all" && burden === "all" && control === "all") ? (row.atomicChanges ?? []) : matchingAtomics;
+          const matchingAtomics = (row.atomicChanges ?? []).filter((atomic) => matchesAtomic(atomic, score, changeType, burden, control));
+          const displayedAtomics = (score === "all" && changeType === "all" && burden === "all" && control === "all") ? (row.atomicChanges ?? []) : matchingAtomics;
           const dynamicTypeCounts = displayedAtomics.reduce((acc, atomic) => {
             acc[atomic.changeType] += 1;
             return acc;
