@@ -1,0 +1,153 @@
+name: One-off atomic score filter patch
+
+on:
+  push:
+    branches: [chatgpt-score-filter-work]
+    paths:
+      - ".github/workflows/one-off-score-filter.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v4
+        with:
+          ref: chatgpt-score-filter-work
+          fetch-depth: 0
+
+      - name: Add exact and threshold atomic score filters
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          path = Path("app/item-drilldown.tsx")
+          text = path.read_text(encoding="utf-8")
+
+          def replace_once(old: str, new: str, label: str):
+              global text
+              count = text.count(old)
+              if count != 1:
+                  raise SystemExit(f"{label}: expected 1 match, found {count}")
+              text = text.replace(old, new, 1)
+
+          replace_once(
+              'type ControlShiftFilter = "all" | "toward_franchisor" | "toward_franchisee";\n',
+              'type ControlShiftFilter = "all" | "toward_franchisor" | "toward_franchisee";\n'
+              'type ScoreFilter = "all" | "1" | "2" | "3" | "4" | "5" | "3plus" | "4plus";\n',
+              "score filter type",
+          )
+
+          replace_once(
+              '''function matchesAtomic(\n  atomic: AtomicChange,\n  changeType: "all" | AtomicChangeType,\n  burden: EconomicBurdenFilter,\n  control: ControlShiftFilter,\n) {\n  return (changeType === "all" || atomic.changeType === changeType)\n    && (burden === "all" || atomic.economicBurdenDirection === burden)\n    && (control === "all" || atomic.controlShift === control);\n}\n''',
+              '''function matchesScore(atomic: AtomicChange, score: ScoreFilter) {\n  if (score === "all") return true;\n  if (score === "3plus") return atomic.score >= 3;\n  if (score === "4plus") return atomic.score >= 4;\n  return atomic.score === Number(score);\n}\n\nfunction scoreFilterLabel(score: ScoreFilter) {\n  if (score === "3plus") return "score ≥ 3";\n  if (score === "4plus") return "score ≥ 4";\n  return score === "all" ? "" : `score = ${score}`;\n}\n\nfunction matchesAtomic(\n  atomic: AtomicChange,\n  score: ScoreFilter,\n  changeType: "all" | AtomicChangeType,\n  burden: EconomicBurdenFilter,\n  control: ControlShiftFilter,\n) {\n  return matchesScore(atomic, score)\n    && (changeType === "all" || atomic.changeType === changeType)\n    && (burden === "all" || atomic.economicBurdenDirection === burden)\n    && (control === "all" || atomic.controlShift === control);\n}\n''',
+              "matchesAtomic",
+          )
+
+          replace_once(
+              '  const [outcome, setOutcome] = useState("all");\n  const [changeType, setChangeType] = useState<"all" | AtomicChangeType>(initialChangeType);\n',
+              '  const [outcome, setOutcome] = useState("all");\n  const [score, setScore] = useState<ScoreFilter>("all");\n  const [changeType, setChangeType] = useState<"all" | AtomicChangeType>(initialChangeType);\n',
+              "score state",
+          )
+
+          replace_once(
+              '    const controlCounts = { toward_franchisor: 0, toward_franchisee: 0 };\n    let atomic = 0;\n',
+              '    const controlCounts = { toward_franchisor: 0, toward_franchisee: 0 };\n    const scoreCounts = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };\n    let atomic = 0;\n',
+              "score counts init",
+          )
+
+          replace_once(
+              '      atomic += 1;\n      change[a.changeType] += 1;\n',
+              '      atomic += 1;\n      change[a.changeType] += 1;\n      if (a.score >= 1 && a.score <= 5) scoreCounts[a.score as 1 | 2 | 3 | 4 | 5] += 1;\n',
+              "score counts increment",
+          )
+
+          replace_once(
+              '    return { atomic, change, burden: burdenCounts, control: controlCounts };\n',
+              '    return { atomic, score: scoreCounts, change, burden: burdenCounts, control: controlCounts };\n',
+              "score counts return",
+          )
+
+          replace_once(
+              '    const atomicFilterActive = changeType !== "all" || burden !== "all" || control !== "all";\n',
+              '    const atomicFilterActive = score !== "all" || changeType !== "all" || burden !== "all" || control !== "all";\n',
+              "atomic filter active",
+          )
+
+          replace_once(
+              '.filter((row) => !atomicFilterActive || (row.atomicChanges ?? []).some((atomic) => matchesAtomic(atomic, changeType, burden, control)))\n',
+              '.filter((row) => !atomicFilterActive || (row.atomicChanges ?? []).some((atomic) => matchesAtomic(atomic, score, changeType, burden, control)))\n',
+              "visible row score filter",
+          )
+
+          replace_once(
+              '  }, [rows, pairFilter, query, outcome, changeType, burden, control, sort, selectedRoute]);\n',
+              '  }, [rows, pairFilter, query, outcome, score, changeType, burden, control, sort, selectedRoute]);\n',
+              "visible deps",
+          )
+
+          replace_once(
+              '  const visibleAtomicCount = visible.reduce((sum, row) => sum + (row.atomicChanges ?? []).filter((atomic) => matchesAtomic(atomic, changeType, burden, control)).length, 0);\n',
+              '  const visibleAtomicCount = visible.reduce((sum, row) => sum + (row.atomicChanges ?? []).filter((atomic) => matchesAtomic(atomic, score, changeType, burden, control)).length, 0);\n',
+              "visible atomic count",
+          )
+
+          replace_once(
+              '<p>逐条查看公司—年份比较及 atomic changes。变化类型、franchisee economic burden 和 control shift 可组合筛选。</p>',
+              '<p>逐条查看公司—年份比较及 atomic changes。Score、变化类型、franchisee economic burden 和 control shift 可组合筛选。</p>',
+              "summary copy",
+          )
+
+          replace_once(
+              '''        </label>\n\n        <label className="select-control">\n          <span>Change type</span>\n''',
+              '''        </label>\n\n        <label className="select-control">\n          <span>Score</span>\n          <select value={score} onChange={(event) => { setScore(event.target.value as ScoreFilter); setShown(30); }}>\n            <option value="all">全部评分（{counts.atomic.toLocaleString()}）</option>\n            <option value="1">= 1（{counts.score[1].toLocaleString()}）</option>\n            <option value="2">= 2（{counts.score[2].toLocaleString()}）</option>\n            <option value="3">= 3（{counts.score[3].toLocaleString()}）</option>\n            <option value="4">= 4（{counts.score[4].toLocaleString()}）</option>\n            <option value="5">= 5（{counts.score[5].toLocaleString()}）</option>\n            <option value="3plus">3+（{(counts.score[3] + counts.score[4] + counts.score[5]).toLocaleString()}）</option>\n            <option value="4plus">4+（{(counts.score[4] + counts.score[5]).toLocaleString()}）</option>\n          </select>\n        </label>\n\n        <label className="select-control">\n          <span>Change type</span>\n''',
+              "score control",
+          )
+
+          replace_once(
+              '      {(changeType !== "all" || burden !== "all" || control !== "all") ? (\n',
+              '      {(score !== "all" || changeType !== "all" || burden !== "all" || control !== "all") ? (\n',
+              "active filter condition",
+          )
+
+          replace_once(
+              '''          Atomic filters: <strong>{[\n            changeType !== "all" ? changeTypeLabels[changeType] : "",\n''',
+              '''          Atomic filters: <strong>{[\n            score !== "all" ? scoreFilterLabel(score) : "",\n            changeType !== "all" ? changeTypeLabels[changeType] : "",\n''',
+              "active filter score label",
+          )
+
+          replace_once(
+              '          const matchingAtomics = (row.atomicChanges ?? []).filter((atomic) => matchesAtomic(atomic, changeType, burden, control));\n          const displayedAtomics = (changeType === "all" && burden === "all" && control === "all") ? (row.atomicChanges ?? []) : matchingAtomics;\n',
+              '          const matchingAtomics = (row.atomicChanges ?? []).filter((atomic) => matchesAtomic(atomic, score, changeType, burden, control));\n          const displayedAtomics = (score === "all" && changeType === "all" && burden === "all" && control === "all") ? (row.atomicChanges ?? []) : matchingAtomics;\n',
+              "displayed atomics score filter",
+          )
+
+          path.write_text(text, encoding="utf-8")
+          PY
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static site
+        env:
+          GITHUB_PAGES: "true"
+        run: npm run build:github
+
+      - name: Commit patched component
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app/item-drilldown.tsx
+          git diff --cached --check
+          git diff --cached --quiet && exit 0
+          git commit -m "Restore atomic score filters"
+          git push origin HEAD:chatgpt-score-filter-work
