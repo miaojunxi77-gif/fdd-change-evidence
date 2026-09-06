@@ -1,0 +1,9 @@
+measure,n_brand_years,share
+All reconciled brand-years,11102,1.0
+Paper-ready brand-years,11001,0.9909025400828679
+Remaining unresolved score conflicts,101,0.009097459917132048
+Any financing support (score >= 1),3667,0.3333333333333333
+Risk-bearing support (score >= 2),3002,0.27288428324697755
+Material credit risk (score >= 3),1514,0.13762385237705663
+Direct funded credit (score = 4),1183,0.10753567857467503
+

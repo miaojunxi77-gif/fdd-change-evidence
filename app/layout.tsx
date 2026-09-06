@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "FDD Contract Change Evidence Explorer",
   description:
-    "An auditable explorer for consecutive-year variation and cross-period substantive change in Franchise Disclosure Documents.",
+    "An auditable explorer for FDD contract changes and franchisor financing support in Item 10.",
   other: {
     "codex-preview": "development",
   },

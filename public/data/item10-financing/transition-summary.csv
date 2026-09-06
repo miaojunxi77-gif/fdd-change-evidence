@@ -1,0 +1,10 @@
+measure,n_pairs,share
+Consecutive brand-year pairs,5647,1.0
+RiskScore changes,287,0.05082344607756331
+0 to support,105,0.018593943686913406
+Support to 0,124,0.021958562068354878
+Risk increase,135,0.023906499026031522
+Risk decrease,152,0.026916947051531786
+Low (0-2) to material (3-4),47,0.008323003364618381
+Material (3-4) to low (0-2),38,0.0067292367628829465
+

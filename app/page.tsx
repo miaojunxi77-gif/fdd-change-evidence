@@ -154,6 +154,13 @@ export default function Home() {
           <p>DeepSeek v4.5 跨期包已完成结构审计并投入生产展示：1,334 个成功比较、14,505 条候选原子变化，其中 6,211 条为 outcome-ready。</p>
           <Link className="text-link" href="/substantive">查看重点条款结果 →</Link>
         </article>
+        <article>
+          <span className="route-number">03</span>
+          <p className="eyebrow">FINANCING MEASUREMENT</p>
+          <h2>Item 10 融资支持</h2>
+          <p>在 11,102 个 reconciled brand-years 中区分转介、延期付款、或有风险与直接出资，并报告年度趋势和 within-brand changes。</p>
+          <Link className="text-link" href="/financing">查看融资风险编码结果 →</Link>
+        </article>
       </section>
     </main>
   );

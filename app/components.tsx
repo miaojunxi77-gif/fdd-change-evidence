@@ -17,6 +17,7 @@ const navigation = [
   { href: "/consecutive", label: "连续年变化" },
   { href: "/substantive", label: "跨期实质变化" },
   { href: "/cases", label: "公司案例" },
+  { href: "/financing", label: "Item 10 融资" },
   { href: "/method", label: "方法与质量" },
 ];
 
@@ -69,10 +70,10 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div>
         <strong>FDD Contract Change Evidence Explorer</strong>
-        <p>Evidence is reported at the company × year-pair × Item level.</p>
+        <p>Change evidence uses company × year-pair × Item units; financing measures use reconciled brand-years.</p>
       </div>
       <div className="footer-note">
-        <span>Research prototype · July 2026</span>
+        <span>Research prototype · September 2026</span>
         <span>Original PDFs remain the authoritative source.</span>
       </div>
     </footer>
