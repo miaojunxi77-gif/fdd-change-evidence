@@ -41,7 +41,7 @@ function TrendChart() {
   const y = (value: number) => top + height - (value / 50) * height;
 
   return (
-    <div className="financing-chart-wrap" aria-label="Annual financing support prevalence, 2014 to 2026">
+    <div className="financing-chart-wrap" aria-label="Annual financing support prevalence, 2013 to 2026">
       <svg className="financing-trend-chart" viewBox="0 0 1020 340" role="img">
         <title>Annual financing support prevalence by risk threshold</title>
         {[0, 10, 20, 30, 40, 50].map((tick) => (
@@ -100,8 +100,8 @@ export default function FinancingPage() {
         <div className="financing-hero-metrics" aria-label="Item 10 production sample">
           <div><strong>13,222</strong><span>reconciled brand-years</span></div>
           <div><strong>13,067</strong><span>paper-ready observations</span></div>
-          <div><strong>98.83%</strong><span>production coverage</span></div>
-          <div><strong>155</strong><span>defined unresolved values</span></div>
+          <div><strong>98.83%</strong><span>paper-ready coverage</span></div>
+          <div><strong>155</strong><span>unresolved score conflicts</span></div>
         </div>
       </section>
 
@@ -186,7 +186,7 @@ export default function FinancingPage() {
       <section className="financing-section shell">
         <div className="financing-section-heading compact">
           <div><p className="eyebrow">TIME TREND</p><h2>Annual prevalence by financing-risk threshold</h2></div>
-          <p>圆点透明度较低的 2013、2019 与 2020 年样本量小于 200，不应把这些年份的波动单独解释为经济趋势。</p>
+          <p>图从 2013 年开始；2008–2012 年合计仅 21 个 observations，保留在下载数据中但不进入折线。圆点透明度较低的 2013、2019 与 2020 年样本量小于 200，不应把这些年份的波动单独解释为经济趋势。</p>
         </div>
         <TrendChart />
         <div className="financing-year-samples" aria-label="Annual sample sizes">
@@ -252,5 +252,4 @@ export default function FinancingPage() {
     </main>
   );
 }
-
 

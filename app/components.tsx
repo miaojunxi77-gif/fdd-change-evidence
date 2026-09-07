@@ -17,7 +17,7 @@ const navigation = [
   { href: "/consecutive", label: "连续年变化" },
   { href: "/substantive", label: "跨期实质变化" },
   { href: "/cases", label: "公司案例" },
-  { href: "/financing", label: "Item 10 融资" },
+  { href: "/financing", label: "融资支持面板" },
   { href: "/method", label: "方法与质量" },
 ];
 
