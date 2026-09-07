@@ -206,6 +206,64 @@
 .financing-sensitivity-grid p { margin: 12px 0 0; color: var(--muted); font-size: 13px; }
 .financing-sensitivity-note { margin: 18px 0 0; padding: 18px 22px; border-left: 3px solid var(--blue); background: #eef2fb; color: #2e477e; font-size: 14px; line-height: 1.65; }
 
+.financing-unit-section { border-block: 1px solid var(--border); background: #e4ebe4; }
+.financing-unit-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border: 1px solid var(--border); background: var(--border); }
+.financing-unit-grid article { min-height: 190px; padding: 26px; background: var(--paper); }
+.financing-unit-grid span { color: #a1aaa4; font-family: Georgia, serif; font-size: 22px; }
+.financing-unit-grid h3 { margin: 26px 0 0; font-family: Georgia, serif; font-size: 23px; }
+.financing-unit-grid p { margin: 12px 0 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.financing-unit-comparison { display: grid; grid-template-columns: minmax(300px,.75fr) minmax(560px,1.25fr); gap: 28px; align-items: center; margin-top: 18px; padding: 30px; border: 1px solid var(--border); background: rgba(255,254,249,.7); }
+.financing-unit-comparison h3 { margin: 0; font-family: Georgia, serif; font-size: 27px; }
+.financing-unit-comparison > div > p:last-child { color: var(--muted); font-size: 14px; line-height: 1.7; }
+.financing-unit-table-wrap { overflow-x: auto; }
+.financing-unit-table-wrap table { width: 100%; border-collapse: collapse; background: var(--paper); font-size: 14px; }
+.financing-unit-table-wrap th,.financing-unit-table-wrap td { padding: 13px 15px; border-bottom: 1px solid var(--soft-border); text-align: right; }
+.financing-unit-table-wrap th:first-child { text-align: left; }
+.financing-unit-table-wrap thead th { color: var(--forest); background: #edf2ec; font-size: 13px; }
+.financing-unit-table-wrap small { color: var(--muted); font-weight: 500; }
+.financing-unit-answer { border-left-color: var(--forest); }
+
+.financing-evidence-notes { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 18px; }
+.financing-evidence-notes article { padding: 22px; border-top: 3px solid var(--forest); background: var(--paper); }
+.financing-evidence-notes strong { display:block; color:var(--forest); font-family:Georgia,serif; font-size:25px; font-weight:500; }
+.financing-evidence-notes span { display:block; margin-top:4px; font-size:13px; font-weight:800; }
+.financing-evidence-notes p { margin:12px 0 0; color:var(--muted); font-size:13px; line-height:1.6; }
+.financing-explorer { border:1px solid var(--border); background:var(--paper); box-shadow:var(--shadow); }
+.financing-explorer-tabs { display:grid; grid-template-columns:1fr 1fr; border-bottom:1px solid var(--border); background:#e8ede7; }
+.financing-explorer-tabs button { min-height:58px; padding:0 24px; border:0; border-right:1px solid var(--border); background:transparent; font-weight:800; text-align:left; cursor:pointer; }
+.financing-explorer-tabs button[aria-selected="true"] { background:var(--forest); color:white; }
+.financing-explorer-tabs span { float:right; padding:3px 8px; border-radius:999px; background:rgba(255,255,255,.18); font-size:12px; }
+.financing-filters { display:grid; grid-template-columns:minmax(300px,2fr) repeat(3,minmax(140px,.7fr)); gap:12px; padding:20px; border-bottom:1px solid var(--border); }
+.financing-filters label { display:grid; gap:7px; }
+.financing-filters label>span { color:var(--muted); font-size:11px; font-weight:800; letter-spacing:.06em; text-transform:uppercase; }
+.financing-filters input,.financing-filters select { width:100%; height:43px; padding:0 12px; border:1px solid #bcc6bd; border-radius:3px; background:white; color:var(--ink); font-size:13px; }
+.financing-result-line { min-height:52px; padding:0 20px; display:flex; align-items:center; gap:6px; border-bottom:1px solid var(--border); color:var(--muted); font-size:13px; }
+.financing-result-line strong { color:var(--forest); font-family:Georgia,serif; font-size:21px; font-weight:500; }
+.financing-result-line span { margin-left:auto; }
+.financing-loading,.financing-error { padding:32px 20px; color:var(--muted); text-align:center; }
+.financing-error { color:#8b2d2d; background:#fff0ed; }
+.financing-table-wrap { overflow-x:auto; }
+.financing-evidence-table { width:100%; min-width:1080px; border-collapse:collapse; table-layout:fixed; }
+.financing-evidence-table th { padding:12px 13px; border-bottom:1px solid var(--border); background:#f0f3ef; color:var(--forest); font-size:11px; letter-spacing:.05em; text-align:left; text-transform:uppercase; }
+.financing-evidence-table td { padding:15px 13px; border-bottom:1px solid var(--soft-border); vertical-align:top; font-size:13px; line-height:1.5; }
+.financing-evidence-table tr:hover td,.financing-evidence-table tr.selected td { background:#f3f7f2; }
+.financing-evidence-table th:nth-child(1){width:19%}.financing-evidence-table th:nth-child(2){width:7%}.financing-evidence-table th:nth-child(3){width:12%}.financing-evidence-table th:nth-child(4){width:21%}.financing-evidence-table th:nth-child(5){width:34%}.financing-evidence-table th:nth-child(6){width:7%}
+.financing-evidence-table td>strong,.financing-evidence-table td>small { display:block; }
+.financing-evidence-table td>small { margin-top:5px; color:var(--muted); font-size:11px; }
+.financing-evidence-table q { display:-webkit-box; overflow:hidden; color:#48564e; font-family:Georgia,serif; font-size:13px; line-height:1.55; -webkit-box-orient:vertical; -webkit-line-clamp:4; }
+.financing-evidence-table td>button { padding:7px 9px; border:1px solid var(--forest); border-radius:3px; background:white; color:var(--forest); font-size:11px; font-weight:800; cursor:pointer; }
+.financing-score-badge { min-width:34px; height:34px; display:inline-grid; place-items:center; border:2px solid currentColor; border-radius:50%; font-family:Georgia,serif; font-size:16px; font-weight:700; }
+.financing-score-badge.score-0{color:#76827a}.financing-score-badge.score-1{color:#4a8f6e}.financing-score-badge.score-2{color:var(--teal)}.financing-score-badge.score-3{color:#9b6b00}.financing-score-badge.score-4{color:var(--blue)}.financing-score-badge.score-na{min-width:42px;border-radius:4px;color:#8b2d2d;font-size:12px}
+.financing-change-table th:nth-child(1){width:18%}.financing-change-table th:nth-child(2){width:10%}.financing-change-table th:nth-child(3){width:12%}.financing-change-table th:nth-child(4),.financing-change-table th:nth-child(5){width:26%}.financing-change-table th:nth-child(6){width:8%}
+.financing-change-table td q { margin-top:7px; -webkit-line-clamp:3; }.financing-change-up,.financing-change-down { display:inline-block; padding:4px 8px; border-radius:3px; font-weight:800; }.financing-change-up{background:#e3f1e8;color:#176b43}.financing-change-down{background:#fff0e8;color:#99421b}
+.financing-pager { min-height:64px; padding:12px 20px; display:flex; align-items:center; justify-content:center; gap:20px; border-top:1px solid var(--border); }.financing-pager button{min-width:108px;padding:8px 12px;border:1px solid var(--border);border-radius:3px;background:white;font-size:12px;font-weight:800;cursor:pointer}.financing-pager button:disabled{opacity:.4}.financing-pager span{color:var(--muted);font-size:12px}
+.financing-detail-panel { padding:24px; border-top:4px solid var(--forest); background:#edf2ec; }.financing-detail-panel>header{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:16px}.financing-detail-panel>header span{color:var(--forest);font-size:11px;font-weight:800;letter-spacing:.12em}.financing-detail-panel>header h3{margin:5px 0 0;font-family:Georgia,serif;font-size:28px}.financing-detail-panel>header p{margin:7px 0 0;color:var(--muted);font-size:13px}.financing-detail-panel>header button{padding:8px 12px;border:1px solid var(--border);background:white;font-weight:800;cursor:pointer}
+.financing-version-card { margin-top:12px;padding:20px;border:1px solid var(--border);background:var(--paper) }.financing-version-head{display:flex;align-items:center;justify-content:space-between;gap:16px}.financing-version-head div{display:grid;gap:4px}.financing-version-head span{color:var(--muted);font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}.financing-version-head strong{font-size:14px}
+.financing-detail-grid{display:grid;grid-template-columns:repeat(4,1fr);margin:18px 0 0;border:1px solid var(--soft-border)}.financing-detail-grid div{padding:12px;border-right:1px solid var(--soft-border)}.financing-detail-grid div:last-child{border-right:0}.financing-detail-grid dt{color:var(--muted);font-size:10px;font-weight:800;letter-spacing:.07em;text-transform:uppercase}.financing-detail-grid dd{margin:5px 0 0;font-size:12px;line-height:1.45}
+.financing-version-card blockquote{margin:18px 0 0;padding:18px 20px;border-left:3px solid var(--amber);background:#faf5df;color:#433d27;font-family:Georgia,serif;font-size:15px;line-height:1.65}.financing-version-card blockquote span{display:block;margin-bottom:6px;color:#7b6120;font-family:Arial,sans-serif;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.financing-original-text{margin-top:14px;border:1px solid var(--border);background:white}.financing-original-text summary{padding:12px 15px;color:var(--forest);font-size:12px;font-weight:800;cursor:pointer}.financing-original-text pre{max-height:560px;margin:0;padding:20px;overflow:auto;border-top:1px solid var(--border);background:#fbfbf8;font-family:Georgia,serif;font-size:13px;line-height:1.65;white-space:pre-wrap;word-break:break-word}.financing-original-text>p{margin:0;padding:18px;border-top:1px solid var(--border);color:var(--muted);font-size:13px}.financing-coding-note{margin:14px 0 0;color:var(--muted);font-size:12px;line-height:1.65}
+.financing-compare-columns{display:grid;grid-template-columns:1fr 1fr;gap:14px}.financing-compare-columns>div>h4{margin:0 0 8px;padding:12px 15px;background:var(--forest);color:white;font-family:Georgia,serif;font-size:18px}
+
 .financing-download-section { padding-block: 52px; border-top: 1px solid var(--border); background: #e3e8e1; }
 .financing-download-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 48px; align-items: center; }
 .financing-download-inner h2 { margin: 0; font-family: Georgia, serif; font-size: 34px; }
@@ -213,21 +271,26 @@
 .financing-download-links { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
 .financing-download-links a { min-height: 44px; padding: 0 16px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--forest); background: var(--paper); color: var(--forest); font-size: 13px; font-weight: 800; }
 .financing-download-links a:hover { background: var(--forest); color: white; }
+.financing-download-links a.primary-download { grid-column:1/-1; background:var(--forest); color:white; }
 
 @media (max-width: 1180px) {
   .financing-funnel { grid-template-columns: repeat(3, 1fr); }
-  .financing-explainer-grid, .financing-threshold-grid { grid-template-columns: repeat(2, 1fr); }
+  .financing-explainer-grid, .financing-threshold-grid, .financing-evidence-notes { grid-template-columns: repeat(2, 1fr); }
   .financing-transition-grid { grid-template-columns: repeat(3, 1fr); }
+  .financing-filters { grid-template-columns:2fr repeat(2,1fr); }
 }
 
 @media (max-width: 900px) {
   .financing-hero,
   .financing-section-heading,
   .financing-score-layout,
-  .financing-download-inner { grid-template-columns: 1fr; }
+  .financing-download-inner, .financing-unit-comparison, .financing-compare-columns { grid-template-columns: 1fr; }
   .financing-section-heading { gap: 24px; }
   .financing-change-hero { grid-template-columns: 1fr; }
   .financing-download-links { justify-self: stretch; }
+  .financing-unit-grid { grid-template-columns:1fr; }
+  .financing-filters { grid-template-columns:1fr 1fr; }
+  .financing-detail-grid { grid-template-columns:1fr 1fr; }
 }
 
 @media (max-width: 640px) {
@@ -237,12 +300,17 @@
   .financing-threshold-grid,
   .financing-transition-grid,
   .financing-sensitivity-grid,
-  .financing-download-links { grid-template-columns: 1fr; }
+  .financing-download-links, .financing-evidence-notes, .financing-explorer-tabs, .financing-filters, .financing-detail-grid { grid-template-columns: 1fr; }
   .financing-hero-metrics div { border-left: 0 !important; border-top: 1px solid var(--border); }
   .financing-hero-metrics div:first-child { border-top: 0; }
   .financing-section { padding-block: 54px; }
   .financing-change-hero strong { font-size: 60px; }
   .financing-answer-box p { font-size: 17px; }
+  .financing-unit-comparison { padding:20px; }
+  .financing-result-line { align-items:flex-start;flex-direction:column;padding-block:14px; }
+  .financing-result-line span { margin-left:0; }
+  .financing-detail-panel { padding:15px; }
+  .financing-detail-panel>header { flex-direction:column; }
+  .financing-detail-grid div { border-right:0;border-bottom:1px solid var(--soft-border); }
 }
-
 

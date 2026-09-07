@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import EvidenceExplorer from "./evidence-explorer";
 
 const scoreDistribution = [
   { score: 0, label: "No financing involvement", n: 8722, share: 66.75, color: "#9aa69e" },
@@ -102,6 +103,15 @@ export default function FinancingPage() {
           <div><strong>13,067</strong><span>paper-ready observations</span></div>
           <div><strong>98.83%</strong><span>paper-ready coverage</span></div>
           <div><strong>155</strong><span>unresolved score conflicts</span></div>
+        </div>
+      </section>
+
+      <section className="financing-section financing-unit-section">
+        <div className="shell">
+          <div className="financing-section-heading compact"><div><p className="eyebrow">UNIT OF OBSERVATION</p><h2>Is this franchisor-level or contract-level?</h2></div><p><strong>Short answer:</strong> 主结果是 <b>franchise system × filing year（brand-year）</b>，既不是把每份州申报文件都当一条 observation，也不是每个 franchisor 永远只出现一次。</p></div>
+          <div className="financing-unit-grid"><article><span>01</span><h3>Raw document</h3><p>同一品牌同一年可能有多个州的 FDD、amendment 或 duplicate。它们是证据来源，不是回归 observation。</p></article><article><span>02</span><h3>Primary: brand-year</h3><p>先合并同一 canonical system × year 的文件，再形成一个年度融资分数。不同年份保留，因此可以研究 within-firm changes。</p></article><article><span>03</span><h3>Pure franchisor snapshot</h3><p>若老师需要“一家公司一行”，使用每个 system 最新的 paper-ready 年份；这适合横截面描述，但会丢失年度变化。</p></article></div>
+          <div className="financing-unit-comparison"><div><p className="eyebrow">SAME DATA, DIFFERENT DENOMINATORS</p><h3>Primary panel versus one-row-per-franchisor</h3><p>主表应该报告 brand-year，因为研究问题关心融资安排是否随时间变化。Latest-year franchisor snapshot 作为补充表，直接回答老师的 observation-level 问题。</p></div><div className="financing-unit-table-wrap"><table><thead><tr><th>Measure</th><th>Brand-year panel<br/><small>N = 13,067</small></th><th>Latest-year franchisor<br/><small>N = 4,722</small></th></tr></thead><tbody><tr><th>Any support (≥1)</th><td>33.25%</td><td>28.21%</td></tr><tr><th>Risk-bearing (≥2)</th><td>27.44%</td><td>23.32%</td></tr><tr><th>Material risk (≥3)</th><td>14.30%</td><td>12.11%</td></tr><tr><th>Direct funded (=4)</th><td>11.49%</td><td>9.76%</td></tr></tbody></table></div></div>
+          <div className="financing-answer-box financing-unit-answer"><span>Suggested advisor wording</span><p>“The main distribution is based on franchise-system-year observations, not raw FDD filings. Multiple state filings for the same system and year are reconciled into one observation, while different years remain separate. For comparison, I also report a pure franchisor-level snapshot using each system’s latest paper-ready year.”</p></div>
         </div>
       </section>
 
@@ -219,6 +229,12 @@ export default function FinancingPage() {
         </div>
       </section>
 
+      <section className="financing-section shell" id="financing-evidence">
+        <div className="financing-section-heading compact"><div><p className="eyebrow">AUDITABLE EVIDENCE EXPLORER</p><h2>Firm, year, score—and the original Item 10 language</h2></div><p>检索全部 13,222 个 reconciled brand-years，或直接比较 341 个 within-firm score changes。点开任意记录可查看 coding evidence 和用于编码的 Item 10 抽取文本。</p></div>
+        <div className="financing-evidence-notes"><article><strong>10,873 / 13,222</strong><span>brand-years with full extracted text</span><p>其余记录仍展示 Item 10 原文 evidence quote；原始 PDF 始终是最终权威来源。</p></article><article><strong>0–4</strong><span>financing-risk score</span><p>这里不是合同变化页面的 1–5 change score；Score 4 表示 direct funded credit。</p></article><article><strong>Disclosure ≠ use</strong><span>interpretation boundary</span><p>文本说明 franchisor 披露了某类支持，不代表 franchisee 实际使用、贷款实际发放或违约发生。</p></article></div>
+        <EvidenceExplorer basePath={basePath}/>
+      </section>
+
       <section className="financing-section shell">
         <div className="financing-section-heading compact">
           <div><p className="eyebrow">CONSERVATIVE FREEZE</p><h2>Unresolved cases stay missing, not forced into a score</h2></div>
@@ -239,8 +255,12 @@ export default function FinancingPage() {
 
       <section className="financing-section financing-download-section">
         <div className="shell financing-download-inner">
-          <div><p className="eyebrow">PRODUCTION V1.1 · FROZEN 2026-09-07</p><h2>Derived summaries for replication</h2><p>本页已按 provenance-first identity repair 更新；网站只发布派生汇总，不公开原始 PDF 或完整 Item 10 正文。</p></div>
+          <div><p className="eyebrow">PRODUCTION V1.1 · FROZEN 2026-09-07</p><h2>Advisor-ready and replication files</h2><p>原始 PDF 仍是权威来源；网页发布用于核查的抽取文本与派生变量，不公开本地文件路径。</p></div>
           <div className="financing-download-links">
+            <a className="primary-download" href={`${basePath}/data/item10-financing/Item10_Financing_Advisor_Package_V1_1.xlsx`} download>Advisor package XLSX</a>
+            <a href={`${basePath}/data/item10-financing/brand-year-evidence.csv`} download>Brand-year evidence CSV</a>
+            <a href={`${basePath}/data/item10-financing/franchisor-latest-year.csv`} download>Latest-year franchisor CSV</a>
+            <a href={`${basePath}/data/item10-financing/within-firm-changes.csv`} download>341 changed pairs CSV</a>
             <a href={`${basePath}/data/item10-financing/annual-trends.csv`} download>Annual trends CSV</a>
             <a href={`${basePath}/data/item10-financing/risk-distribution.csv`} download>Risk distribution CSV</a>
             <a href={`${basePath}/data/item10-financing/transition-summary.csv`} download>Transition summary CSV</a>
@@ -252,4 +272,3 @@ export default function FinancingPage() {
     </main>
   );
 }
-
