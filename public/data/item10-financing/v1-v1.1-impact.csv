@@ -1,0 +1,16 @@
+metric,v1,v1_1,change
+Clean Item 10 documents,32534,32534,0
+Unique Item 10 texts,10780,10780,0
+Identity-resolved documents,22449,32455,10006
+Panel-contributing documents,22430,28369,5939
+Brand-years,11102,13222,2120
+Paper-ready brand-years,11001,13067,2066
+Unique canonical brands,4157,4736,579
+Any financing support,3667,4345,678
+Risk-bearing support,3002,3586,584
+Material credit risk,1514,1869,355
+Direct funded credit,1183,1502,319
+Consecutive brand-year pairs,5647,7013,1366
+RiskScore changes,287,341,54
+0 to support,105,130,25
+Support to 0,124,144,20

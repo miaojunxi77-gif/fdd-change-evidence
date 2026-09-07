@@ -1,6 +1,5 @@
-measure,lower_bound_all_unresolved_zero,upper_bound_all_unresolved_qualify,maximum_bound_width
-Any financing support (score >= 1),0.33030084669428933,0.33939830661142134,0.009097459917132011
-Risk-bearing support (score >= 2),0.27040172941812285,0.2794991893352549,0.009097459917132067
-Material credit risk (score >= 3),0.13637182489641506,0.1454692848135471,0.00909745991713204
-Direct funded credit (score = 4),0.10655737704918032,0.11565483696631237,0.009097459917132053
-
+measure,observed_qualifying_brand_years,unresolved_brand_years,all_reconciled_brand_years,lower_bound_share,upper_bound_share
+Any financing support (score >= 1),4345,155,13222,0.3286189683860233,0.3403418544849493
+Risk-bearing support (score >= 2),3586,155,13222,0.27121464226289516,0.28293752836182123
+Material credit risk (score >= 3),1869,155,13222,0.1413553168960823,0.15307820299500832
+Direct funded credit (score = 4),1502,155,13222,0.1135985478747542,0.12532143397368023
