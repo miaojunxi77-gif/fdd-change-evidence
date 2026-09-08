@@ -1,0 +1,13 @@
+﻿metric,v1_1,v1_2,change
+Brand-years,13222,13237,15
+Paper-ready brand-years,13067,13124,57
+Unique canonical brands,4736,4743,7
+Any financing support,4345,4385,40
+Risk-bearing support,3586,3620,34
+Material credit risk,1869,1883,14
+Direct funded credit,1502,1513,11
+Consecutive brand-year pairs,7013,7070,57
+RiskScore changes,341,349,8
+0 to support,130,135,5
+Support to 0,144,146,2
+Unresolved score conflicts,155,113,-42

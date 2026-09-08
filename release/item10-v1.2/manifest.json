@@ -1,0 +1,24 @@
+{
+  "version": "Production V1.2",
+  "freeze": "2026-09-08",
+  "counts": {
+    "all": 13237,
+    "paper": 13124,
+    "unresolved": 113,
+    "any": 4385,
+    "risk": 3620,
+    "material": 1883,
+    "direct": 1513,
+    "pairs": 7070,
+    "changes": 349,
+    "zero_to_support": 135,
+    "support_to_zero": 146
+  },
+  "score_counts": {
+    "0": 8739,
+    "2": 1737,
+    "4": 1513,
+    "3": 370,
+    "1": 765
+  }
+}

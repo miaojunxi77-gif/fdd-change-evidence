@@ -1,0 +1,5 @@
+﻿measure,observed_qualifying_brand_years,unresolved_brand_years,all_reconciled_brand_years,lower_bound_share,upper_bound_share
+Any financing support (score >= 1),4385,113,13237,0.33126841429326886,0.33980509178816953
+Risk-bearing support (score >= 2),3620,113,13237,0.2734758631109768,0.28201254060587744
+Material credit risk (score >= 3),1883,113,13237,0.14225277630883132,0.15078945380373196
+Direct funded credit (score = 4),1513,113,13237,0.11430082344942208,0.12283750094432273

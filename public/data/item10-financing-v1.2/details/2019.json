@@ -1,0 +1,1700 @@
+{
+  "S4592::2019": {
+    "id": "S4592::2019",
+    "brand": "All Dry",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "02fbeb821c0dbe1b95d72831555e803e05e85794b67b9daf6a263e8c8191bfe0",
+        "source": "NASAA_NON_SBA",
+        "efdId": "EFD407388",
+        "docId": "DOC184256",
+        "issuanceDate": "",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or obligation.",
+        "codingNote": "The franchisor expressly disclaims offering direct or indirect financing and disclaims any guarantee of the franchisee's note, lease, or obligation. There is no financing involvement, seller credit, contingent credit, or funded credit exposure by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 30 =====\nItem 10                                                                     Financing\n\nWe do not offer direct or indirect financing. We do not guarantee your note, lease or obligation."
+      }
+    ]
+  },
+  "S0100::2019": {
+    "id": "S0100::2019",
+    "brand": "Amazing Athletes",
+    "year": 2019,
+    "score": 2,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "99b5f0b0f7793ce86a5add356bd0e7ff66b23ffa12dd6f426d0e710798be2269",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-04-30",
+        "score": 2,
+        "forms": [
+          "initial_fee_installment"
+        ],
+        "providers": [
+          "franchisor"
+        ],
+        "purposes": [
+          "fee"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "up to $12,500 of the initial franchise fee || You will sign a promissory note || financed over 12 months with interest at 156% simple interest || Neither we nor our Affiliates guaranty or otherwise support any loan, note, lease or other third-party obligations.",
+        "codingNote": "The franchisor provides seller credit by allowing the franchisee to finance up to $12,500 of the initial franchise fee through a promissory note and installment payments over 12 months. This is deferred fee receivable exposure, not a funded cash loan, so Score 2 is appropriate. The required guaranty is the franchisee owner's personal guaranty and is not franchisor credit support. No current sale, assignment, or discounting of the note is disclosed, and no third-party guarantees are provided.",
+        "item10Text": "===== PAGE 31 =====\nITEM 10.   FINANCING\n\nSummary of Financing Offered\n\n Item Financed                                          Initial Franchise Fee\n Source of Financing                           Franchisor\n Down Payment                             $12,500 to $24,999\n Amount Financed                          $0 to $12,500\n Terms (yrs)                                                                 1\n Interest Rate                          156% simple interest\n  Interest Rate uoon DefaLill                  The lesser of 18% per annum or the hiahest\n                                                        rate permitted bv law-'\n Monthly Payment                             Will vary\n Prepay Penalty                         None\n Security Required                           Guaranty\n Liability Upon Default                         Acceleration collection costs, attorney’s fees,\n                                                termination of Franchise Agreement\n\n    ?  /•M.'f  /v (•  f  z'tioj                                       f >'i t 11 <                                                          /-vI             Klr\\   11                                                        )  t n i f» a                    v.l  r      L. ^cl t    j \\rl    rt.i  t,,M I  i..^ t r\\. i Ciirt.                                               V V XI1  t C-r  V.5 i  f1\\./ritw-.  jNxr    | tn S    1 miCi 1.  LN    Ln.ri id11 Vvll.\n\n                                                       lMlewa'-esti4et+ve-ee-v©nafH-s\n Financinii Charues                       None\n\n        If you ffleeH^UFe-i^<?4i-t-s«m€to4#spufcha$e a franchise, mi_w-a-will have the option lo finance\nup to $12,500 of the initial franchise fee. You will sign a promissory note (“Note” attached as\n\n                                          27\n\n===== PAGE 32 =====\nExhibit 10 to the Franchise Agreement), that will be financed over 12 months with interest at 156%\nsimple interest. If you are a partnership, limited liability company, or corporation, then the note\nmust be guaranteed individually by all of the partners, members or shareholders, as applicable.\n\n        In the event of nonpayment or other default under the Note or in the event of a breach of\nthe Franchise Agreement, the payment of the principal and interest may be accelerated at our\noption without notice or demand to you. You also will be responsible for our attorneys’ fees as\nwell as your own, in the event you are in default. Upon transfer, expiration or termination of the\nfranchise, any principal balance becomes immediately payable. The Note does not require you to\nwaive defenses or other legal rights nor does it bar you from asserting a defense against us.\n\n    We do not engage in the practice of selling, assigning, or discounting to a third party, in\nwhole or in part, any note, contract or other instrument executed by you. However, we may do so\nin the future.\n\n       Other than the above, neither we nor our Affiliates currently offer any direct or indirect\nfinancing in connection with the acquisition or development of your franchise.\n\n      You may pre-pav the debt at anv time without penalty.\n\n       Neither we nor our Affiliates guaranty or otherwise support any loan, note, lease or other\nthird-party obligations. Neither-Wwe andner our Affiliates have not net-in the past and at this time\nhave no present intention of selling, assigning, CMydiscounting to a third party all or part of anv er\nofl-er-!-Hgr--lt^Hehi-sees--fmancing arrangements-evk+v-th-Hh-paifi-e-s. Neither we nor our  affiliates\nreceive any direct or indirect payments from any person for the placement of financing."
+      },
+      {
+        "hash": "e0d9c1580d8e2c7af979017e6829e27ef8a52dedc4269c67ca0d8e365c5b335d",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-04-30",
+        "score": 2,
+        "forms": [
+          "initial_fee_installment"
+        ],
+        "providers": [
+          "franchisor"
+        ],
+        "purposes": [
+          "fee"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "If you purchase a franchise, you will have the option to finance up to $12,500 of the initial franchise fee. || You will sign a promissory note (“Note” attached as Exhibit 10 to the Franchise Agreement), that will be financed over 12 months with interest at 15% simple interest. || Other than the above, neither we nor our Affiliates currently offer any direct or indirect financing in connection with the acquisition or development of your franchise. || Neither we nor our Affiliates guaranty or otherwise support any loan, note, lease or other third-party obligations.",
+        "codingNote": "The franchisor extends seller credit by accepting a promissory note for up to $12,500 of the initial franchise fee, payable over 12 months at 15% simple interest. This is deferred receivable exposure (Score 2). No third-party lending, guarantee, current assignment/discounting, or affiliate financing is disclosed.",
+        "item10Text": "===== PAGE 32 =====\nITEM 10.   FINANCI NG\n\nSummary of Financing Offered\n\n Item Financed                                         Initial Franchise Fee\n Source of Financing                           Franchisor\n Down Payment                             $12,500 to $24,999\n Amount Financed                          $0 to $12,500\n Terms (yrs)                                                                                1\n Interest Rate                          15% simple interest\n Interest Rate upon Default                  The lesser of 18% per annum or the highest\n                                                       rate permitted by law\n Monthly Payment                             Will vary\n Prepay Penalty                         None\n Security Required                           Guaranty\n Liability Upon Default                        Acceleration collection costs, attorney’s fees,\n                                                termination of Franchise Agreement\n Financing Charges                      None\n\n        If you purchase a franchise, you will have the option to finance up to $12,500 of the initial\nfranchise fee. You will sign a promissory note (“Note” attached as Exhibit 10 to the Franchise\n\n                                          22\n\n===== PAGE 33 =====\nAgreement), that will be financed over 12 months with interest at 15% simple interest. If you are a\npartnership, limited liability  company  or  corporation,  then  the  note  must  be  guaranteed\nindividually by all of the partners, members or shareholders, as applicable.\n\n        In the event of nonpayment or other default under the Note or in the event of a breach of\nthe Franchise Agreement, the payment of the principal and interest may be accelerated at our\noption without notice or demand to you. You also will be responsible for our attorneys’ fees as\nwell as your own, in the event you are in default. Upon transfer, expiration or termination of the\nfranchise, any principal balance becomes immediately payable. The Note does not require you to\nwaive defenses or other legal rights nor does it bar you from asserting a defense against us.\n\n     We do not engage in the practice of selling, assigning, or discounting to a third party, in\nwhole or in part, any note, contract or other instrument executed by you. However, we may do so\nin the future.\n\n       Other than the above, neither we nor our Affiliates currently offer any direct or indirect\nfinancing in connection with the acquisition or development of your franchise.\n\n      You may pre-pay the debt at any time without penalty.\n\n       Neither we nor our Affiliates guaranty or otherwise support any loan, note, lease or other\nthird-party obligations. We and our Affiliates have not in the past and at this time have no present\nintention of selling, assigning, or discounting to a third party  all or part of any financing\narrangement. Neither we nor our affiliates receive any direct or indirect payments from any person\nfor the placement of financing."
+      }
+    ]
+  },
+  "S0110::2019": {
+    "id": "S0110::2019",
+    "brand": "American Poolplayers Association",
+    "year": 2019,
+    "score": 2,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "080da462697d124fe37f0ad4ce97ba4a72323fcea27f77abe8fd75bc6c19905d",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 2,
+        "forms": [
+          "seller_store_purchase_financing"
+        ],
+        "providers": [
+          "franchisor"
+        ],
+        "purposes": [
+          "store_acquisition"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "APA allowed the buyer to pay a portion of the purchase price owed to APA in installments subject to the term of a promissory note. || the new franchisee paid APA a down payment and issued APA a promissory note for the unpaid portion of the purchase price.",
+        "codingNote": "Although APA states it does not generally offer financing and does not guarantee obligations, the specific disclosed transaction is seller credit: APA sold a territory and accepted a promissory note for the unpaid purchase price owed to APA. This creates deferred receivable exposure for the franchisor and is scored as Score 2, not Score 4, because no separate cash/asset advance is disclosed. No guarantee, assignment, or recourse exposure is disclosed.",
+        "item10Text": "===== PAGE 30 =====\nITEM 10\n\n                                 FINANCING\n\nWe do not generally offer financing at this time, nor do we guarantee any notes, leases or\nobligations. In one case, in January, 2018, APA sold Territory with active APA league play, which\nAPA controlled following two franchisees’ voluntary termination of their franchise agreement. APA\nallowed the buyer to pay a portion of the purchase price owed to APA in installments subject to the\nterm of a promissory note. The decision to allow this new franchisee to pay the purchase price in\ninstallments was based on unique and extenuating circumstances specific to that transaction.\n\nIn that instance, the new franchisee paid APA a down payment and issued APA a promissory note\nfor the unpaid portion of the purchase price. The principal amount of the note was $22,578.24. The\npromissory note required the new franchisee to pay interest at a rate of 6.5%, 2% above the then\nprime lending rate. Per the promissory note, the new franchisee has eighteen (18) months to pay\nall amount owed. APA did not take a security interest in any property to secure the note.\n\nNo one, other than the franchisee, guarantied any of the notesnote referenced above, though if\nsimilar arrangements are made in the future with married franchisees, APA may require a\nfranchisee’s spouse to guaranty the note if the spouse is not a franchisee. The note allowed the\nAPA-FDD 20182019                             25\n\n===== PAGE 31 =====\nfranchisee to prepay the notesbalance due without penalty. Per the terms of the note, if the new\nfranchisee defaults on the note: APA has the right to accelerate her obligation to pay the entire\namount due at the time of default; and the franchisee would be liable for any court costs or\nreasonable attorneys’ fees incurred by APA in collecting on the debt.\n\nNo agent or affiliate of APA offers direct or indirect financing, guarantees any notes, leases or\nobligations, has any practice or intent to sell, assign or discount to a third party all or part of any\nfinancing arrangement, or receives any direct or indirect payments or other consideration from any\nperson for the placement of financing with a lender."
+      }
+    ]
+  },
+  "S0059::2019": {
+    "id": "S0059::2019",
+    "brand": "ATC Healthcare Services",
+    "year": 2019,
+    "score": 4,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "66792bdce3c54a1f3064405e25a7e52cd6655b1c3877b96f044469e1c3cf7b75",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-17",
+        "score": 4,
+        "forms": [
+          "direct_loan",
+          "lender_referral_compensation"
+        ],
+        "providers": [
+          "franchisor",
+          "third_party"
+        ],
+        "purposes": [
+          "working_capital",
+          "other"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "Quick Pay Program checks and e-card advances are not loans. They are drawn on our account and will be treated as a Direct Cost to you under the Franchise Agreement || We reserve the right to receive a fee if franchisee uses a Lender that we recommend. That fee depends on the type of financing the franchisee receives || Neither we nor any of our affiliates offer, directly, any arrangements for financing your initial investment or for the operation of your Franchised Business We will not guarantee your note, lease or other obligations",
+        "codingNote": "The Quick-Pay Program is a funded cash-advance arrangement: the franchisor draws pay advances on its own account and recovers them from the franchisee as a Direct Cost, creating direct funded credit exposure despite being labeled 'not loans.' This is Score 4. Separately, the franchisor may receive a referral fee if the franchisee uses a recommended lender; that is third-party referral compensation with no franchisor credit exposure, Score 1. No guarantee, assignment, or recourse is disclosed. Because the Item contains both a funded direct-credit form and a third-party referral form, the architecture is covered but a mixed multi-layer modifier is retained.",
+        "item10Text": "===== PAGE 27 =====\nITEM 10\n                              FINANCING\n\n         Neither we nor any of our affiliates offer, directly, any arrangements for financing your initial\n  investment or for the operation of your Franchised Business We will not guarantee your note, lease or\n  other obligations\n\n        For qualified'franchisees who obtain individual fidelity bond insurance, we offer our Quick-Pay\n  Program which provides pay advances to healthcare associates of up to $500 each week  The healthcare\n  associates are our etnployees  Quick Pay Program checks and e-card advances are not loans  They are\n drawn on our account and will be treated as a Direct Cost to you under the Franchise Agreement  If you\n\n\n  ATC Healthcare/ufdd 23\n\n===== PAGE 28 =====\ndo not maintain the required fidelity bond or fail to follow program rules, we can suspend or cancel your\nparticipation in this program\n\n\n                                                                                                                                                             I\n     We reserve the right to receive a fee if franchisee uses a Lender that we recommend That fee\ndepends on the type of financing the franchisee receives"
+      },
+      {
+        "hash": "b24d3107055ad7b97d29b2fa29cc912dba5956f7776f088f998485042e364f32",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-18",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "FINANCING",
+        "codingNote": "The Item 10 text contains only a section header and no disclosed financing arrangements, assistance, or credit exposure by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 6 =====\nITEM 10                                              I                                                                               22\n\n  FINANCING                                                                            22"
+      }
+    ]
+  },
+  "S3263::2019": {
+    "id": "S3263::2019",
+    "brand": "Bear Paddle Swin School",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "02fbeb821c0dbe1b95d72831555e803e05e85794b67b9daf6a263e8c8191bfe0",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-02-28",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or obligation.",
+        "codingNote": "The franchisor expressly disclaims offering direct or indirect financing and disclaims any guarantee of the franchisee's note, lease, or obligation. There is no financing involvement, seller credit, contingent credit, or funded credit exposure by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 30 =====\nItem 10                                                                     Financing\n\nWe do not offer direct or indirect financing. We do not guarantee your note, lease or obligation."
+      }
+    ]
+  },
+  "U_bc76f7a1::2019": {
+    "id": "U_bc76f7a1::2019",
+    "brand": "BMB Franchising Services, Inc",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "d5c3b864499642845bc5dbb45b73d2b25855034c4e4190128d3bf5d0cb092729",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-15",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing, and we do not guarantee your notes, leases, or other obligations.",
+        "codingNote": "Item 10 expressly disclaims any direct or indirect financing and any guarantee of franchisee notes, leases, or other obligations, so there is no franchisor or affiliate credit-risk architecture.",
+        "item10Text": "===== PAGE 27 =====\nITEM 10\n                             FINANCING\n\nWe do not offer direct or indirect financing, and we do not guarantee your notes, leases, or other\nobligations."
+      }
+    ]
+  },
+  "U_93f03e5e::2019": {
+    "id": "U_93f03e5e::2019",
+    "brand": "Bruxie, LLC",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "660890ec12a1e684a3db39d4b5bcd1dcb1b9d6e7e27c0034ea14832f3fe043b7",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-05-11",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing || We do not guarantee your note, lease, or obligation",
+        "codingNote": "Item 10 expressly disclaims both direct/indirect financing and any franchisor guarantee of the franchisee's note, lease, or obligation. There is no franchisor or affiliate credit-risk architecture disclosed, so the score is 0.",
+        "item10Text": "===== PAGE 28 =====\nItem 10\n                          FINANCING\n\n    We do not offer direct or indirect financing We do not guarantee your note, lease, or\nobligation\n\n\nBRUXIE FDD\nEASTM53I5'I1.18 5F.AST\\165973676.2\n\n===== PAGE 29 ====="
+      },
+      {
+        "hash": "d3dd47ec6b98001b34b7cffc8e8bbd6003549b409028fde6d66bc0b2bc3a31e3",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-05-21",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing || We do not guarantee your note, lease, or obligation",
+        "codingNote": "Item 10 expressly negates any direct or indirect financing by the franchisor and also negates any guarantee of the franchisee's note, lease, or obligation. There is no financing involvement, seller credit, contingent credit, or funded credit exposure by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 27 =====\nItem 10\n                          FINANCING\n\n     We do not offer direct or indirect financing We do not guarantee your note, lease, or\nobligation\n\n\nBRUXIEFDD (2019)\nEAS1M 65973676 2\n\n===== PAGE 28 ====="
+      }
+    ]
+  },
+  "S5138::2019": {
+    "id": "S5138::2019",
+    "brand": "Bumper Man",
+    "year": 2019,
+    "score": 4,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "1e0d48ab75144b2f70f5f544f5ec9e8b9dc2302dde0aa3d3e39a750c079134ca",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-03-08",
+        "score": 4,
+        "forms": [
+          "initial_fee_installment",
+          "direct_loan"
+        ],
+        "providers": [
+          "franchisor"
+        ],
+        "purposes": [
+          "fee",
+          "other"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "We do not offer, directly or indirectly, any financing arrangements to any franchisee, except for a portion of the initial franchise fee to qualified franchisee operators as discussed below. || pay the remaining half (up to $25,000) in 120 equal semi-monthly installments during a five-year term at an interest rate of 10% per annum || On occasion, we have extended small loans to franchisees in emergency circumstances. || We do not have any past or present practice, or any intention, to sell, assign or discount to any third party any note, contract or other instrument you execute.",
+        "codingNote": "The franchisor provides two economically distinct financing forms: (1) seller credit for half of the initial franchise fee, payable in installments under a note—Score 2; and (2) discretionary cash loans in emergency circumstances—Score 4. The franchisor expressly disclaims guarantees and any sale, assignment, or discount of notes, so no contingent guarantee exposure or transfer is present. The final score is 4 based on the funded direct-loan exposure, while the mixed multi-layer financing program is retained as a modifier.",
+        "item10Text": "===== PAGE 21 =====\nITEM 10\n                           FINANCING\n\n We do not offer, directly or indirectly, any financing arrangements to any franchisee, except for a\n portion of the initial franchise fee to qualified franchisee operators as discussed below. We will\n not guarantee any franchisee’s note, lease, or other obligation. We do not have any past or present\n  practice, or any intention, to sell, assign or discount to any third party any note, contract or other\n instrument you execute.\n\n New franchise, operators who meet our current credit criteria may pay us half of the initial\n franchisee fee upon the execution of the Franchise Agreement and pay the remaining half (up to\n $25,000) in 120 equal semi-monthly installments during a five-year term at an interest rate of 10%\n per annum, secured by your right, title and interest in the Franchise Agreement. Default of your\n payment obligations under the note constitutes a default under the Franchise Agreement for which\n we may terminate the Franchise Agreement if you fail to cure your default of your payment\n  obligations under the note.\n\n On occasion, we have extended small loans to franchisees in emergency circumstances.  Such\n loans are discretionary, usually short term and vary in interest rates. We are not obligated to extend\n a loan to any franchisee regardless of circumstances.\n\n              Summary of Financing Offered to Franchisee Operator\n\n                                                                 ■^Description     ■\n                 Financing Term         :|\n\n Amoimt financed                             $25,0000\n\n  Source of Financing                       Bumper Man, Inc.\n\n Down Payment                               $25,000 (One half of $50,000 Initial Fee)\n\n Term (years)                                    Five\n\n  Interest Rate                          10% per aimum during the loan term; 15% per\n                                       annum following the loan maturity date\n\n  Semi-Monthly Payment                       $265.59\n\n\n  WEST\\285410810.5\n\n===== PAGE 22 =====\nPrepayment Penalty                       None\n\nSecurity Required                         Your right, title and interest in the Franchise\n                                            Agreement. In addition, if you own your\n                                                  franchise in a legal entity, then each owner of\n                                                  the legal entity will be required to personally\n                                               guarantee the note. We may offset from any\n                                          amounts that we collect from Bumper Man\n                                             customers for bumper repair services that you\n                                            perform and for which distributions to you for\n                                            such services are owed any note payments\n                                                     that are not received by us by the due date.\n\nLiability upon default                            Principal and interest, accelerated to date of\n                                                       default, and all costs of enforcement of the\n                                                     note, including without limitation attorneys’\n                                                    fees and court costs.\n\nLoss of legal right upon default               Waiver of defenses; termination of Franchise\n                                            Agreement."
+      },
+      {
+        "hash": "20c9c316174074ad55fbb47b3cdb097ca994c81297c0b4b74766592b7740dc35",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-10-05",
+        "score": 4,
+        "forms": [
+          "initial_fee_installment",
+          "direct_loan"
+        ],
+        "providers": [
+          "franchisor"
+        ],
+        "purposes": [
+          "fee",
+          "other"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "New franchise operators who meet our current credit criteria may pay us half of the initial franchisee fee  (i.e. $25,000) upon the execution of the Franchise Agreement and pay the remaining half ... in 120 equal semi-monthly installments during a five-year term at an interest rate of 10% per annum || On occasion, we have extended small loans to franchisees in emergency circumstances. || We will not guarantee any franchisee’s note, lease, or other obligation. || We do not have any past or present practice, or any intention, to sell, assign or discount to any third party any note, contract or other instrument you execute.",
+        "codingNote": "The franchisor defers half of the initial franchise fee via an installment note secured by the franchise agreement (Score 2 seller credit), and also discloses discretionary emergency cash loans extended by the franchisor (Score 4 funded direct credit exposure). No affiliate provider or third-party lender program is disclosed. The franchisor expressly declines to guarantee franchisee obligations and disclaims any sale, assignment, or discount of notes. Final score is 4 due to the funded direct loans.",
+        "item10Text": "===== PAGE 24 =====\nITEM 10\n                           FINANCING\n\n We do not offer, directly or indirectly, any financing arrangements to any franchisee, except for a\n portion of the initial franchise fee to qualified franchisee operators as discussed below. We will\n\n\n  4S'18-3103-1392.11WEST\\285410810.5\n\n===== PAGE 25 =====\nnot guarantee any franchisee’s note, lease, or other obligation. We do not have any past or\npresent practice, or any intention, to sell, assign or discount to any third party any note, contract\nor other instrument you execute.\n\nNew franchise operators who meet our current credit criteria may pay us half of the initial\nfranchisee fee  (i.e. $25,000) upon the execution of the Franchise Agreement and pay the\nremaining half fun to $25.000) in 120 equal semi-monthly installmentinstallments during a five-\nyear term at an interest rate of 10% per annum, secured by your right, title and interest in the\nFranchise Agreement.  Default of your payment obligations under the note constitutes a default\nunder the Franchise Agreement for which we may terminate the Franchise Agreement if you fail\nto cure your default of your payment obligations under the note.\n\nOn occasion, we have extended small loans to franchisees in emergency circumstances.  Such\nloans are discretionary, usually short term and vary in interest rates. We are not obligated to\nextend a loan to any franchisee regardless of circumstances.\n\n             Summary of Financing Offered to Franchisee Operator\n\n\n               Financing Tenn                                   Description\n\nAmount financed                             $25,0000\n\nSource of Financing                         Bumper Man, Inc.\n\nDown Payment                               $25,000 (One half of $50,000 Initial Fee)\n\nTerm ('vrsvears)                                  Five\n\n nterest Rate                          10% per armum during the loan term; 15% per\n                                      annum following the loan maturity date\n\n Semi-Monthly Payment                        $265.59\n\n i’repayment Penalty                        None\n\n Security Required                          Your right, title and interest in the Franchise\n                                             Agreement. In addition, weif vou own vour\n                                                   franchise in a legal entitv. then each owner of\n                                                     the legal entitv will be reauired to nersonallv\n                                                guarantee the note. We mav offset from anv\n                                           amounts that we collect from Bumper Man\n                                              customers for bumper repair services that you\n                                             perform and for which distributions to you for\n                                               such services are owed any note payments that\n                                                      are not received by us by the due date.\n\n\n4848-3103-1392.nWEST\\2854l08l0.5\n\n===== PAGE 26 =====\nFinancing.,Temi    .      •                               Description\n\nLiability upon default                              Principal and interest, accelerated to date of\n                                                        default, and all costs of enforcement of the\n                                                      note, including without limitation attorneys’\n                                                      fees and court costs.\n\nLoss of legal right upon default                Waiver of defenses; termination of Franchise\n                                             Agreement."
+      }
+    ]
+  },
+  "U_4b5441a2::2019": {
+    "id": "U_4b5441a2::2019",
+    "brand": "Call on Care, Inc",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "ead48ee578a78015044046add86a5a7ab604b5add8eba925ec6d84750da6321c",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-04-03",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your lease or other any other obligations.",
+        "codingNote": "The Item 10 expressly disclaims both direct/indirect financing and any guarantee of lease or other obligations. There is no franchisor or affiliate credit-risk architecture.",
+        "item10Text": "===== PAGE 13 =====\nItem 10.  Financing\n\nWe do not offer direct or indirect financing. We do not guarantee your lease or other any other\nobligations."
+      }
+    ]
+  },
+  "U_c398ffe8::2019": {
+    "id": "U_c398ffe8::2019",
+    "brand": "CareBuilders At Home, Inc",
+    "year": 2019,
+    "score": 1,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "ad943e60b479f3293cc85f71d0e62b88e359f0b50586a889214a6d7366daeaf0",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-17",
+        "score": 1,
+        "forms": [
+          "third_party_financing_program",
+          "lender_referral_compensation"
+        ],
+        "providers": [
+          "third_party"
+        ],
+        "purposes": [
+          "other"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing We do not guarantee your note, lease or obligation || Currently a third-party lender, Benetrends, Inc provides financing to our franchisees || We can receive a fee of up to $1,000",
+        "codingNote": "Franchisor affirmatively disclaims direct/indirect financing and any guarantee. A third-party lender provides financing, and the franchisor may receive a referral fee. This is third-party access support with compensation, without franchisor credit exposure.",
+        "item10Text": "===== PAGE 18 =====\nITEM 10\n                             FINANCING\n\n     We do not offer direct or indirect financing We do not guarantee your note, lease or obligation\n\n     We reserve the right to receive a fee if franchisee uses a lender that we recommend Currently a\nthird-party lender, Benetrends, Inc provides financing to our franchisees The fee may vary based on the\ntype of financing the franchisee receives, which can be an SB A loan, 401K/IRA rollover funding or\nsecurities backed loans We can receive a fee of up to $1,000"
+      },
+      {
+        "hash": "f5796d6d5498c3678481c014cd132bb3a4c9535b75a780c7fa6a6a3c2bd6b80a",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-17",
+        "score": 1,
+        "forms": [
+          "lender_referral_compensation"
+        ],
+        "providers": [
+          "third_party"
+        ],
+        "purposes": [
+          "other"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing We do not guarantee your note, lease or obligation || Currently a third-party lender, Benetrends, Inc provides financing to our franchisees || We can receive a fee of up to $1,000",
+        "codingNote": "Franchisor expressly disclaims direct/indirect financing and guarantees. A third-party lender provides financing; franchisor may receive a referral fee up to $1,000. This is third-party facilitation with compensation and no franchisor/affiliate credit exposure, so Score 1. Use of funds is not stated, so purpose is other.",
+        "item10Text": "===== PAGE 24 =====\nITEM 10\n                              FINANCING\n\n      We do not offer direct or indirect financing We do not guarantee your note, lease or obligation\n\n      We reserve the right to receive a fee if franchisee uses a lender that we recommend Currently a\n  third-party lender, Benetrends, Inc provides financing to our franchisees The fee may vary based on the\n type of financing the franchisee receives, which can be an SBA loan, 401K/1RA rollover funding or\n  securities backed loans We can receive a fee of up to $1,000"
+      }
+    ]
+  },
+  "S0360::2019": {
+    "id": "S0360::2019",
+    "brand": "Charleys",
+    "year": 2019,
+    "score": 2,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "fd5bd2cfe0f50724357a091a9f77eca1e92c38e0a791b6b171d8255eb4e0b21d",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-06-01",
+        "score": 2,
+        "forms": [
+          "seller_inventory_or_equipment_credit"
+        ],
+        "providers": [
+          "affiliate"
+        ],
+        "purposes": [
+          "equipment",
+          "inventory"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "We do not offer direct or indirect financing. We do not guarantee your note, lease or obligation. || Payments for any signs, equipment and supplies you may purchase from our affiliates are due upon then current terms, but in no event are the current terms longer than 30 days.",
+        "codingNote": "Although Item 10 disclaims direct/indirect financing and guarantees, it discloses that franchisees may purchase signs, equipment, and supplies from affiliates with payment terms up to 30 days. This creates seller/deferred receivable exposure for the affiliate, which is Score 2. No funded loan, guarantee, or assignment/recourse language is present; the cross-reference to Item 8 is noted.",
+        "item10Text": "===== PAGE 24 =====\nITEM 10\n                               FINANCING\n\n    We do not offer direct or indirect financing. We do not guarantee your note, lease or\nobligation. Payments for any signs, equipment and supplies you may purchase from our\naffiliates are due upon then current terms, but in no event are the current terms longer than 30\ndays. See Item 8."
+      }
+    ]
+  },
+  "U_5864f8b8::2019": {
+    "id": "U_5864f8b8::2019",
+    "brand": "Chunyang Tea USA, LLC",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "b11ca9ebfc2420dcc5ae86498aa106bb1163f3ecfce975203a21b4ed920d8d2d",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-04",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not, guarantee your note, lease or obligation.",
+        "codingNote": "Franchisor expressly disclaims offering any direct or indirect financing and disclaims guaranteeing the franchisee's note, lease, or obligation. No franchisor or affiliate credit-risk architecture is disclosed.",
+        "item10Text": "===== PAGE 16 =====\nITEM 10: FINANCING\n\nWe do not offer direct or indirect financing. We do not, guarantee your note, lease or obligation."
+      }
+    ]
+  },
+  "U_2d69f887::2019": {
+    "id": "U_2d69f887::2019",
+    "brand": "Core Progression Franchise LLC",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "bd1bd7424b10beab2029a4a413ec2a86fb24f564eb42afc63ea5adc9b6c2ac5e",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-18",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing to you. || We do not guarantee your note, lease, or other obligation.",
+        "codingNote": "The franchisor expressly disclaims offering direct or indirect financing and disclaims any guarantee or contingent credit exposure. There is no financing involvement, seller credit, guarantee, or funded credit risk borne by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 29 =====\nITEM 10\n                             FINANCING\n\n     We do not offer direct or indirect financing to you. We do not guarantee your note, lease, or other\n obligation."
+      },
+      {
+        "hash": "edc3203c940581fc9454fc344a1ab6c6ec4660f7910e263d7c08444c96859a30",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-18",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing to you. || We do not guarantee your note, lease, or other obligation.",
+        "codingNote": "The franchisor expressly disclaims any direct or indirect financing and any guarantee of the franchisee's obligations, so there is no economic credit-risk architecture borne by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 22 =====\nITEM 10\n                             FINANCING\n\n     We do not offer direct or indirect financing to you. We do not guarantee your note, lease, or\nother obligation.\n\n\n{00089719.DOCX.14 }                                            16\n[2018-2019 FDD v1F]\n\n===== PAGE 23 ====="
+      }
+    ]
+  },
+  "S4171::2019": {
+    "id": "S4171::2019",
+    "brand": "Craters & Freighters",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "8361b31949e23d36f2be8786bc4e7d551b8fc8b130884252b435bfe449ffabfa",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "Neither we nor any agent or any Affiliate currently offers financing, either direct or indirect. || We do not guarantee any of your notes or leases or any other financial obligations.",
+        "codingNote": "Item 10 explicitly disclaims any current financing by franchisor or affiliate, including direct or indirect financing, and disclaims any guarantee of notes, leases, or other obligations. The future possibility of offering financing or assistance is not a current economic credit-risk architecture. Score 0, no financing involvement.",
+        "item10Text": "===== PAGE 15 =====\nITEM 10\n                              FINANCING\n\nNeither we nor any agent or any Affiliate currently offers financing, either direct or indirect. We do not\nguarantee any of your notes or leases or any other financial obligations. We may offer financing or assist\nfranchisees in obtaining financing in the future."
+      }
+    ]
+  },
+  "S4173::2019": {
+    "id": "S4173::2019",
+    "brand": "Cruisin' Tikis",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "8f8cef1748785d75592bb2cf137a15f978d1f3cb86d09a45011e5af95a40284a",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-08-05",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your promissory notes, mortgages, leases or other obligations.",
+        "codingNote": "Item 10 expressly disclaims any direct or indirect financing and any guarantee obligation, so there is no franchisor/affiliate credit exposure.",
+        "item10Text": "===== PAGE 28 =====\nITEM 10\n                               FINANCING\n\n     We do not offer direct or indirect financing. We do not guarantee your promissory notes,\n       mortgages, leases or other obligations."
+      },
+      {
+        "hash": "ed8a7f729937de2f07395aab2506b8d29b98d1cde853d99d32fc882f2c9f9189",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-08-05",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your promissory notes, mortgages, leases or other obligations.",
+        "codingNote": "The Item 10 expressly disclaims both direct and indirect financing and any franchisor guarantee of franchisee obligations. No financing involvement, seller credit, contingent support, or funded exposure is disclosed.",
+        "item10Text": "===== PAGE 21 =====\nITEM 10\n                          FINANCING\n\n     We do not offer direct or indirect financing. We do not guarantee your promissory notes,\n mortgages, leases or other obligations.\n\n\n                                       14\n Cruisin’ Tikis International, Inc.\n 2019 Franchise Disclosure Document\n 1313.001.002/268458.7\n\n===== PAGE 22 ====="
+      }
+    ]
+  },
+  "S5054::2019": {
+    "id": "S5054::2019",
+    "brand": "Discovery Map",
+    "year": 2019,
+    "score": 2,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "a6a0c69ca505073003ed157e4645a028897538c2324e14fe941feec8bc803006",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-01",
+        "score": 2,
+        "forms": [
+          "seller_fee_financing"
+        ],
+        "providers": [
+          "franchisor",
+          "affiliate"
+        ],
+        "purposes": [
+          "fee"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "DISCOVERY MAP INTERNATIONAL, INC will finance a portion of the Initial Franchise Fee || Lender DISCOVERY MAP INTERNATIONAL, INC or an affiliated company || It IS not the Franchisor’s practice, or intent to sell assign, or discount to a third party all or part of the financing arrangement",
+        "codingNote": "The franchisor or an affiliate extends seller credit by financing up to 67% of the initial franchise fee, with interest, a 3-year maximum term, and a pledge of the franchise agreement as security. This is deferred receivable exposure on a fee owed to the franchisor/affiliate, not a funded cash/asset advance, so Score 2. The franchisee principal owner's personal guarantee is not franchisor credit support. The FDD states the franchisor does not sell, assign, or discount the financing arrangement, so no risk transfer is disclosed.",
+        "item10Text": "===== PAGE 20 =====\nItem 10\n                          FINANCING\n\nDISCOVERY MAP INTERNATIONAL, INC will finance a portion of the Initial Franchise Fee\nfor applicants, which it determines in its sole discretion are qualified based on the following\nterms\n\nBorrower                  Franchisee\n\nLender              DISCOVERY MAP INTERNATIONAL, INC or an affiliated\n                       company\n\nAmount              Up to a maximum of 67% of the Initial Franchise Fee\n\nInterest Rate              Determined based on Borrower s credit worthiness and prevailing\n                           market conditions\n\nMaximum Term        Up to a maximum of 3 years\n\nSecurity                   Pledge of the Franchise Agreement\n\nGuarantor                 Personal Guarantee required by Franchisee’s principal owner\n\nPrepayment            Fmancmg may be prepaid m whole or in part at any time without\n                             penalty\n\nDefault Remedies         The Lender may declare all remaining outstanding balance due and\n                           payable immediately.\n\n                        The Borrower agrees to pay all court costs and attorney’s fees\n                              incurred in collection of the debt,\n\n                   DISCOVERY MAP INTERNATIONAL, INC may termmate the\n                               franchise, and\n\n\n3O4-S2019© Discovery Map International Inc\nFranchise Disclosure Document\n 12 31 -F?18\n\n===== PAGE 21 =====\nDISCOVERY MAP INTERNATIONAL, INC may invoke the\n                               cross-default clause m the Franchise Agreement\n\nThe loan agreement also requires Franchisee to waive defenses and bars Franchisees from\nasserting a defense against the Franchisor\n\nIt IS not the Franchisor’s practice, or intent to sell assign, or discount to a third party all or part of\nthe financing arrangement\n\n\n                                                                                                                                                                                                        I\n\nNeither the franchisor nor any affiliate leceivedreceive any consideration for placing financing\nwith the lender"
+      },
+      {
+        "hash": "acfe47c2cf62b428ce3d44b9b5a4b5d005211797ef75047df99dc6a76f97fb86",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-01",
+        "score": 2,
+        "forms": [
+          "seller_fee_financing"
+        ],
+        "providers": [
+          "franchisor",
+          "affiliate"
+        ],
+        "purposes": [
+          "fee"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "DISCOVERY MAP INTERNATIONAL, INC will finance a portion of the Initial Franchise Fee || It is not the Franchisor's practice, or intent to sell assign, or discount to a third party all or part of the financing arrangement",
+        "codingNote": "The franchisor or an affiliated company directly finances up to 67% of the initial franchise fee owed to the franchisor. This is seller credit/deferred receivable exposure for the fee, not a separate funded cash advance, so Score 2 applies. The personal guaranty is from the franchisee's owner and is not franchisor credit support. The statement against selling, assigning, or discounting indicates no risk transfer.",
+        "item10Text": "===== PAGE 20 =====\nItem 10\n                          FINANCING\n\nDISCOVERY MAP INTERNATIONAL, INC will finance a portion of the Initial Franchise Fee\nfor applicants, which it determines m its sole discretion are qualified based on the following\nterms\n\nBorrower                  Franchisee\n\nLender              DISCOVERY MAP INTERNATIONAL, INC or an affiliated\n                       company\n\nAmount              Up to a maximum of 67% of the Imtial Franchise Fee\n\nInterest Rate              Determined based on Borrower’s credit worthiness and prevailing\n                          market conditions\n\nMaximum Term        Up to a maximum of 3 years\n\nSecurity                   Pledge of the Franchise Agreement\n\nGuarantor                 Personal Guarantee required by Franchisee’s principal owner\n\nPrepayment            Fmancmg may be prepaid m whole or m part at any time without\n                             penalty\n\nDefault Remedies         The Lender may declare all remaimng outstandmg balance due and\n                           payable immediately.\n\n                       The Borrower agrees to pay all court costs and attorney’s fees\n                             incurred in collection of the debt,\n\n                   DISCOVERY MAP INTERNATIONAL, INC may termmate the\n                               franchise, and\n\n                   DISCOVERY MAP INTERNATIONAL, INC may invoke the\n                              cross-default clause in the Franchise Agreement\n\nThe loan agreement also requires Franchisee to waive defenses and bars Franchisees from\nasserting a defense against the Franchisor\n\n\n2019© Discovery Map International Inc\nFranchise Disclosure Document\n 1231 18\n\n===== PAGE 21 =====\nIt IS not the Franchisor’s practice, or intent to sell assign, or discount to a third party all or part of\nthe financing arrangement\n\nNeither the franchisor nor any affiliate receive any consideration for placing financing with the\nlender                                                                                           '"
+      }
+    ]
+  },
+  "S4604::2019": {
+    "id": "S4604::2019",
+    "brand": "Doughnuttery",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "40b293e2e7502147ac5f0a18b60e93097021f48de95ef6fd9d09d87288c5c266",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-04-05",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We and pur affiliates do not offer direct or indirect financing, Neither we nor our affiliate will guarantee your note, lease, or obligation.",
+        "codingNote": "The franchisor and affiliate expressly disclaim offering direct or indirect financing and also disclaim any guarantee of the franchisee's note, lease, or obligation. There is no financing involvement or credit risk borne by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 26 =====\nItem 10\n\n                            FINANGING\n\n     We and pur affiliates do not offer direct or indirect financing,  Neither we nor our affiliate\nwill guarantee your note, lease, or obligation."
+      },
+      {
+        "hash": "f49c310452ed863204f0e41d37476f41d3cbaf0e63b176a96e739bdd7293cc71",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-04-05",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We and our affiliates do not offer direct or indirect financing. || Neither we nor our affiliate will guarantee your note, lease, or obligation.",
+        "codingNote": "The Item 10 expressly negates any franchisor or affiliate financing and any guarantee, so there is no financing involvement or credit-risk exposure. Score is 0.",
+        "item10Text": "===== PAGE 23 =====\nItem 10\n\n                            FINANCING\n\n     We and our affiliates do not offer direct or indirect financing.  Neither we nor our affiliate\nwill guarantee your note, lease, or obligation."
+      }
+    ]
+  },
+  "S2958::2019": {
+    "id": "S2958::2019",
+    "brand": "Fit Body Boot Camp",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "450038f06dd2e18fc5604d1b61709e88ffafc5d9382a4838f90e29e9802ec7c2",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-15",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "Neither we nor any agent or affiliate offers direct or indirect financing to you, guarantees any note, lease or obligation of yours, or has any pfactibe or intent to sell, assign or discount to a third party all or any part of any financing arrangement of yours.",
+        "codingNote": "Item 10 expressly disclaims any franchisor or affiliate financing, guarantee, or assignment/discount arrangement. There is no credit-risk architecture borne by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 27 =====\nITEM 10: FINANCING\n\nNeither we nor any agent or affiliate offers direct or indirect financing to you, guarantees any\nnote, lease or obligation of yours, or has any pfactibe or intent to sell, assign or discount to a\nthird party all or any part of any financing arrangement of yours."
+      }
+    ]
+  },
+  "S0681::2019": {
+    "id": "S0681::2019",
+    "brand": "Frullati Cafe & Bakery",
+    "year": 2019,
+    "score": 3,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "026073773f3990a5cbcec1171fd5aac93eccec66944d16f9976ad874172afee2",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 3,
+        "forms": [
+          "seller_store_purchase_financing",
+          "lease_guarantee"
+        ],
+        "providers": [
+          "franchisor",
+          "affiliate"
+        ],
+        "purposes": [
+          "store_acquisition",
+          "lease_site"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "We do not offer any direct or indirect financing or financing arrangement, nor will we guaranty your obligations under any note or other obligation, except potentially for the lease for your site or if you purchase a restaurant corporate-owned “as-is” by one of our affiliates, and only in our sole and absolute discretion. || If ... the landlord requires you to obtain a third party lease guarantee, and we or one of our affiliates agrees to serve as such guarantor ... you will pay to us a lease guarantee fee ... || If you purchase a corporate restaurant “as-is” that is owned and operated by one of our affiliates, we may finance up to 100% of the purchase price, at our sole discretion. || The lender providing the financing is one of our affiliates, Kahala Holdings or Kahala Restaurants, whichever entity owns the restaurant. || We or our affiliates may, in our sole discretion, lease the site approved by us for your Frullati Cafe & Bakery restaurant and sublease the site to you. || We do not intend to sell, assign or discount to a third party any financing arrangement.",
+        "codingNote": "Highest score is 3 due franchisor/affiliate contingent lease exposure, including the discretionary third-party lease guarantee and the master-lease/sublease arrangement. The as-is corporate restaurant purchase financing is seller credit by an affiliate (deferred purchase price payable under a promissory note), not a separate funded cash advance, so it is Score 2. The financing is not sold, assigned, or discounted. Personal/spousal guaranties are not franchisor credit support.",
+        "item10Text": "===== PAGE 68 =====\nITEM 10: FINANCING\n\n    We do not offer any direct or indirect financing or financing arrangement, nor  will we\nguaranty your obligations under any note or other obligation, except potentially for the lease for your\nsite or if you purchase a restaurant corporate-owned “as-is” by one of our affiliates, and only in our\nsole and absolute discretion.\n\n            If you are an individual and married, your spouse must execute and deliver to us a Guaranty\nof Franchise Agreement (see  Exhibit F-1: Guarantee  of Franchise Agreement) and a Non-\nDisclosure and Non-Competition Agreement (see Exhibit F-2: Non-Disclosure and Non-Competition\nAgreement) at the same time that you sign the Franchise Agreement unless your spouse is also\nsinging the Agreement as an individual.  If you are a corporation, limited liability company, or other\nbusiness  entity, each of your shareholders, members, or other owners (and  their respective\nspouses, if married) must execute and deliver to us a Guaranty of Franchise Agreement, and their\nrespective spouses must execute and  deliver  to us a Non-Disclosure and Non-Competition\nAgreement, at the same time that you sign this Agreement. In the event any person who has not\npreviously signed a Guaranty of Franchise Agreement or a Non-Disclosure and Non-Competition\nAgreement becomes your spouse or the holder of any class of your stock or ownership interests or\na spouse of such holder, at any time after the execution of this Agreement, you must cause such\nperson(s) to immediately execute and deliver a Guaranty of Franchise Agreement and a Non-\nDisclosure and Non-Competition Agreement to us as appropriate.\n\n            If,  in order to obtain the lease agreement  for the  site  of your  Frullati Cafe & Bakery\nrestaurant, the landlord requires you to obtain a third party lease guarantee, and we or one of our\naffiliates agrees to serve as such guarantor (with such determination to be made in our sole and\nabsolute discretion), you will pay to us a lease guarantee fee in the amount of 10% of the total\namount of the rental obligations being guaranteed under the lease during its term up to a maximum\npayment of $10,000.  If the franchisee is an individual, the individual franchisee (and his/her souse,\nif married) must personally guarantee the debt.   If the franchisee is a corporation, limited liability\ncompany, partnership, or other  entity, each of the principals of the entity (and each of their\nrespective spouses,   if married) must personally guarantee the debt.  Once paid, the lease\nguarantee fee is non-refundable under all circumstances. We do not offer financing for the lease\nguarantee fee as it is payable in full upon the execution of the guarantee.  Neither we, nor any of\nour affiliates, are required to serve as a guarantor of your lease for the site of your restaurant. The\ndecision of whether to serve as a guarantor of your lease shall be made at our sole and absolute\ndiscretion.\n\n            If you purchase a corporate restaurant “as-is” that is owned and operated by one of our\naffiliates, we may finance up to 100% of the purchase price, at our sole discretion. When you\npurchase a corporate-owned restaurant from one of our affiliates, you will enter into an “Asset\nPurchase Agreement” (see Exhibit D: Asset Purchase Agreement (For Sale of a Corporate Store to\na Franchisee).   If you finance any portion of the purchase price of the corporate-owned restaurant\nthrough Kahala Holdings or Kahala Restaurants, you will also enter into a Promissory Note and\nSecurity Agreement and a Guaranty, which are exhibits to the Asset Purchase Agreement. The\npurchase price includes the initial franchise fee and all leasehold improvements including furniture,\nfixtures, and equipment that are contained in the restaurant at the time of purchase, along with any\ninventory that is in the restaurant at the time of purchase. The lender providing the financing is one\nof our affiliates, Kahala Holdings or Kahala Restaurants, whichever entity owns the restaurant. The\nannual  rate  of  interest charged  will be between 0% and 12% and  will depend on  the\ncreditworthiness of the franchisee, the amount being financed, and the dollar amount being paid up-\nfront by the franchisee.  There are no finance charges associated with the Promissory Note and\n\n                                  Page -65-\n\n===== PAGE 69 =====\nSecurity Agreement. The amount being financed will be required to be re-paid in equal monthly\ninstallments and the period of repayment will be between 12 months and 60 months, depending on\nthe amount being financed.  The security interest required by us is a first position lien on  all\nequipment.    If the franchisee is an individual, the individual franchisee (and his/her spouse,  if\nmarried) must personally guarantee the debt.   If the franchisee is a corporation, limited liability\ncompany, partnership, or other entity, each of the principals of the entity (and their respective\nspouses,  if married) must personally guarantee the debt.  The Promissory Note and Security\nAgreement may be pre-paid in full or in part at any time and from time to time without penalty. The\nfranchisee’s potential liabilities upon default include: (i) an accelerated obligation to pay the entire\namount due, including all accrued and unpaid interest, if the default is not cured within ten calendar\ndays; and the interest rate will be increased to an annual rate of 18%; (ii) obligation to pay costs\nand attorneys’ fees incurred in collecting the debt; (iii) termination of the franchise; and (iv) liabilities\nfrom cross  defaults  resulting from non-payment  or from the  loss  of business  property; on\nfranchisee’s other restaurants name in the Promissory Note and Security Agreement and granting\neither Kahala Holdings or Kahala Restaurants the right to take back the restaurant(s).  The\nPromissory Note and Security Agreement requires franchisees to waive the following legal rights:\ndemand, notice, diligence protest, presentment for payment, and notice of extension, dishonor,\nprotest, demand and nonpayment of the promissory note; any release or discharge as a result in\nany change in security given or change in person or entity who may become liable for the note or\nany modification of the note; rights to contest or appeal our exercise of the take back rights; and not\nreceiving compensation for the restaurant after the take back rights have been exercised.  The\nPromissory Note and Security Agreement also bars the franchisee’s right to contest the take back\nrights.\n\n    We require a first lien position in all equipment as a security interest to be given by the\nfranchisee. We do not intend to sell, assign or discount to a third party any financing arrangement.\nWe do not arrange financing from other sources; therefore, we do not receive direct or indirect\npayments from placing financing.\n\n      The lease for a corporate restaurant is entered into by one of our affiliates. When you\npurchase the corporate restaurant, you  will enter into a Sublease with our  affiliate using our\nstandard form of Sublease where you pay all monies owing under the Master Lease directly to the\nproperty owner, or our standard form of Sublease in which you pay all monies owing under the\nMaster Lease to our affiliate and the affiliate will pay the property owner, which are exhibits to the\nAsset Purchase Agreement. The Sublease will contain substantially the same terms as the Master\nLease. The term of the Sublease will be for the entire term of the Master Lease, less one day.   If\nyou are an individual, you (and your spouse, if married) must sign the Guaranty of Sublease (see\nExhibit O: Guaranty of Sublease).  If you are a corporation, limited liability company, partnership or\nother business entity, each of your shareholders, members, partners or other owners (and their\nrespective spouses, if married) must sign the Guaranty of Sublease.\n\n    We  will, within 60 days after we receive the proposed Master Lease (and additional\nmaterials required by us), review the Master Lease to make sure  it meets our minimum site\nrequirements.\n\n     Upon submission of a proposed Master Lease, you must provide us with any additional\ndocumentation and information that we may require regarding the proposed site, the proposed\nlease, your financial condition and your Principals’ financial condition.  If we determine that you do\nnot have the financial capacity to perform your obligations with respect to the site or the Master\nLease, we may deny approval of the site and/or Master Lease. That disapproval will be deemed to\nbe  reasonable.     In  that  event,  we  or  our   affiliates  or  franchisees  may  operate  a\nFrullati Cafe & Bakery restaurant at that site.\n\n\n                                  Page -66-\n\n===== PAGE 70 =====\nWe or our affiliates may, in our sole discretion, lease the site approved by us for your\nFrullati Cafe & Bakery restaurant and sublease the site to you.   If we lease your site, you will be\nsubject to a Location Review Fee payable when you sign your Franchise Agreement. In addition, if\nand when you sign the Sublease, you must pay to us an amount equal to two month’s base rent\nunder the Master Lease, plus a security deposit in an amount equal to the security deposit required\nunder the Master Lease. (We reserve the right, however, to require a greater security deposit,\nbased upon your creditworthiness.)\n\n      Please note, if you intend to lease the site of your restaurant, the lease must include certain\nrequired provisions (See Exhibit L: Required Lease Terms; Exhibit E-1:  Franchise Agreement\n(New) – Section 2.2; Exhibit E-2:  Franchise Agreement (Renewal) – Section 2.2; Exhibit E-3:\nFranchise Agreement (Transfer) – Section 2.2  (all the proceeding three franchise agreements\ncollectively known as “Exhibit E: Franchise Agreement”))."
+      }
+    ]
+  },
+  "S0655::2019": {
+    "id": "S0655::2019",
+    "brand": "FW Fleet Clean, LLC",
+    "year": 2019,
+    "score": 2,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "3ae27e550b859ae8f0260add837db410e287124a5ef180beee59048c4c847e47",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-01",
+        "score": 2,
+        "forms": [
+          "direct_loan",
+          "lender_referral_compensation"
+        ],
+        "providers": [
+          "franchisor",
+          "third_party"
+        ],
+        "purposes": [
+          "equipment",
+          "store_acquisition"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "we currently provide financing to our franchisees for up to 80% of the purchase price for Fleet Clean Vehicles and to finance the acquisition of company-owned Fleet Clean businesses || We will receive direct or indirect payments for placing financing || We have no practice or intent to sell, assign or discount to a third party all or part of any of your financing arrangements",
+        "codingNote": "The franchisor directly advances funded loans for vehicle purchases and store acquisitions, with security interests and default remedies, constituting Score 4 funded capital/direct credit exposure. The disclosure also mentions receiving payments for placing third-party financing, which is Score 1 referral compensation, but does not involve franchisor credit exposure. No guarantees or seller-credit structures are affirmatively disclosed, and the franchisor disclaims any practice or intent to sell, assign, or discount the financing arrangements.",
+        "item10Text": "===== PAGE 30 =====\nITEM 10\n                               FINANCING\n\n\n    We may offer financing to qualified franchisees as described in this Item 10\n\n      Under the terms of the Commercial Finance Agreement (Exhibit I), we currently provide\nfinancing to our franchisees for up to 80% of the purchase price for Fleet Clean Vehicles and to\nfinance the acquisition of company-owned Fleet Clean businesses at a rate of 5 to 10% interest\nWe may charge a loan origination fee of 1%, and may charge a Private Business Loan Risk Fee\nof 0 to 2 5% of the loan amount  There are no other financing charges  The rate of interest\ncould be different depending on when financing is given, and will vary due to our cost of funds\nwhen loan is given, and also your creditworthiness and the size of the loan\n\n      The term of the financing is 48 to 120 months, and the loan is payable with 48 to 120\nmonthly payments\n\n      You must grant us a blanket hen on your Franchise including your Fleet Clean Vehicle\nand accounts receivable, plus any other assets owned by you (the “Secured Assets”)\n\n      Prepayments of principal may be made by you at any time, however, any prepayment\nwill not reduce the total interest that you owe to us under the original terms of the Commercial\nFinance Agreement\n\n      Payments are made on the first day of the month by check payable to us We are also\nauthorized to deduct payments owed under the Commercial Finance Agreement from payments\nfrom your customers or by electronic funds transfer from a designated bank account\n\n    A default under the Franchise Agreement  is a default under the Commercial Finance\nAgreement A complete description of defaults under the Commercial Finance Agreement  is\ncontained in Section 5 of the Commercial Finance Agreement\n\n    A failure to make any payment under the Commercial Finance Agreement when due or\nother violation of the Commercial Finance Agreement  is also a default under the Franchise\nAgreement  for which we may terminate the Franchise Agreement   Upon  default  of the\nCommercial Finance Agreement,  all amounts owed are due and payable immediately at our\noption and the default interest rate of 18% will apply We may take possession of the Secured\nAssets  if you default    If we or our agent or assignee seeks to enforce the Commercial Loan\nAgreement in an arbitration or a judicial or other proceeding, we (or our agent or assignee) are\nentitled to recover reasonable costs and expenses incurred in connection with such judicial or\nother proceeding  The assignment terms, including whether we will remain primarily obligated\nto provide the financed products or services may vary  The franchisee may lose all its defenses\nagainst the lender as a result of the sale or assignment\n\n      You are required to release all prior claims against us and our affiliates under the terms\nof, the Commercial Finance Agreement, and you waive presentment for payment, demand, and\nall other demands and notices     If we assign the loan, you must execute  all documents we\nrequire    If you do not, the loan becomes immediately due and payable  No other loans are\npermitted unless we provide written consent  No loans by your owners may be taken or repaid\n                                         24\nFDD 2019 (For Use in California)\nUS2008 15267184 1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |\n\n===== PAGE 31 =====\nuntil the loan is paid in full   Disputes must be heard in Brevard County, Florida\n\n         All of your owners must personally sign the Commercial Finance Agreement, making\nthem personally liable for all amounts owed\n\n       Except as described above, the Commercial Finance Agreement does not require that\nyou waive any defenses or other legal rights\n\n    We have no practice or intent to sell, assign or discount to a third party all or part of any\nof your financing arrangements\n\n    We do not know whether you will be able to obtain financing from third parties for all or\npart of your investment and,  if so, the terms of the financing We will receive direct or indirect\npayments for placing financing\n\n       Other than as described in this disclosure document, neither we nor our affiliates offer\ndirect or indirect financing to you or guarantees any of your notes, leases or obligations"
+      },
+      {
+        "hash": "456f9b49738fa200c3d39e4fb6fb63f937439b6eed138f57f005228cdf78815d",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-01",
+        "score": 2,
+        "forms": [
+          "direct_loan"
+        ],
+        "providers": [
+          "franchisor"
+        ],
+        "purposes": [
+          "equipment",
+          "store_acquisition"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "we currently provide financing to our franchisees for up to 80% of the purchase price for Fleet Clean Vehicles and to finance the acquisition of company-owned Fleet Clean businesses || The term of the financing is 48 to 120 months, and the loan is payable with 48 to 120 monthly payments. || We have no practice or intent to sell, assign or discount to a third party all or part of any of your financing arrangements.",
+        "codingNote": "The franchisor directly funds and issues loans for vehicle purchases and acquisition of company-owned stores, with interest, fees, collateral, and personal guarantees. This is funded direct credit exposure (Score 4). The assignment language is conditional and contradicted by an express no-practice/no-intent to sell or assign, so risk_transfer is none_disclosed.",
+        "item10Text": "===== PAGE 31 =====\nITEM 10\n                              FINANCING\n\n\n    We may offer financing to qualified franchisees as described in this Item 10.\n\n      Under the terms of the Commercial Finance Agreement (Exhibit I), we currently provide\nfinancing to our franchisees for up to 80% of the purchase price for Fleet Clean Vehicles and to\nfinance the acquisition of company-owned Fleet Clean businesses at a rate of 5 to 10% interest.\nWe may charge a loan origination fee of 1%, and may charge a Private Business Loan Risk Fee\nof 0 to 2.5% of the loan amount. There are no other financing charges. The rate of interest\ncould be different depending on when financing is given, and will vary due to our cost of funds\nwhen loan is given, and also your creditworthiness and the size of the loan.\n\n     The term of the financing is 48 to 120 months, and the loan is payable with 48 to 120\nmonthly payments.\n\n     You must grant us a blanket lien on your Franchise including your Fleet Clean Vehicle\nand accounts receivable, plus any other assets owned by you (the “Secured Assets”).\n\n      Prepayments of principal may be made by you at any time, however, any prepayment\nwill not reduce the total interest that you owe to us under the original terms of the Commercial\nFinance Agreement.\n\n      Payments are made on the first day of the month by check payable to us. We are also\nauthorized to deduct payments owed under the Commercial Finance Agreement from payments\nfrom your customers or by electronic funds transfer from a designated bank account.\n\n    A default under the Franchise Agreement is a default under the Commercial Finance\nAgreement. A complete description of defaults under the Commercial Finance Agreement is\ncontained in Section 5 of the Commercial Finance Agreement.\n\n    A failure to make any payment under the Commercial Finance Agreement when due or\nother violation of the Commercial Finance Agreement is also a default under the Franchise\nAgreement  for which we may terminate the Franchise Agreement.  Upon default  of the\nCommercial Finance Agreement, all amounts owed are due and payable immediately at our\noption and the default interest rate of 18% will apply. We may take possession of the Secured\nAssets  if you default.   If we or our agent or assignee seeks to enforce the Commercial Loan\nAgreement in an arbitration or a judicial or other proceeding, we (or our agent or assignee) are\nentitled to recover reasonable costs and expenses incurred in connection with such judicial or\nother proceeding. The assignment terms, including whether we will remain primarily obligated\nto provide the financed products or services may vary. The franchisee may lose all its defenses\nagainst the lender as a result of the sale or assignment.\n\n     You are required to release all prior claims against us and our affiliates under the terms\nof the Commercial Finance Agreement, and you waive presentment for payment, demand, and\nall other demands and notices.    If we assign the loan, you must execute all documents we\nrequire.   If you do not, the loan becomes immediately due and payable. No other loans are\npermitted unless we provide written consent. No loans by your owners may be taken or repaid\nuntil the loan is paid in full.  Disputes must be heard in Brevard County, Florida.\n\n                                       25\nFDD 2019\nUS2008 15099469 1\n\n===== PAGE 32 =====\nAll of your owners must personally sign the Commercial Finance Agreement, making\nthem personally liable for all amounts owed.\n\n      Except as described above, the Commercial Finance Agreement does not require that\nyou waive any defenses or other legal rights.\n\n    We have no practice or intent to sell, assign or discount to a third party all or part of any\nof your financing arrangements.\n\n    We do not know whether you will be able to obtain financing from third parties for all or\npart of your investment and, if so, the terms of the financing. We will receive direct or indirect\npayments for placing financing.\n\n       Other than as described in this disclosure document, neither we nor our affiliates offer\ndirect or indirect financing to you or guarantees any of your notes, leases or obligations."
+      },
+      {
+        "hash": "65c9597984ebaea3cf26055faf3afb90203701bc953e7f2b070824883cf45644",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-01",
+        "score": 2,
+        "forms": [
+          "seller_inventory_or_equipment_credit",
+          "seller_store_purchase_financing",
+          "lender_referral_compensation"
+        ],
+        "providers": [
+          "franchisor",
+          "third_party"
+        ],
+        "purposes": [
+          "equipment",
+          "store_acquisition",
+          "other"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "we currently provide financing to our franchisees for up to 80% of the purchase price for Fleet Clean Vehicles and to finance the acquisition of company-owned Fleet Clean businesses at a rate of 5 to 10% interest || We have no practice or intent to sell, assign or discount to a third party all or part of any of your financing arrangements. || We will receive direct or indirect payments for placing financing",
+        "codingNote": "The franchisor's Commercial Finance Agreement provides seller credit for up to 80% of the purchase price of Fleet Clean Vehicles and for acquisition of company-owned Fleet Clean businesses. Because the financed amounts are purchase prices and no separate cash/asset advance is disclosed, the architecture is Score 2 seller credit rather than Score 4 funded lending. The franchisor also receives compensation for placing third-party financing, which is Score 1. Assignment terms are disclosed but the franchisor states no practice or intent to sell/assign/discount, so risk_transfer is none_disclosed; the mixed financing layers and conditional assignment language warrant covered_but_needs_modifier.",
+        "item10Text": "===== PAGE 31 =====\nITEM 10\n                               FINANCING\n\n\n    We may offer financing to qualified franchisees as descnbed in this Item 10\n\n      Under the terms of the Commercial Finance Agreement (Exhibit I), we currently provide\nfinancing to our franchisees for up to 80% of the purchase price for Fleet Clean Vehicles and to\nfinance the acquisition of company-owned Fleet Clean businesses at a rate of 5 to 10% interest\nWe may charge a loan origination fee of 1%, and may charge a Private Business Loan Risk Fee\nof 0 to 2 5% of the loan amount There are no other financing charges The rate of interest could\n\n\nFDD 2019 (For Use in California)\nUS2008 1526718'! 1---------------                                                                      -US2008 152671841\n\n===== PAGE 32 =====\nbe different depending on when financing is given, and will vary due to our cost of funds when\nloan IS given, and also your creditworthiness and the size of the loan\n\n      The term of the financing is 48 to 120 months, and the loan is payable with 48 to 120\nmonthly payments\n\n      You must grant us a blanket lien on your Franchise including your Fleet Clean Vehicle and\naccounts receivable, plus any other assets owned by you (the “Secured Assets”)\n\n      Prepayments of principal may be made by you at any time, however, any prepayment will\nnot reduce the total interest that you owe to us under the original terms of the Commercial Finance\nAgreement\n\n      Payments are made on the first day of the month by check payable to us We are also\nauthorized to deduct payments owed under the Commercial Finance Agreement from payments\nfrom your customers or by electronic funds transfer from a designated bank account\n\n    A default under the Franchise Agreement  is a default under the Commercial Finance\nAgreement A complete description of defaults under the Commercial Finance Agreement is\ncontained in Section 5 of the Commercial Finance Agreement\n\n    A failure to make any payment under the Commercial Finance Agreement when due or\nother violation of the Commercial Finance Agreement is also a default under the Franchise\nAgreement for which we may terminate the Franchise Agreement   Upon  default  of the\nCommercial Finance Agreement,  all amounts owed are due and payable immediately at our\noption and the default interest rate of 18% will apply We may take possession of the Secured\nAssets  if you default    If we or our agent or assignee seeks to enforce the Commercial Loan\nAgreement in an arbitration or a judicial or other proceeding, we (or our agent or assignee) are\nentitled to recover reasonable costs and expenses incurred in connection with such judicial or\nother proceeding The assignment terms, including whether we will remain primarily obligated to\nprovide the financed products or services may vary  The franchisee may lose all its defenses\nagainst the lender as a result of the sale or assignment\n\n      You are required to release all prior claims against us and our affiliates under the terms of\nthe Commercial Finance Agreement, and you waive presentment for payment, demand, and all\nother demands and notices    If we assign the loan, you must execute all documents we require\nIf you do not, the loan becomes immediately due and payable  No other loans are permitted\nunless we provide written consent  No loans by your owners may be taken or repaid until the\nloan IS paid in full  Disputes must be heard in Brevard County, Florida\n\n         All of your owners must personally sign the Commercial Finance Agreement, making them\npersonally liable for all amounts owed\n\n       Except as descnbed above, the Commercial Finance Agreement does not require that you\nwaive any defenses or other legal rights\n\n    We have no practice or intent to sell, assign or discount to a third party all or part of any\nof your financing arrangements\n\n\nFDD 2019 (For Use in California)\nUS2008 15267-18/I 1------------                                                               US2008 15267184 1\n\n===== PAGE 33 =====\nWe do not know whether you will be able to obtain financing from third parties for all or\npart of your investment and,  if so, the terms of the financing We will receive direct or indirect\npayments for placing financing\n\n      Other than as described in this disclosure document, neither we nor our affiliates offer\ndirect or indirect financing to you or guarantees any of your notes, leases or obligations"
+      }
+    ]
+  },
+  "U_86098ae8::2019": {
+    "id": "U_86098ae8::2019",
+    "brand": "H&R Block",
+    "year": 2019,
+    "score": 4,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "37b89c3490a63a36d3bb068a0f389134837d5daa64e2cb498672a42179d9cda2",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 4,
+        "forms": [
+          "affiliate_direct_loan",
+          "passive_sba_directory_access"
+        ],
+        "providers": [
+          "affiliate",
+          "third_party"
+        ],
+        "purposes": [
+          "store_acquisition",
+          "construction_conversion",
+          "working_capital",
+          "other"
+        ],
+        "riskTransfer": "assignment_recourse_unclear",
+        "evidenceQuote": "Our affiliate, Franchise Partner, Inc. (“FPI”), offers commercial financing to H&R Block franchisees, subject to credit approvals. || Approved franchisees may take draws on the annual Short-Term Loan between September 1 and March 31 to fund their operating liquidity needs. || FPI does not have a practice or intent to sell, assign, or discount to a third party all or part of any franchisee financing arrangements but may do so at its sole option and with prior notice to you. || If you plan to work with a lender to obtain an SBA loan, direct your lender to the SBA Franchise Directory.",
+        "codingNote": "Affiliate FPI extends Term Loan and Short-Term Loan products directly to franchisees, constituting funded capital/direct credit exposure by an affiliate and therefore Score 4. The SBA Franchise Directory listing is passive third-party access support with no franchisor/affiliate credit exposure. The text discloses a possible future sale/assignment of franchisee financing without specifying recourse, so risk_transfer is assignment_recourse_unclear. Full loan terms are cross-referenced to Exhibit H. Franchisee/Associate borrower liability is not franchisor credit support.",
+        "item10Text": "===== PAGE 29 =====\nITEM 10    FINANCING\n\nWe are unable to estimate any financing terms or whether you will be able to obtain financing for all or\nany part of your investment.\n\nExcept as described below, we do not offer, directly or indirectly, any arrangement for financing your\ninitial investment or the costs associated with the initial operation of your Franchised Business.\n\nOur affiliate, Franchise Partner, Inc. (“FPI”), offers commercial financing to H&R Block franchisees,\nsubject to credit approvals. No payment is required to H&R Block Tax Services LLC or to any affiliate\nfor the placement of financing with FPI, and H&R Block Tax Services LLC receives no monetary benefit\nif you take out a loan with FPI.\n\nThe full terms of FPI’s standard loan productproducts are set forth in the Annual Payments Adjustable\nRate Term Loan (“APARTLCredit and Security Agreement (“Term Loan”) and annual Short-Term Loan\nCredit and Security Agreement (“Short-Term Loan”) attached as Exhibit H to this disclosure document as\nExhibit H-1 and H-2, respectively.\n\nFPI’s APARTLTerm Loan may only be used to acquire an H&R Block franchise, another tax preparation\nbusiness, buy out a partner, refinance a U.S. Small Business Administration (“SBA”) loan, or for use on\nbrand office standard upgrades.  FPI’s Short-Term loan may be used to pay some of your operating and\nrelated expenses prior to the beginning of each Tax Season. You are prohibited from using any loanTerm\nLoan or Short-Term Loan proceeds for any non-commercial purpose unrelated to the operation of your\nFranchised Business. FPI may also offer programs under different terms for targeted purposes.\n\nThe maximum loan amount is determined by FPI in its sole discretion, but is generally limited to a\nmaximum of 60% of the businessFranchised Business’ net revenue from the prior tax seasonTax Season.\nLoan amounts depend on a variety of factors, including:  (1) your credit bureau report, (2) your cash\ninvestment in the Franchised Business, (3) your balance sheet, (4) FPI’s estimate of the value of your\nFranchised Business, (5) the expected cash flows generated from the operation of your Franchised\nBusiness, (65) analysis by H&R Block Tax Service LLC, and (76) your equity in other H&R Block\nfranchises.\n\nIn most states, the interest rate charged on the APARTLTerm Loan is 6.253.0% over the preceding\nmonth’s Prime Rate.  For instance, on JuneMarch 1, 20182019, the Wall Street Journal, in the Money\nRates section, reported that the Prime Rate was 4.755.50% on the last business day in AprilFebruary.\nThe interest rate is 118.50% (4.755.50% + 6.253%) and this rate will be used in the monthly billing cycle\nfrom May 7April 6, 20182019 to JuneMay 5, 20182019. In addition, the APARTLTerm Loan has a 2%\nadministration fee on loan amounts. Unless required by stateapplicable law, there is no cap or floor on\nAPARTLTerm Loan interest rate fluctuations.\n\nThe term of the standard APARTLTerm Loan may vary, but is generally 5 to 10 years, and will be\ndefined specifically in the credit documents for your Term Loan. The APARTLTerm Loan’s minimum\nrequired annual payments vary. FPI may adjust the required annual payment for your Term Loan to an\namount sufficient to repay the unpaid principal, interest, and fees by the maturity date at the interest rate\nthat was in effect each year.  The APARTLTerm Loan’s minimum required annual payment may be\nchanged at FPI’s sole discretion and with prior notice provided to you. There is no prepayment penalty\non the APARTLfor a Term Loan and it may be prepaid at any time.\n\nAPARTLs\n\n\n                                                                H&R Block Tax Services LLC\n                                                         25\n\n===== PAGE 30 =====\nThe term of the standard Annual Short-Term Loan is 7 months, from September 1 to April 30.  Credit\nlimits can be up to 20% of the prior year’s net tax preparation revenue. Approved franchisees may take\ndraws on the annual Short-Term Loan between September 1 and March 31 to fund their operating\nliquidity needs. The loan must be repaid in its entirety by April 30.\n\nBoth the Term Loan and the Short-Term Loan are secured by the property used in the operation of your\nFranchised Business, whether now owned or  later acquired by you during the operation of your\nFranchised Business.  FPI does not require a personal guarantee from you; however, Franchisee’s\nAssociates (defined in your FLA to include Franchisee’s spouse, and the; affiliates, officers, directors,\nand any individual with an ownership interest in the franchise entity) may be required to be designated as\na Borrower under the terms of the APARTLTerm Loan and Short-Term Loan and will be responsible for\nthe timely payments and the obligations of the loanseach loan.\n\nA breach of any of the terms of the loanTerm Loan or the Short-Term Loan documents (“Credit\nDocuments”) is an Event of Default. Upon the occurrence of an Event of Default, FPI has the right to (1)\ndeclare all amounts owed immediately due and payable, (2) exercise any of its rights and remedies under\nany of the Credit Documents, including the right to foreclose on your Franchised Business property, and\n(3) as permitted by applicable law, increase the interest rate, and (4) as permitted by applicable law,\ninitiate, or cause to be initiated, collection of all amounts due and payable.\n\nAn Event of Default is a breach of the FLA and an Event of Default on any other loans with FPI. The\nCredit Documents require you to (1) waive the defenses of presentment, demand, protest, notice of\nprotest, or other notice of dishonor of any kind or of non-payment of the note, and (2) agree to pay all\ncosts of collection, including attorneys’ fees.\n\nFPI does not have a practice or intent to sell, assign, or discount to a third party all or part of any\nfranchisee financing arrangements but may do so at its sole option and with prior notice to you.\n\nFranchisees are not required to obtain financing from FPI and are permitted to obtain  loans with\nthird-party lenders. However, you do not have the right to encumber or otherwise pledge as security your\nFranchised Business for any loan other than those offered by FPI.\n\nH&R Block is included onin the U.S. Small Business Administration (“SBA”) Franchise Directory as a\nbrand that is eligible for SBA financial assistance.  If you plan to work with a lender to obtain an SBA\nloan, direct your lender to the SBA Franchise Directory . The SBA requires a signed addendum (SBA\nForm 2462) as a condition for obtaining its financial guarantee."
+      }
+    ]
+  },
+  "U_a12a3079::2019": {
+    "id": "U_a12a3079::2019",
+    "brand": "Holding IP Franchise USA, LLC",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "0f8bff5ed9347078523bfc522c1c7f2aecaa92437e0ec1be8e4b8d5f25a6a586",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-11",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or obligationsobligation.",
+        "codingNote": "Item 10 expressly disclaims any direct or indirect financing and any guaranty of the franchisee's note, lease, or obligations. There is no franchisor/affiliate credit-risk architecture.",
+        "item10Text": "===== PAGE 40 =====\nITEM 10\n\n\n                               FINANCING\n\n\nWe do not offer direct or indirect financing. We do not guarantee your note, lease or obligationsobligation.\nItem"
+      },
+      {
+        "hash": "b289fc72e7a72d60dd7f7c3cbaa798e6ed8d59fd96251a3621c8e1580f524fe3",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-11",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or obligation.",
+        "codingNote": "The Item 10 expressly negates both direct/indirect financing and any guarantee of the franchisee's note, lease, or obligation. There is no franchisor/affiliate credit exposure, so the architecture is Score 0.",
+        "item10Text": "===== PAGE 22 =====\nITEM 10\n                                FINANCING\n\n We do not^offer direct or indirect financing. We do nOtiguaraiitee your nofe,iease or obligation."
+      }
+    ]
+  },
+  "S2031::2019": {
+    "id": "S2031::2019",
+    "brand": "Hotworx",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "02fbeb821c0dbe1b95d72831555e803e05e85794b67b9daf6a263e8c8191bfe0",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-05-01",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or obligation.",
+        "codingNote": "The franchisor expressly disclaims offering direct or indirect financing and disclaims any guarantee of the franchisee's note, lease, or obligation. There is no financing involvement, seller credit, contingent credit, or funded credit exposure by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 30 =====\nItem 10                                                                     Financing\n\nWe do not offer direct or indirect financing. We do not guarantee your note, lease or obligation."
+      }
+    ]
+  },
+  "S0936::2019": {
+    "id": "S0936::2019",
+    "brand": "Kahala Coffee Traders",
+    "year": 2019,
+    "score": 3,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "cbfaca8a5c067f4d24236c7126104e6f20823ee88e1a8b7c907c401a0bd3d0ca",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 3,
+        "forms": [
+          "lease_guarantee",
+          "seller_store_purchase_financing"
+        ],
+        "providers": [
+          "franchisor",
+          "affiliate"
+        ],
+        "purposes": [
+          "lease_site",
+          "store_acquisition"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "If, in order to obtain the lease agreement for the site of your Kahala Coffee Traders restaurant, the landlord requires you to obtain a third party lease guarantee, and we or one of our affiliates agrees to serve as such guarantor (with such determination to be made in our sole and absolute discretion), you will pay to us a lease guarantee fee in the amount of 10% of the total amount of the rental obligations being guaranteed under the lease during its term up to a maximum payment of $10,000. || If you purchase a corporate restaurant “as-is” that is owned and operated by one of our affiliates, we may finance up to 100% of the purchase price, at our sole discretion. || The lender providing the financing is one of our affiliates, Kahala Holdings or Kahala Restaurants, whichever entity owns the restaurant. || We do not intend to sell, assign or discount to a third party any financing arrangement. || We or our affiliates may, in our sole discretion, lease the site approved by us for your Kahala Coffee Traders restaurant and sublease the site to you.",
+        "codingNote": "The franchisor/affiliate disclaims general financing but retains two economically distinct credit-risk forms: (1) discretionary site-lease guarantees, plus a possible master-lease/sublease arrangement, creating contingent lease-payment exposure (Score 3); and (2) affiliate seller financing of the purchase price of an affiliate-owned corporate restaurant via a promissory note, which is deferred seller credit rather than a funded cash loan (Score 2). No third-party lender program or funded direct loan is disclosed. The no-sale/assignment statement supports risk_transfer=none_disclosed. Personal guaranties by owners are not franchisor credit support. Maximum score is 3.",
+        "item10Text": "===== PAGE 66 =====\nITEM 10: FINANCING\n\n       We do not offer any direct or indirect financing or financing arrangement, nor  will we\n    guaranty your obligations under any note or other obligation, except potentially for the lease for your\n     site or if you purchase a restaurant corporate-owned “as-is” by one of our affiliates, and only in our\n    sole and absolute discretion.\n\n                   If you are an individual and married, your spouse must execute and deliver to us a Guaranty\n     of Franchise Agreement (see  Exhibit F-1: Guarantee  of Franchise Agreement) and a Non-\n    Disclosure and Non-Competition Agreement (see Exhibit F-2: Non-Disclosure and Non-Competition\n    Agreement) at the same time that you sign the Franchise Agreement unless your spouse is also\n    singing the Agreement as an individual.  If you are a corporation, limited liability company, or other\n    business  entity, each of your shareholders, members, or other owners (and  their respective\n    spouses, if married) must execute and deliver to us a Guaranty of Franchise Agreement, and their\n    respective spouses must execute and  deliver  to us a Non-Disclosure and Non-Competition\n    Agreement, at the same time that you sign this Agreement. In the event any person who has not\n    previously signed a Guaranty of Franchise Agreement or a Non-Disclosure and Non-Competition\n    Agreement becomes your spouse or the holder of any class of your stock or ownership interests or\n                                     Page -61-\n\n===== PAGE 67 =====\na spouse of such holder, at any time after the execution of this Agreement, you must cause such\nperson(s) to immediately execute and deliver a Guaranty of Franchise Agreement and a Non-\nDisclosure and Non-Competition Agreement to us as appropriate.\n\n            If,  in order to obtain the lease agreement  for the  site of your Kahala Coffee Traders\nrestaurant, the landlord requires you to obtain a third party lease guarantee, and we or one of our\naffiliates agrees to serve as such guarantor (with such determination to be made in our sole and\nabsolute discretion), you will pay to us a lease guarantee fee in the amount of 10% of the total\namount of the rental obligations being guaranteed under the lease during its term up to a maximum\npayment of $10,000.  If the franchisee is an individual, the individual franchisee (and his/her souse,\nif married) must personally guarantee the debt.   If the franchisee is a corporation, limited liability\ncompany, partnership, or other  entity, each of the principals of the entity (and each of their\nrespective spouses,   if married) must personally guarantee the debt.  Once paid, the lease\nguarantee fee is non-refundable under all circumstances. We do not offer financing for the lease\nguarantee fee as it is payable in full upon the execution of the guarantee.  Neither we, nor any of\nour affiliates, are required to serve as a guarantor of your lease for the site of your restaurant. The\ndecision of whether to serve as a guarantor of your lease shall be made at our sole and absolute\ndiscretion.\n\n            If you purchase a corporate restaurant “as-is” that is owned and operated by one of our\naffiliates, we may finance up to 100% of the purchase price, at our sole discretion. When you\npurchase a corporate-owned restaurant from one of our affiliates, you will enter into an “Asset\nPurchase Agreement” (see Exhibit D: Asset Purchase Agreement (For Sale of a Corporate Store to\na Franchisee).   If you finance any portion of the purchase price of the corporate-owned restaurant\nthrough Kahala Holdings or Kahala Restaurants, you will also enter into a “Promissory Note and\nSecurity Agreement” and a “Guaranty,” which are exhibits to the Asset Purchase Agreement. The\npurchase price includes the initial franchise fee and all leasehold improvements including furniture,\nfixtures, and equipment that are contained in the restaurant at the time of purchase, along with any\ninventory that is in the restaurant at the time of purchase. The lender providing the financing is one\nof our affiliates, Kahala Holdings or Kahala Restaurants, whichever entity owns the restaurant. The\nannual  rate  of  interest charged  will be between 0% and 12% and  will depend on  the\ncreditworthiness of the franchisee, the amount being financed, and the dollar amount being paid up-\nfront by the franchisee.  There are no finance charges associated with the Promissory Note and\nSecurity Agreement. The amount being financed will be required to be re-paid in equal monthly\ninstallments and the period of repayment will be between 12 months and 60 months, depending on\nthe amount being financed.  The security interest required by us is a first position lien on  all\nequipment.    If the franchisee is an individual, the individual franchisee (and his/her spouse,  if\nmarried) must personally guarantee the debt.   If the franchisee is a corporation, limited liability\ncompany, partnership, or other entity, each of the principals of the entity (and their respective\nspouses,  if married) must personally guarantee the debt.  The Promissory Note and Security\nAgreement may be pre-paid in full or in part at any time and from time to time without penalty. The\nfranchisee’s potential liabilities upon default include: (i) an accelerated obligation to pay the entire\namount due, including all accrued and unpaid interest, if the default is not cured within ten calendar\ndays; and the interest rate will be increased to an annual rate of 18%; (ii) obligation to pay costs\nand attorneys’ fees incurred in collecting the debt; (iii) termination of the franchise; and (iv) liabilities\nfrom cross  defaults  resulting from non-payment  or from the  loss  of business  property; on\nfranchisee’s other restaurants name in the Promissory Note and Security Agreement and granting\neither Kahala Holdings or Kahala Restaurants the right to take back the restaurant(s).  The\nPromissory Note and Security Agreement requires franchisees to waive the following legal rights:\ndemand, notice, diligence protest, presentment for payment, and notice of extension, dishonor,\nprotest, demand and nonpayment of the promissory note; any release or discharge as a result in\nany change in security given or change in person or entity who may become liable for the note or\nany modification of the note; rights to contest or appeal our exercise of the take back rights; and not\nreceiving compensation for the restaurant after the take back rights have been exercised.  The\n                                  Page -62-\n\n===== PAGE 68 =====\nPromissory Note and Security Agreement also bars the franchisee’s right to contest the take back\nrights.\n\n    We require a first lien position in all equipment as a security interest to be given by the\nfranchisee. We do not intend to sell, assign or discount to a third party any financing arrangement.\nWe do not arrange financing from other sources; therefore, we do not receive direct or indirect\npayments from placing financing.\n\n      The lease for a corporate restaurant is entered into by one of our affiliates. When you\npurchase the corporate restaurant, you  will enter into a Sublease with our  affiliate using our\nstandard form of Sublease where you pay all monies owing under the Master Lease directly to the\nproperty owner, or our standard form of Sublease in which you pay all monies owing under the\nMaster Lease to our affiliate and the affiliate will pay the property owner, which are exhibits to the\nAsset Purchase Agreement. The Sublease will contain substantially the same terms as the Master\nLease. The term of the Sublease will be for the entire term of the Master Lease, less one day.   If\nyou are an individual, you (and your spouse, if married) must sign the Guaranty of Sublease (see\nExhibit O: Guaranty of Sublease).  If you are a corporation, limited liability company, partnership or\nother business entity, each of your shareholders, members, partners or other owners (and their\nrespective spouses, if married) must sign the Guaranty of Sublease.\n\n    We  will, within 60 days after we receive the proposed Master Lease (and additional\nmaterials required by us), review the Master Lease to make sure  it meets our minimum site\nrequirements.\n\n     Upon submission of a proposed Master Lease, you must provide us with any additional\ndocumentation and information that we may require regarding the proposed site, the proposed\nlease, your financial condition and your Principals’ financial condition.  If we determine that you do\nnot have the financial capacity to perform your obligations with respect to the site or the Master\nLease, we may deny approval of the site and/or Master Lease. That disapproval will be deemed to\nbe  reasonable.     In  that  event,  we  or  our   affiliates  or  franchisees  may  operate  a\nKahala Coffee Traders restaurant at that site.\n\n    We or our affiliates may, in our sole discretion, lease the site approved by us for your\nKahala Coffee Traders restaurant and sublease the site to you.   If we lease your site, you will be\nsubject to a Location Review Fee payable when you sign your Franchise Agreement. In addition, if\nand when you sign the Sublease, you must pay to us an amount equal to two month’s base rent\nunder the Master Lease, plus a security deposit in an amount equal to the security deposit required\nunder the Master Lease. (We reserve the right, however, to require a greater security deposit,\nbased upon your creditworthiness.)\n\n      Please note, if you intend to lease the site of your restaurant, the lease must include certain\nrequired provisions (See Exhibit L: Required Lease Terms; Exhibit E-1:  Franchise Agreement\n(New) – Section 2.2; Exhibit E-2:  Franchise Agreement (Renewal) – Section 2.2; Exhibit E-3:\nFranchise Agreement (Transfer) – Section 2.2  (all the proceeding three franchise agreements\ncollectively known as “Exhibit E: Franchise Agreement”))."
+      }
+    ]
+  },
+  "U_c13395e7::2019": {
+    "id": "U_c13395e7::2019",
+    "brand": "LaLa Photography Franchising LLC",
+    "year": 2019,
+    "score": 1,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "9f3471681df8a7ec0cc28c87055824eb3792dde86820bf7f5f1892a0f604dbf8",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-03",
+        "score": 1,
+        "forms": [
+          "third_party_financing_arrangement_assistance"
+        ],
+        "providers": [
+          "third_party"
+        ],
+        "purposes": [
+          "other"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. We do not guarantee any note, lease, or obligation on your behalf. || We will, if such is available, introduce you to financial sources and suppliers who may offer credit arrangements, but we will not derive income from the placement of financing.",
+        "codingNote": "The franchisor expressly disclaims offering financing and disclaims any guarantee of notes, leases, or obligations. The only disclosed activity is a potential introduction to third-party financial sources and suppliers, without income to the franchisor. This is third-party facilitation with no franchisor/affiliate credit exposure, so the score is 1.",
+        "item10Text": "===== PAGE 19 =====\nITEM 10:     FINANCING\n\n  We do not offer direct or indirect financing. We do not guarantee any note, lease, or\nobligation on your behalf. We will,  if such is available, introduce you to financial sources\nand suppliers who may offer credit arrangements, but we will not derive income from the\nplacement of financing.  You may obtain financing from any source, at your discretion,\nupon such terms and conditions as you may negotiate."
+      }
+    ]
+  },
+  "U_414583cc::2019": {
+    "id": "U_414583cc::2019",
+    "brand": "Leading Edge Marketing, Inc",
+    "year": 2019,
+    "score": 4,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "c2c1012f96a5a0e822f1a498bfed82dbff728c47b0bce91480980e092ef2cf34",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-21",
+        "score": 4,
+        "forms": [
+          "direct_establishment_cost_loan",
+          "initial_fee_installment",
+          "formal_third_party_financing_program"
+        ],
+        "providers": [
+          "franchisor",
+          "third_party"
+        ],
+        "purposes": [
+          "construction_conversion",
+          "fee",
+          "other"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "ProSource will, at its discretion, ... offer financing up to $250,000 per Showroom for costs incurred m building out and developing a new ProSource Showroom || ProSource will reimburse the franchisee upon submission of proper documentation || a portion of Your initial franchise fee is payable in installments || ProSource has entered into an agreement with a third party lender which gives ProSource franchisees the opportunity to offer financing to such franchisee’s customers",
+        "codingNote": "The highest exposure is Score 4: ProSource may fund showroom build-out/development costs on a reimbursement basis and take a Promissory Note, making it a franchisor-funded direct establishment-cost loan. Score 2 also applies because a portion of the initial franchise fee is deferred into twelve monthly installments, a seller-credit arrangement. Score 1 applies to the third-party customer financing program, which involves no franchisor default exposure. The statement that ProSource does not guarantee notes, leases, or other obligations negates Score 3, and no sale/assignment/discount of the loan exposure is disclosed.",
+        "item10Text": "===== PAGE 21 =====\nITEM 10 FINANCING\n\n       For a limited time for certain qualified candidates, ProSource will, at its discretion, and subject to the\n       prospective franchisee meeting certain creditworthiness standards (which may be more or less stringent\n       than those credit worthiness standards for a qualifying franchisee candidate) offer financing up to\n       $250,000 per Showroom for costs incurred m building out and developing a new ProSource Showroom\n        If offered, this financing will be on a reimbursement type basis, where the franchisee would pay the\n       various vendors and suppliers for build out and development costs for the new Showroom and ProSource\n        will reimburse the franchisee upon submission of proper documentation The mterest rate on such\n       financmg is fixed at the “Prime” rate of interest as published by The Wall Street Journal, and repayment\n       terms are 60 months  There is no prepayment penalty The first payment due date under the Promissoiy\n      Note IS due 45 days after the date the Showroom opens  Payment terms (interest rate, duration of note,\n       and first due date) are subject to change  If You are offered this financing and You qualify for this\n        financing, ProSource will contact You with the details of such financing at such time  If You do qualify\n       and ProSource does offer You financing as described above^and You do borrow money from ProSource,\n     You will be required to sign a Promissory Note and a release, and Your Principals will be required to co-\n        sign the Promissory Note, and sign a release in a form acceptable to ProSource as well as such other\n      documents as required by ProSource  Sample forms of the Promissory Note and Release are attached\n       hereto as Exhibit G  If You default on payment under the Promissory Note, the entire amount may be\n        accelerated as due and owing. You will be required to pay attorneys’ fees and costs of collection and the\n        default can be considered a default under the Franchise Agreement  ProSource does not presently intend\n        to sell, assign or discount to a third party such financing arrangement  ProSource makes no representation\n\n\n       437829 29                                                                                 1/21/2019\n\n===== PAGE 22 =====\nregarding the likelihood that financing will be offered to You  ProSource may elect not to provide any\nfinancing at all to any qualified franchisees, or ProSource could provide some financing at its discretion\nto qualified franchisees and then cease any further financing  ProSource may from time to time, at its\ndiscretion, offer mcentives to qualified franchisees regardmg special loan terms, which may include a\nreduced interest rate, loan forgiveness or other special terms You understand that You should not\npurchase a ProSource franchise based on receiving this financing unless You have been specifically\napproved for such fin^cing and been offered such financing by ProSource in writing before You\npurchase Your franchise\n\nOther than the limited discretionary financing described in the previous paragraph, ProSource does not\noffer any direct or induect financing to You, except that a portion of Your initial franchise fee is payable\nin installments as follows  (i) the sum of $34,450 00 is payable in a lump sum upon Your execution of the\nFranchise Agreement, and (ii) the balance of the initial franchise fee, $12,000 00, is payable in twelve\nequal monthly payments of $1,000 00 each, beginning the month following the month m which You open\nthe ProSource Showroom  ProSource does not currently require you to sign a promissory note with\nrespect to your payment of the initial franchise fee, however, ProSource reserves the nght to require You\nto sign additional documents including, without limitation, a promissory note to confirm the terms of\npayment in the future No interest is charged on mstallments paid when due  ProSource may charge You\nmterest at the rate of the lower of 18% per annum or the maximum rate allowed by law on late payments\ncalculated from the date due until payment m full is received  ProSource does not require any security or\ncollateral to secure this payment obligation You may prepay this obligation at any time, without penalty\n\nProSource does not guarantee Your note, lease or other obligations  ProSource has entered into an\nagreement with a third party lender which gives ProSource franchisees the opportunity to offer financing\nto such franchisee’s customers  This financing arrangement is between the franchisee’s customer and the\nthird party lender, and not between ProSource and the franchisee"
+      }
+    ]
+  },
+  "S4222::2019": {
+    "id": "S4222::2019",
+    "brand": "ManageMowed",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "7b4e2a3fe3525eb355bfe4fea203f313f8d63e78c140008a26b73b8dd94d5d55",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-11",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing to franchisees. || We will not guarantee your promissory note, lease, or other obligation.",
+        "codingNote": "The franchisor explicitly disclaims both direct/indirect financing and guarantees. No financing involvement or credit-risk architecture exists.",
+        "item10Text": "===== PAGE 21 =====\nITEM 10\n                                   FINANCING\n\n     We do not offer direct or indirect financing to franchisees. We will not guarantee your promissory\nnote, lease, or other obligation."
+      }
+    ]
+  },
+  "S1107::2019": {
+    "id": "S1107::2019",
+    "brand": "Metal Supermarkets",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "74628f4918ffd39f3cedd6de8f772439576149ab30174a6ed0102dfa644f4efe",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-29",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "Neither'we nor any agent or affiliate of ours offers direct or indirect financing to you or guarantees any note, lease or other obligation of yours.",
+        "codingNote": "The Item 10 expressly disclaims any direct or indirect financing by the franchisor or affiliates and disclaims any guarantee of notes, leases, or other obligations. Therefore there is no franchisor/affiliate financing involvement or credit exposure.",
+        "item10Text": "===== PAGE 23 =====\nITEM 10\n\n                             FINANCING\n\n       Neither'we nor any agent or affiliate of ours offers direct or indirect financing to you or guarantees\nany note, lease or other obligation of yours."
+      },
+      {
+        "hash": "dd1a834b3d7062346670f2f3cac8c0adf33ed0624e1b71b34103ecdd28d1e0da",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-24",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "Neither we nor any agent or affiliate of ours offers direct or indirect financing to you or guarantees any note, lease or other obligation of yours.",
+        "codingNote": "The Item 10 expressly disclaims any direct or indirect financing by the franchisor or affiliate and any guarantee of franchisee obligations. No financing involvement or credit-risk architecture exists.",
+        "item10Text": "===== PAGE 23 =====\nITEM 10\n\n                             FINANCING\n\n        Neither we nor any agent or afTiliate>of ours offers direct or inditjecffinancing to you or guarantees\nmy note, lease or other obligation of yours.,"
+      }
+    ]
+  },
+  "S5029::2019": {
+    "id": "S5029::2019",
+    "brand": "Mio Sushi",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "d247f8ac060210beec5b1b46d3cd8f6d172e2c5c39e64dcf288430bd324fc30c",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-18",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "Neither we nor our affiliates provide direct or indirect financing to you; assist in providing financing for you; or guarantee any of your notes or financial obligations.",
+        "codingNote": "Item 10 expressly negates franchisor and affiliate financing, financing assistance, and guarantee exposure. There is no economic credit-risk architecture borne by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 20 =====\nItem 10\n                             FINANCING\n\nNeither we nor our affiliates provide direct or indirect financing to you; assist in providing financing for you;\nor guarantee any of your notes or financial obligations."
+      }
+    ]
+  },
+  "U_719ba35d::2019": {
+    "id": "U_719ba35d::2019",
+    "brand": "Naf-Naf Franchising LLC",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "07864ec47f8f936a7704653f7c162d31e866b62b93cab273e2fbab55d17b0d48",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-05-01",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing || We do not guarantee your note, lease, or obligation",
+        "codingNote": "Item 10 expressly disclaims both direct/indirect financing and any guarantee of franchisee notes, leases, or obligations. There is no franchisor or affiliate credit-risk exposure, so the score is 0.",
+        "item10Text": "===== PAGE 17 =====\nItem 10\n\n                                   Financing\n\n    We do not offer direct or indirect financing We do not guarantee your note, lease, or obligation"
+      }
+    ]
+  },
+  "S1197::2019": {
+    "id": "S1197::2019",
+    "brand": "NrGize Lifestyle Cafe",
+    "year": 2019,
+    "score": 3,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "69f5ed58fc962ba092297593cfb448192c804cd7e627d490f34227d880617034",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 3,
+        "forms": [
+          "lease_guarantee",
+          "seller_store_purchase_financing"
+        ],
+        "providers": [
+          "franchisor",
+          "affiliate"
+        ],
+        "purposes": [
+          "lease_site",
+          "store_acquisition"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "We do not offer any direct or indirect financing or financing arrangement, nor will we guaranty your obligations under any note or other obligation, except potentially for the lease for your site or if you purchase a restaurant corporate-owned “as-is” by one of our affiliates, and only in our sole and absolute discretion. || If, in order to obtain the lease agreement for the site of your NrGize Lifestyle Cafe restaurant, the landlord requires you to obtain a third party lease guarantee, and we or one of our affiliates agrees to serve as such guarantor (with such determination to be made in our sole and absolute discretion), you will pay to us a lease guarantee fee in the amount of 10% of the total amount of the rental obligations being guaranteed under the lease during its term up to a maximum payment of $10,000. || we may finance up to 100% of the purchase price, at our sole discretion. || The lender providing the financing is one of our affiliates, Kahala Holdings or Kahala Restaurants, whichever entity owns the restaurant. || We do not intend to sell, assign or discount to a third party any financing arrangement.",
+        "codingNote": "The franchisor/affiliate may provide discretionary lease support through a lease guarantee or by taking a master lease and subleasing to the franchisee, creating contingent lease-payment exposure (Score 3). The affiliate seller-finances up to 100% of the purchase price of a corporate-owned restaurant via promissory note; this is deferred purchase-price seller credit (Score 2), not funded cash credit. No sale, assignment, or discount of financing arrangements is disclosed.",
+        "item10Text": "===== PAGE 87 =====\nITEM 10:   FINANCING\n\n     We do not offer any direct or indirect financing or financing arrangement, nor will we guaranty your\nobligations under any note or other obligation, except potentially for the lease for your site or if you purchase a\nrestaurant corporate-owned “as-is” by one of our affiliates, and only in our sole and absolute discretion.\n\n             If you are an individual, you ( and married, your spouse, if married), must sign theexecute and deliver\nto us a Guaranty of Franchise Agreement (see Exhibit F-1: Guarantee of Franchise Agreement) and a\nNon-Disclosure and Non- Competition Agreement (see Exhibit F-2: Non-Disclosure and Non-Competition\nAgreement) at the same time that you sign the Franchise Agreement unless your spouse is also singing the\nAgreement as an individual. If you are a corporation, limited liability company, partnership or other business\nentity, each of your shareholders, members, partners or other owners (and their respective spouses, if married)\nmust sign the Guaranty of Franchise Agreement.execute and deliver to us a Guaranty of Franchise\nAgreement, and  their  respective spouses must  execute and  deliver  to  us a  Non-Disclosure and\nNon-Competition Agreement, at the same time that you sign this Agreement. In the event any person who has\nnot previously signed a Guaranty of Franchise Agreement or a Non-Disclosure and Non-Competition\nAgreement becomes your spouse or the holder of any class of your stock or ownership interests or a spouse of\nsuch holder, at any time after the execution of this Agreement, you must cause such person(s) to immediately\nexecute and deliver a Guaranty of Franchise Agreement and a Non-Disclosure and Non- Competition\nAgreement to us as appropriate.\n\n             If, in order to obtain the lease agreement for the site of your NrGize Lifestyle Cafe restaurant, the\nlandlord requires you to obtain a third party lease guarantee, and we or one of our affiliates agrees to serve as\nsuch guarantor (with such determination to be made in our sole and absolute discretion), you will pay to us a\nlease guarantee fee in the amount of 10% of the total amount of the rental obligations being guaranteed under\nthe lease during its term up to a maximum payment of $10,000. If the franchisee is an individual, the individual\nfranchisee (and his/her spouse,  if married) must personally guarantee the debt.  If the franchisee  is a\ncorporation, limited liability company, partnership, or other entity, each of the principals of the entity (and each of\ntheir respective spouses, if married) must personally guarantee the debt. Once paid, the lease guarantee fee is\nnon-refundable under all circumstances. We do not offer financing for the lease guarantee fee as it is payable in\nfull upon the execution of the guarantee. Neither we, nor any of our affiliates, are required to serve as a\nguarantor of your lease for the site of your restaurant. The decision of whether to serve as a guarantor of your\nlease shall be made at our sole and absolute discretion.\n\n             If you purchase a corporate restaurant “as-is” that is owned and operated by one of our affiliates, we\n\n===== PAGE 88 =====\nmay finance up to 100% of the purchase price, at our sole discretion. When you purchase a corporate-owned\nrestaurant from one of our affiliates, you will enter into an “Asset Purchase Agreement” (see Exhibit D: Asset\nPurchase Agreement (For Sale of a Corporate Store to a Franchisee). If you finance any portion of the purchase\nprice of the corporate-owned restaurant through Kahala Holdings or Kahala Restaurants, you will also enter into\na “Promissory Note and Security Agreement,” and a Guaranty which are exhibits to the Asset Purchase\nAgreement. The purchase price includes the initial franchise fee and all leasehold improvements including\nfurniture, fixtures, and equipment that are contained in the restaurant at the time of purchase, along with any\ninventory that is in the restaurant at the time of purchase. The lender providing the financing is one of our\naffiliates, Kahala Holdings or Kahala Restaurants, whichever entity owns the restaurant. The annual\n\n===== PAGE 89 =====\nrate of interest charged will be between 0% and 12% and will depend on the creditworthiness of the franchisee,\nthe amount being financed, and the dollar amount being paid up- front by the franchisee. There are no finance\ncharges associated with the Promissory Note and Security Agreement. The amount being financed will be\nrequired to be re-paid in equal monthly installments and the period of repayment will be between 12 months and\n60 months, depending on the amount being financed. The security interest required by us is a first position lien\non all equipment. If the franchisee is an individual, the individual franchisee (and his/her spouse, if married)\nmust personally guarantee the debt. If the franchisee is a corporation, limited liability company, partnership, or\nother entity, each of the principals of the entity (and their respective spouses,  if married) must personally\nguarantee the debt. The Promissory Note and Security Agreement may be pre-paid in full or in part at any time\nand from time to time without penalty. The franchisee’s potential  liabilities upon default include:  (i) an\naccelerated obligation to pay the entire amount due, including all accrued and unpaid interest, if the default is\nnot cured within ten calendar days; and the interest rate will be increased to an annual rate of 18%; (ii) obligation\nto pay costs and attorneys’ fees incurred in collecting the debt; (iii) termination of the franchise; and (iv) liabilities\nfrom cross defaults resulting from non-payment or from the loss of business property; on franchisee’s other\nrestaurants name in the Promissory Note and Security Agreement and granting either Kahala Holdings or\nKahala Restaurants the right to take back the restaurant(s). The Promissory Note and Security Agreement\nrequires franchisees to waive the following legal rights: demand, notice, diligence protest, presentment for\npayment, and notice of extension, dishonor, protest, demand and nonpayment of the promissory note; any\nrelease or discharge as a result in any change in security given or change in person or entity who may become\nliable for the note or any modification of the note; rights to contest or appeal our exercise of the take back rights;\nand not receiving compensation for the restaurant after the take back rights have been exercised. The\nPromissory Note and Security Agreement also bars the franchisee’s right to contest the take back rights.\n\n     We require a first lien position in all equipment as a security interest to be given by the franchisee. We\ndo not intend to sell, assign or discount to a third party any financing arrangement. We do not arrange financing\nfrom other sources; therefore, we do not receive direct or indirect payments from placing financing.\n\n      The lease for a corporate restaurant is entered into by one of our affiliates. When you purchase the\ncorporate restaurant, you will enter into a Sublease with our affiliate using our standard form of Sublease where\nyou pay all monies owing under the Master Lease directly to the property owner, or our standard form of\nSublease in which you pay all monies owing under the Master Lease to our affiliate and the affiliate will pay the\nproperty owner, which are exhibits to the Asset Purchase Agreement. The Sublease will contain substantially\nthe same terms as the Master Lease. The term of the Sublease will be for the entire term of the Master Lease,\nless one day. If you are an individual, you (and your spouse, if married) must sign the Guaranty of Sublease\n(see Exhibit O: Guarantee of Sublease). If you are a corporation, limited liability company, partnership or other\nbusiness entity, each of your shareholders, members, partners or other owners (and their respective spouses, if\nmarried) must sign the Guaranty of Sublease.\n     We will, within 60 days after we receive the proposed Master Lease (and additional materials required\nby us), review the Master Lease to make sure it meets our minimum site requirements.\n\n      Upon submission of a proposed Master Lease, you must provide us with any additional documentation\nand information that we may require regarding the proposed site, the proposed lease, your financial condition\nand your Principals’ financial condition. If we determine that you do not have the financial capacity to perform\nyour obligations with respect to the site or the Master Lease, we may deny approval of the site and/or Master\nLease. That disapproval will be deemed to be reasonable. In that event, we or our affiliates or franchisees may\noperate a NrGize Lifestyle Cafe restaurant at that site.\n\n     We or our affiliates may, in our sole discretion, lease the site approved by us for your NrGize Lifestyle\nCafe restaurant and sublease the site to you. If we lease your site, you will be subject to a Location Review Fee\npayable when you sign your Franchise Agreement. In addition, if and when you sign the Sublease, you must\npay to us an amount equal to two month’s base rent under the Master Lease, plus a security deposit in an\namount equal to the security deposit required under the Master Lease. (We reserve the right, however, to\nrequire a greater security deposit, based upon your creditworthiness.)\n\n      The lease for a corporate restaurant is entered into by one of our affiliates. When you purchase the\ncorporate restaurant, you will enter into a Sublease with our affiliate using our standard form of Sublease where\nyou pay all monies owing under the Master Lease directly to the property owner, or our standard form of\nSublease in which you pay all monies owing under the Master Lease to our affiliate and the affiliate will pay the\nproperty owner, which are exhibits to the Asset Purchase Agreement. The Sublease will contain substantially\n\n===== PAGE 90 =====\nthe same terms as the Master Lease. The term of the Sublease will be for the entire term of the Master Lease,\nless one day. If you are an individual, you (and your spouse, if married) must sign the Guaranty of Sublease\n(see Exhibit O: Guarantee of Sublease). If you are a corporation, limited liability company, partnership or other\nbusiness entity, each of your shareholders, members, partners or other owners (and their respective spouses, if\nmarried) must sign the Guaranty of Sublease.\n\n       Please note, if you intend to lease the site of your restaurant, the lease must include certain required\nprovisions (See Exhibit L: Required Lease Terms; Exhibit E-1: Franchise Agreement (New) – Section 2.2;\nExhibit E-2: Franchise Agreement (Renewal) – Section 2.2; Exhibit E-3: Franchise Agreement (Transfer) –\nSection 2.2  (all the proceeding three franchise agreements collectively known as “Exhibit E: Franchise\nAgreement”))."
+      }
+    ]
+  },
+  "U_8f1714d9::2019": {
+    "id": "U_8f1714d9::2019",
+    "brand": "Optima Franchising, Inc",
+    "year": 2019,
+    "score": null,
+    "status": "UNRESOLVED_SCORE_CONFLICT",
+    "versions": [
+      {
+        "hash": "10f7ea99ba7603b486a347962573350892672906175eee00a922964716a99b5c",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-15",
+        "score": 4,
+        "forms": [
+          "direct_loan",
+          "lease_guarantee"
+        ],
+        "providers": [
+          "franchisor",
+          "affiliate"
+        ],
+        "purposes": [
+          "other",
+          "lease_site"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "We or our affiliate may offer a limited financing to fund a part of the initial investment (Item 7). || providing a limited guarantee for up to three (3) years for your lease with a landlord participating in the Lease Guarantee Program.",
+        "codingNote": "Franchisor/affiliate may provide a funded loan to finance part of the initial investment, evidenced by a promissory note and repayment terms, which is a direct credit exposure (Score 4). Separately, franchisor/affiliate may offer a limited lease guarantee for up to three years, which is a contingent credit exposure (Score 3). Maximum score is 4. The initial investment cross-references Item 7. No sale/assignment or recourse language is disclosed.",
+        "item10Text": "===== PAGE 26 =====\nITEM 10\n\n                                     Financing\n\nFinancing your initial investment\n\nNeither we, nor our affiliates currently offer financing of the initial investment into a Franchise\nto Franchisees.\nWe or our affiliate may offer a limited financing to fund a part of the initial investment (Item 7).\nWe or our affiliate will decide on a case to case basis on the amount that can be financed toward\nthe initial investment. The cost of financing and the terms thereof will depend on your\ncreditworthiness and our lending policies at the time of your application. Not all franchisees will\nqualify for financing and every application for financing will be considered on a case to case\nbasis.\n\nThe terms of financing will be determined at our discretion based on your creditworthiness,\namount financed and term. Term of your repayment will be between 5 years to 10 years\ndepending on the above-referenced factors and your lease term with the landlord.\n\nAny material breach of the terms of your promissory note and a failure to cure such breach\nwithin ninety (90) days of your notice will result in default. Any default of the promissory note\nshall be deemed a default of the Franchise Agreement.\n\nOther term and conditions may apply.\n\nLease Guarantee Program\n\nWe or our affiliate may offer a Lease Guarantee Program. We or MeHr may offer a Lease\nGuarantee Program to qualified applicants, providing a limited guarantee for up to three (3) years\nfor your lease with a landlord participating in the Lease Guarantee Program. If available and\nupon your qualifying for this program, you will pay a monthly fee of the greater of one thousand\nfive hundred dollars ($1,500) or fifteen percent (15%) of your monthly base rent.\n\nA default of your lease obligations, under the Lease Guarantee Program will be a default under\nthe franchise agreement."
+      },
+      {
+        "hash": "5f776a9538c25dbd208fa7fdf0f0b79f25399b7ef33bb6484f0d3be003db007c",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-15",
+        "score": 3,
+        "forms": [
+          "lease_guarantee"
+        ],
+        "providers": [
+          "franchisor",
+          "affiliate"
+        ],
+        "purposes": [
+          "lease_site"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "We or our affiliate may offer a Lease Guarantee Program. || providing a limited guarantee for up to three (3) years for your lease with a landlord participating in the Lease Guarantee Program.",
+        "codingNote": "Franchisor and/or affiliate disclaim financing of initial investment, but may provide a limited lease guarantee for up to three years. This is contingent credit exposure (Score 3) because franchisor/affiliate may absorb loss upon franchisee default under the lease. No sale, assignment, or recourse language is disclosed.",
+        "item10Text": "===== PAGE 22 =====\nITEM 10\n\n                                     Financing\n\nNeither we, nor our affiliates currently offer financing of the initial investment into a Franchise\nto Franchisees.\n\nLease Guarantee Program\n\nWe or our affiliate may offer a Lease Guarantee Program. We or MeHr may offer a Lease\nGuarantee Program to qualified applicants, providing a limited guarantee for up to three (3) years\nfor your lease with a landlord participating in the Lease Guarantee Program. If available and\nupon your qualifying for this program, you will pay a monthly fee of the greater of one thousand\nfive hundred dollars ($1,500) or fifteen percent (15%) of your monthly base rent.\n\nA default of your lease obligations, under the Lease Guarantee Program will be a default under\nthe franchise agreement."
+      },
+      {
+        "hash": "9746a4af0f6b748209d8de091c08ee21123d7ce99af748c2c611593d23a70fce",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-15",
+        "score": 4,
+        "forms": [
+          "direct_loan",
+          "lease_guarantee"
+        ],
+        "providers": [
+          "franchisor",
+          "affiliate"
+        ],
+        "purposes": [
+          "other",
+          "lease_site"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "We or our affiliate may offer a limited financing to fund a part of the initial investment (Item 7). || We or our affiliate may offer a Lease Guarantee Program to qualified applicants, providing a limited guarantee for up to three (3) years for your lease with a landlord participating in the Lease Guarantee Program.",
+        "codingNote": "Item 10 discloses direct funded lending by franchisor or affiliate: financing a part of the initial investment with a promissory note and 5-10 year repayment is Score 4. It also discloses a franchisor/affiliate lease guarantee program, which is Score 3 contingent exposure. Final score is the maximum, 4. No sale/assignment/recourse language is present, so risk_transfer is none_disclosed. The direct loan purpose is stated only as 'part of the initial investment,' which is broad/unspecified, and the guarantee purpose is lease_site.",
+        "item10Text": "===== PAGE 22 =====\nITEM 10\n\n                                     Financing\n\n\nFinancing your initial investment\n\nWe or our affiliate may offer a limited financing to fund a part of the initial investment (Item 7).\nWe or our affiliate will decide on a case to case basis on the amount that can be financed toward\nthe initial investment. The cost of financing and the terms thereof will depend on your\ncreditworthiness and our lending policies at the time of your application. Not all franchisees will\nqualify for financing and every application for financing will be considered on a case to case\nbasis.\n\nThe terms of financing will be determined at our discretion based on your creditworthiness,\namount financed and term. Term of your repayment will be between 5 years to 10 years\ndepending on the above-referenced factors and your lease term with the landlord.\n\nAny material breach of the terms of your promissory note and a failure to cure such breach\nwithin ninety (90) days of your notice will result in default. Any default of the promissory note\nshall be deemed a default of the Franchise Agreement.\n\nOther term and conditions may apply.\n\nLease Guarantee Program\n\nWe or our affiliate may offer a Lease Guarantee Program. We or MeHr may offer a Lease\nGuarantee Program to qualified applicants, providing a limited guarantee for up to three (3) years\nfor your lease with a landlord participating in the Lease Guarantee Program. If available and\nupon your qualifying for this program, you will pay a monthly fee of the greater of one thousand\nfive hundred dollars ($1,500) or fifteen percent (15%) of your monthly base rent.\n\nA default of your lease obligations, under the Lease Guarantee Program will be a default under\nthe franchise agreement."
+      }
+    ]
+  },
+  "S1431::2019": {
+    "id": "S1431::2019",
+    "brand": "Right at Home",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "94d79b55dd1c33d52fd52965dddb7ab4dd8f0388fd444ae1adeb1649183a72d0",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or other obligation. || We will not receive payment or other consideration from any person or persons for placing your financing with a lender.",
+        "codingNote": "The franchisor expressly disclaims offering financing, guaranteeing obligations, and receiving referral consideration. There is no financing involvement, credit exposure, or facilitation requiring a higher score.",
+        "item10Text": "===== PAGE 29 =====\nITEM 10.  FINANCING\n\n     We do not offer direct or indirect financing. We do not guarantee your note, lease or other obligation.\nWe are unable to estimate whether you will be able to obtain financing for all or any part of your investment,\nand if you are able to obtain financing, we cannot predict the terms of such financing. We will not receive\npayment or other consideration from any person or persons for placing your financing with a lender."
+      }
+    ]
+  },
+  "S2890::2019": {
+    "id": "S2890::2019",
+    "brand": "Shine Window Care and Holiday Lighting",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "53b585bd1a13276eab2d581a8c455da66d646961d7f2629afb7b56886ea5ca14",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or obligation.",
+        "codingNote": "The franchisor explicitly disclaims any direct or indirect financing and any guarantee of notes, leases, or obligations. Negation controls: no financing involvement and no contingent credit exposure, so the score is 0.",
+        "item10Text": "===== PAGE 30 =====\nItem 10.\n                                            Financing\n\n    We do not offer direct or indirect financing. We do not guarantee your note, lease or obligation."
+      }
+    ]
+  },
+  "U_e6df15e6::2019": {
+    "id": "U_e6df15e6::2019",
+    "brand": "Sit Still Franchising, LLC",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "3c9b8372f7167fe3177ccaa56009c980d8ac3b876bf8ea0ed66fe7d66ffe26d5",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-14",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or obligations.",
+        "codingNote": "Item 10 expressly disclaims both direct and indirect financing and any guarantee of franchisee notes, leases, or obligations. No franchisor or affiliate credit-risk architecture is disclosed.",
+        "item10Text": "===== PAGE 29 =====\nItem 10\n                            FINANCING\n\n      We do not offer direct or indirect financing. We do not guarantee your note, lease or\n   obligations.\n\n\n                                        21\n    Sit Still Kid’s Salon – Multistate FDD\n   4838-4839-0000\\9\n   Version Date: 0103/1411/2019\n   4838-4839-0000\\11\n\n===== PAGE 30 ====="
+      },
+      {
+        "hash": "c2604208e964a406a3c665a7770f9e4240f818f97f1c2544d797297043d04faf",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-14",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or obligations.",
+        "codingNote": "The franchisor expressly disclaims offering financing and disclaims any guarantee of the franchisee's note, lease, or obligations. There is no franchisor or affiliate credit exposure, so the score is 0.",
+        "item10Text": "===== PAGE 6 =====\nITEM 10\n                                               FINANCING\n\n    We do not offer direct or indirect financing. We do not guarantee your note, lease or obligations."
+      }
+    ]
+  },
+  "S1605::2019": {
+    "id": "S1605::2019",
+    "brand": "SpeedPro Imaging",
+    "year": 2019,
+    "score": 2,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "914ae66d01f6f471032315e9f507f099873bb056d09437d552f69462646d480f",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 2,
+        "forms": [
+          "seller_fee_financing"
+        ],
+        "providers": [
+          "franchisor"
+        ],
+        "purposes": [
+          "fee"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "For a Conversion Franchised Business, we offer direct financing for up to Twenty Four Thousand Dollars of the Conversion Initial Franchise Fee. || If you meet our credit standards, we will finance up to $24,000 of the Conversion Initial Franchise Fee over a 24-month period.",
+        "codingNote": "Although the FDD calls it direct financing, the only financing disclosed is deferral/installment payment of the Conversion Initial Franchise Fee owed to the franchisor, evidenced by a promissory note. No separate cash or asset advance is disclosed, so this is seller credit (Score 2), not funded capital. The required personal guarantee is franchisee/owner credit support, not franchisor credit exposure. No third-party guarantees, referral financing, or sale/assignment/recourse of the note is disclosed. Cross-item reference to Item 5 for the fee balance.",
+        "item10Text": "===== PAGE 29 =====\nITEM 10\n                                         FINANCING\n\n            We do not offer direct or indirect financing. except for a Conversion Franchised Business.\n          For a Conversion Franchised Business, we offer direct financing for up to Twenty Four Thousand\n           Dollars of the Conversion Initial Franchise Fee. We do not guarantee your note, lease or any other\n            obligation. and we do not arrange financing from other sources.\n\n                                                                                                        Loss of\n                                                                                                                Liability    Legal   Item     Source of    Down    Amount   Term   Interest  Monthly  Prepay   Security\n                                                                                   on      Rights Financed   Financing   Payment   Financed   (yrs)     Rate   Payment  Penalty  Required\n                                                                                                    Default     on\n                                                                                                              Default\nConversion   Franchisor  Balance of   Up to     24     0%      0 - $1000  None     Personal   Loss of    Waive\nInitial                   Conversion  $24,000   months                                Guarantee  franchise   notice;\nFranchise                     Initial                                                                                    confess\nFee                      Franchise                                                                        judgment\n                       Fee (See\n                        Item 5)\n\n           Notes:\n\n              If you meet our credit standards, we will finance up to $24,000 of the Conversion Initial\n          Franchise Fee over a 24-month period. The interest rate is 0%. You will sign the Promissory\n         Note and a waiver of notice and confession of judgment attached to the FDD as Exhibit J. The\n          only security we require is a personal guarantee of the Note by you, your spouse and the\n           shareholders, members or partners if the franchisee is a corporation, limited liability company or\n           partnership. The Note can be prepaid without any penalty at any time. If you do not pay your\n         monthly payments on time or pay the Note in full when due we can accelerate payment of the\n         Note and demand immediate payment of the full outstanding balance and obtain court costs and\n           attorney’s fees if a collection action is necessary. We also have the right to terminate your\n           franchise if you do not make your payments on time. You waive your rights to notice of a\n           collection action and to assert any defenses to collection against us."
+      }
+    ]
+  },
+  "S4453::2019": {
+    "id": "S4453::2019",
+    "brand": "Splash and Dash Groomerie & Boutique",
+    "year": 2019,
+    "score": 4,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "3d06bb6b61f24ffc702b03ac7503c5f3eb222fc9598fee5277b78439bf74344a",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 4,
+        "forms": [
+          "direct_loan",
+          "initial_fee_installment"
+        ],
+        "providers": [
+          "franchisor"
+        ],
+        "purposes": [
+          "fee",
+          "working_capital"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "we may allow you to participate in our 'Revenue Now' program, in which we advance money || allow you to pay your initial franchise fees over time || We do not sell, assign, or discount to a third party all or part of the financing arrangement.",
+        "codingNote": "Revenue Now is a franchisor-funded cash loan (advance of money) secured by all assets, creating direct funded credit exposure (Score 4), with proceeds for operations/working capital. The Multi-Unit Development Agreement allows the franchisor to receive initial franchise fees over time via a promissory note, which is seller credit/deferred receivable exposure (Score 2). Maximum score is 4. There is no disclosed sale/assignment/discount of the notes.",
+        "item10Text": "===== PAGE 20 =====\nItem 10\n                             FINANCING\n\n       We may offer direct financing for individual franchises as follows:\n\n          Revenue Now Program – In our discretion, we may allow you to participate in our\n    “Revenue Now” program, in which we advance money on the following conditions:\n\n\n                                          14\n       Splash and Dash 2019 FDD (v060319)\n\n===== PAGE 21 =====\nTopic                       Terms                      Section in Note\n\n  What the financing      Operations                            N/A\n   covers\n\n   Lender              Us                                         Preamble\n\n  Amount of financing     $1,000 - $50,000                              Schedule 1\n   offered\n\n   Rate of interest        8-16%                                       Schedule 1\n\n  Number of payments    Monthly over a 3 to 120 month period            Schedule 1\n\n   Security interest         All assets of the franchised business              Section 5\n\n   Guarantor           You                                 N/A\n\n   Prepayment           At your discretion                               Section 1\n\n   Potential liabilities on    (A) Accelerated obligation to pay the entire       Section 7\n   default               amount due; (B) pay court costs and attorney’s\n                              fees incurred in collecting the debt; (C)\n                            termination of the franchise.\n\n   Waiver of rights       You waive any right to presentment for payment   Section 8\n                         and other demands and notices. Otherwise, the\n                          promissory note does not require to you to waive\n                            defenses or other legal rights (for example,\n                            confession of judgment), and does not preclude\n                        you from asserting a defense against us.\n\n   Sale or assignment of   We do not sell, assign, or discount to a third     N/A\n   Promissory Note         party all or part of the financing arrangement.\n\n   Consideration for     We do not receive any fees or other              Schedule 1\n   placing financing with    consideration for making the loan, other than a\n   the lender             $75 fee and interest.\n\n\n       Multi-Unit Development Agreement - If you agree to develop multiple franchises by\nsigning our Multi-Unit Development Agreement, then we will allow you to pay your initial\nfranchise fees over time, on the following conditions:\n\n          Topic                       Terms                      Section in Note\n\n  What the financing        Initial franchise fee if you sign a Multi-Unit     N/A\n   covers                Development Agreement\n\n   Lender              Us                                         Preamble\n\n\n                                      15\nSplash and Dash 2019 FDD (v060319)\n\n===== PAGE 22 =====\nTopic                       Terms                      Section in Note\n\n  Amount of financing    The franchise fee for 3 units is $70,000. We will   Section 1\n   offered                  finance $34,500\n                       The franchise fee for 5 units is $84,500. We will\n                            finance $45,500\n\n   Rate of interest         3 units: 3.5%                                    Section 2\n                        5 units: 1.2%\n\n  Number of payments    3 units: 60 months payments of $627.00 each      Section 3\n                        5 units: 96 monthly payments of $497.30 each\n\n   Security interest       None                                N/A\n\n   Guarantor           You                                 N/A\n\n   Prepayment            Mandatory repayment of $10,000 as follows:      Sections 5 and 6\n                        3 units: upon signing 2nd franchise agreement\n                        5 units: upon signing 2nd and 3rd franchise\n                          agreements\n                            Optional: any time, without penalty\n\n   Potential liabilities on    (A) Accelerated obligation to pay the entire       Section 7\n   default               amount due; (B) pay court costs and attorney’s\n                              fees incurred in collecting the debt; (C)\n                            termination of the franchise; (D) loss of right to\n                          develop additional franchises.\n\n   Waiver of rights       You waive any right to presentment for payment   Section 8\n                         and other demands and notices. Otherwise, the\n                          promissory note does not require to you to waive\n                            defenses or other legal rights (for example,\n                            confession of judgment), and does not preclude\n                        you from asserting a defense against us.\n\n   Sale or assignment of   We do not sell, assign, or discount to a third     N/A\n   Promissory Note         party all or part of the financing arrangement.\n\n   Consideration for     We do not receive any fees or other           N/A\n   placing financing with    consideration for making the loan, other than\n   the lender                  interest."
+      }
+    ]
+  },
+  "U_ee77f7d6::2019": {
+    "id": "U_ee77f7d6::2019",
+    "brand": "Substance Health Enterprise LLC",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "d127d6704fa8024c967067adbb330ad1c20f5d05635e84caa9f4222c0849e94a",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-02-01",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing for any amount due under the Franchise Agreement or Area Development Agreement. || We do not guarantee your note, lease or any other obligation.",
+        "codingNote": "Franchisor expressly disclaims offering financing and guarantees, so there is no franchisor or affiliate financing involvement or credit exposure.",
+        "item10Text": "===== PAGE 23 =====\nITEM 10      FINANCING\n\n     We do not offer direct or indirect financing for any amount due under the Franchise Agreement or\nArea Development Agreement. We do not guarantee your note, lease or any other obligation.\n\n                                           18\nSUBSTANCE Fitness FDD 2019\n\n===== PAGE 24 ====="
+      }
+    ]
+  },
+  "S1709::2019": {
+    "id": "S1709::2019",
+    "brand": "TacoTime",
+    "year": 2019,
+    "score": 3,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "91bd5bdb28de85b7f7ce5e550eaf721331a457cd05d709905ec0e3bc2dddbfae",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 3,
+        "forms": [
+          "lease_guarantee",
+          "seller_store_purchase_financing"
+        ],
+        "providers": [
+          "franchisor",
+          "affiliate"
+        ],
+        "purposes": [
+          "lease_site",
+          "store_acquisition"
+        ],
+        "riskTransfer": "none_disclosed",
+        "evidenceQuote": "we or one of our affiliates agrees to serve as such guarantor || we may finance up to 100% of the purchase price || The lender providing the financing is one of our affiliates, Kahala Holdings or Kahala Restaurants",
+        "codingNote": "General disclaimer of direct/indirect financing has explicit exceptions. Franchisor/affiliate may guarantee franchisee's site lease, a contingent lease-guarantee exposure (Score 3). Affiliate seller financing of a corporate restaurant purchase is deferred purchase-price seller credit via promissory note (Score 2), not funded cash credit. A master-lease/sublease arrangement creates similar lease-related contingent exposure. The maximum applicable economic risk architecture is Score 3. No sale/assignment/discount is disclosed; the text affirmatively states no intent to sell/assign/discount financing arrangements.",
+        "item10Text": "===== PAGE 67 =====\nITEM 10: FINANCING\n\n    We do not offer any direct or indirect financing or financing arrangement, nor  will we\nguaranty your obligations under any note or other obligation, except potentially for the lease for your\nsite or if you purchase a restaurant corporate-owned “as-is” by one of our affiliates, and only in our\nsole and absolute discretion.\n\n            If you are an individual and married, your spouse must execute and deliver to us a Guaranty\nof Franchise Agreement (see  Exhibit F-1: Guarantee  of Franchise Agreement) and a Non-\nDisclosure and Non-Competition Agreement (see Exhibit F-2: Non-Disclosure and Non-Competition\nAgreement) at the same time that you sign the Franchise Agreement unless your spouse is also\nsinging the Agreement as an individual.  If you are a corporation, limited liability company, or other\nbusiness  entity, each of your shareholders, members, or other owners (and  their respective\nspouses, if married) must execute and deliver to us a Guaranty of Franchise Agreement, and their\nrespective spouses must execute and  deliver  to us a Non-Disclosure and Non-Competition\nAgreement, at the same time that you sign this Agreement. In the event any person who has not\npreviously signed a Guaranty of Franchise Agreement or a Non-Disclosure and Non-Competition\nAgreement becomes your spouse or the holder of any class of your stock or ownership interests or\na spouse of such holder, at any time after the execution of this Agreement, you must cause such\nperson(s) to immediately execute and deliver a Guaranty of Franchise Agreement and a Non-\nDisclosure and Non-Competition Agreement to us as appropriate.\n\n            If, in order to obtain the lease agreement for the site of your TacoTime restaurant, the\nlandlord requires you to obtain a third party lease guarantee, and we or one of our affiliates agrees\nto serve as such guarantor (with such determination to be made  in our sole and absolute\ndiscretion), you will pay to us a lease guarantee fee in the amount of 10% of the total amount of the\nrental obligations being guaranteed under the lease during its term up to a maximum payment of\n$10,000.  If the franchisee is an individual, the individual franchisee (and his/her spouse, if married)\nmust personally guarantee the debt.   If the franchisee is a corporation, limited liability company,\npartnership, or other entity, each of the principals of the entity (and each of their respective\nspouses,  if married) must personally guarantee the debt. Once paid, the lease guarantee fee is\nnon-refundable under all circumstances. We do not offer financing for the lease guarantee fee as it\nis payable in full upon the execution of the guarantee.  Neither we, nor any of our affiliates, are\nrequired to serve as a guarantor of your lease for the site of your restaurant.  The decision of\nwhether to serve as a guarantor of your lease shall be made at our sole and absolute discretion.\n\n                                  Page -62-\n\n===== PAGE 68 =====\nIf you purchase a corporate restaurant “as-is” that is owned and operated by one of our\naffiliates, we may finance up to 100% of the purchase price, at our sole discretion. When you\npurchase a corporate-owned restaurant from one of our affiliates, you will enter into an “Asset\nPurchase Agreement” (see Exhibit D: Asset Purchase Agreement (For Sale of a Corporate Store to\na Franchisee).   If you finance any portion of the purchase price of the corporate-owned restaurant\nthrough Kahala Holdings or Kahala Restaurants, you will also enter into a “Promissory Note and\nSecurity Agreement” and a Guaranty which are exhibits to the Asset Purchase Agreement. The\npurchase price includes the initial franchise fee and all leasehold improvements including furniture,\nfixtures, and equipment that are contained in the restaurant at the time of purchase, along with any\ninventory that is in the restaurant at the time of purchase. The lender providing the financing is one\nof our affiliates, Kahala Holdings or Kahala Restaurants, whichever entity owns the restaurant. The\nannual  rate  of  interest charged  will be between 0% and 12% and  will depend on  the\ncreditworthiness of the franchisee, the amount being financed, and the dollar amount being paid up-\nfront by the franchisee.  There are no finance charges associated with the Promissory Note and\nSecurity Agreement. The amount being financed will be required to be re-paid in equal monthly\ninstallments and the period of repayment will be between 12 months and 60 months, depending on\nthe amount being financed.  The security interest required by us is a first position lien on  all\nequipment.    If the franchisee is an individual, the individual franchisee (and his/her spouse,  if\nmarried) must personally guarantee the debt.   If the franchisee is a corporation, limited liability\ncompany, partnership, or other entity, each of the principals of the entity (and their respective\nspouses,  if married) must personally guarantee the debt.  The Promissory Note and Security\nAgreement may be pre-paid in full or in part at any time and from time to time without penalty. The\nfranchisee’s potential liabilities upon default include: (i) an accelerated obligation to pay the entire\namount due, including all accrued and unpaid interest, if the default is not cured within ten calendar\ndays; and the interest rate will be increased to an annual rate of 18%; (ii) obligation to pay costs\nand attorneys’ fees incurred in collecting the debt; (iii) termination of the franchise; and (iv) liabilities\nfrom cross  defaults  resulting from non-payment  or from the  loss  of business  property; on\nfranchisee’s other restaurants name in the Promissory Note and Security Agreement and granting\neither Kahala Holdings or Kahala Restaurants the right to take back the restaurant(s).  The\nPromissory Note and Security Agreement requires franchisees to waive the following legal rights:\ndemand, notice, diligence protest, presentment for payment, and notice of extension, dishonor,\nprotest, demand and nonpayment of the promissory note; any release or discharge as a result in\nany change in security given or change in person or entity who may become liable for the note or\nany modification of the note; rights to contest or appeal our exercise of the take back rights; and not\nreceiving compensation for the restaurant after the take back rights have been exercised.  The\nPromissory Note and Security Agreement also bars the franchisee’s right to contest the take back\nrights.\n\n    We require a first lien position in all equipment as a security interest to be given by the\nfranchisee. We do not intend to sell, assign or discount to a third party any financing arrangement.\nWe do not arrange financing from other sources; therefore, we do not receive direct or indirect\npayments from placing financing.\n\n      The lease for a corporate restaurant is entered into by one of our affiliates. When you\npurchase the corporate restaurant, you  will enter into a Sublease with our  affiliate using our\nstandard form of Sublease where you pay all monies owing under the Master Lease directly to the\nproperty owner, or our standard form of Sublease in which you pay all monies owing under the\nMaster Lease to our affiliate and the affiliate will pay the property owner, which are exhibits to the\nAsset Purchase Agreement. The Sublease will contain substantially the same terms as the Master\nLease. The term of the Sublease will be for the entire term of the Master Lease, less one day.   If\nyou are an individual, you (and your spouse, if married) must sign the Guaranty of Sublease (see\nExhibit O: Guaranty of Sublease).  If you are a corporation, limited liability company, partnership or\n\n                                  Page -63-\n\n===== PAGE 69 =====\nother business entity, each of your shareholders, members, partners or other owners (and their\nrespective spouses, if married) must sign the Guaranty of Sublease.\n\n    We  will, within 60 days after we receive the proposed Master Lease (and additional\nmaterials required by us), review the Master Lease to make sure  it meets our minimum site\nrequirements.\n\n     Upon submission of a proposed Master Lease, you must provide us with any additional\ndocumentation and information that we may require regarding the proposed site, the proposed\nlease, your financial condition and your Principals’ financial condition.  If we determine that you do\nnot have the financial capacity to perform your obligations with respect to the site or the Master\nLease, we may deny approval of the site and/or Master Lease. That disapproval will be deemed to\nbe reasonable. In that event, we or our affiliates or franchisees may operate a TacoTime restaurant\nat that site.\n\n    We or our affiliates may, in our sole discretion, lease the site approved by us for your\nTacoTime restaurant and sublease the site to you.   If we lease your site, you will be subject to a\nLocation Review Fee payable when you sign your Franchise Agreement.  In addition, if and when\nyou sign the Sublease, you must pay to us an amount equal to two month’s base rent under the\nMaster Lease, plus a security deposit in an amount equal to the security deposit required under the\nMaster Lease. (We reserve the right, however, to require a greater security deposit, based upon\nyour creditworthiness.)\n\n      Please note, if you intend to lease the site of your restaurant, the lease must include certain\nrequired provisions (See Exhibit L: Required Lease Terms; Exhibit E-1:  Franchise Agreement\n(New) – Section 2.2; Exhibit E-2:  Franchise Agreement (Renewal) – Section 2.2; Exhibit E-3:\nFranchise Agreement (Transfer) – Section 2.2  (all the proceeding three franchise agreements\ncollectively known as “Exhibit E: Franchise Agreement”))."
+      }
+    ]
+  },
+  "S3711::2019": {
+    "id": "S3711::2019",
+    "brand": "The Patch Boys",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "c2604208e964a406a3c665a7770f9e4240f818f97f1c2544d797297043d04faf",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-04-12",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or obligations.",
+        "codingNote": "The franchisor expressly disclaims offering financing and disclaims any guarantee of the franchisee's note, lease, or obligations. There is no franchisor or affiliate credit exposure, so the score is 0.",
+        "item10Text": "===== PAGE 6 =====\nITEM 10\n                                               FINANCING\n\n    We do not offer direct or indirect financing. We do not guarantee your note, lease or obligations."
+      }
+    ]
+  },
+  "U_a2e07d4e::2019": {
+    "id": "U_a2e07d4e::2019",
+    "brand": "Urban Float Opportunities, LLC",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "4389921609e1fb86f696d479a00f75faf4d34e7856f2bee0a2edccc131f18988",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-02-20",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not currently offer direct or indirect financing, however. || We do not guarantee any of your notes, leases or obligations.",
+        "codingNote": "Franchisor explicitly disclaims current direct or indirect financing and any guarantee of franchisee notes, leases, or obligations. No financing involvement or credit exposure is disclosed.",
+        "item10Text": "===== PAGE 25 =====\nITEM 10:   FINANCING\n\nWe do not currently offer direct or indirect financing, however. However, we may offer such\nfinancing in the future. We do not guarantee any of your notes, leases or obligations."
+      }
+    ]
+  },
+  "S1906::2019": {
+    "id": "S1906::2019",
+    "brand": "Wayback Burgers",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "96cdfe379f8650e5d6bb08020dde816cf230ee8690ee63ab4087d94637e2d2ca",
+        "source": "MN",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not offer direct or indirect financing. || We do not guarantee your note, lease or obligation.",
+        "codingNote": "Item 10 expressly disclaims any direct or indirect financing and any guarantee of the franchisee's note, lease, or obligation. The security interest described secures amounts owing under the Franchise Agreement and is not a financing or credit-risk architecture borne by the franchisor or affiliate.",
+        "item10Text": "===== PAGE 29 =====\nItem 10\n                             FINANCING\n\n       We do not offer direct or indirect financing. We do not guarantee your note, lease or obligation.\n\n         As security for the payment of all amounts from time to time owing by you to us under the\n    Franchise Agreement and all other agreements, and performance of all obligations to be performed by\n    you, you must grant us a security interest in all present and future accounts, inventory, equipment,\n     intangibles, proceeds, contract rights, and interest in the franchise. No financing documents are\n     required to be signed by you to perfect the security interest.  (See Section 22 of the Franchise\n    Agreement).\n\n\n       4852-3048-5652.4                             22\n                                                       Wayback Burgers FDD (20182019)\n       4823-7007-6261.8\n\n===== PAGE 30 ====="
+      }
+    ]
+  },
+  "U_f56dec16::2019": {
+    "id": "U_f56dec16::2019",
+    "brand": "Yummy-town USA LLC",
+    "year": 2019,
+    "score": 0,
+    "status": "CONSENSUS",
+    "versions": [
+      {
+        "hash": "4c4c2d23c106968d560e4df886e95d1f8f1cd3833b6c50fd44e7d70929df7956",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-22",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not currently offer any direct or indirect financirig. || We do not guarantee your note, lease or any other Obligation.",
+        "codingNote": "The Item 10 expressly negates both direct/indirect financing and any guarantee of franchisee obligations, so there is no franchisor/affiliate financing involvement or credit risk architecture.",
+        "item10Text": "===== PAGE 25 =====\nITEM 10. FINANCING\n\nWe do not currently offer any direct or indirect financirig. We do not guarantee your note, lease or\nany other Obligation."
+      },
+      {
+        "hash": "9cffcef43f4a6bf6f5b1acad216210ad3452278b19e9ca3533c01e4537be6e5a",
+        "source": "CA",
+        "efdId": "",
+        "docId": "",
+        "issuanceDate": "2019-01-22",
+        "score": 0,
+        "forms": [
+          "no_financing_involvement"
+        ],
+        "providers": [
+          "none"
+        ],
+        "purposes": [
+          "not_applicable"
+        ],
+        "riskTransfer": "not_applicable",
+        "evidenceQuote": "We do not currently offer any direct or indirect financing. || We do not guarantee your note, lease dr any other obligation.",
+        "codingNote": "Item 10 explicitly negates both direct/indirect financing and any guarantee by the franchisor, so there is no franchisor or affiliate credit-risk architecture. Score 0.",
+        "item10Text": "===== PAGE 25 =====\nITEM 10. FINANCING\n\nWe do not currently offer any direct or indirect financing. We do not guarantee your note, lease dr\nany other obligation."
+      }
+    ]
+  }
+}

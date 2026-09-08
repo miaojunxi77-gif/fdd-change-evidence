@@ -1,0 +1,13 @@
+﻿qc_class,n_original_conflicts,v1_2_policy
+VERIFIED_STATE_SPECIFIC_RETAINED,43,Valid state/source-specific versions contain substantive Item 10 differences; no national controlling version is imposed.
+SAME_STATE_SAME_DATE_PARALLEL_RETAINED,35,Parallel versions cannot be safely ordered by chronology; score remains NA.
+METADATA_INSUFFICIENT_RETAINED,23,"Filing metadata is insufficient to establish chronology, state applicability, or offering control; score remains NA."
+CHRONOLOGY_RESOLUTION,19,Unambiguous within-offering chronology identifies the controlling later amendment/version; RiskScore 2 selected.
+OFFERING_SPLIT,19,Distinct offering/program identities were incorrectly pooled in V1.1; V1.2 separates them before scoring.
+IDENTITY_REVIEW_RETAINED,6,Identity/year evidence remains insufficient for safe adjudication; score remains NA.
+OFFERING_SPLIT_AND_IDENTITY_STABILIZATION,3,Distinct offering/program identities were incorrectly pooled in V1.1; V1.2 separates them before scoring.
+CHRONOLOGY_CANDIDATE_NEEDS_SCOPE_CHECK,3,Later-looking version exists but amendment scope/supersession is not strong enough to force a score.
+IDENTITY_CONSOLIDATION,1,Duplicate 1 Percent Lists / 1% Lists 2025 identities consolidated before chronology adjudication.
+IDENTITY_REMAP,1,Generic/misbucketed identity was remapped to the correct franchise offering; remaining score conflict is preserved as NA.
+OFFERING_REASSIGNMENT,1,One version belongs to another existing offering identity and is reassigned rather than treated as a temporal conflict.
+OFFERING_SPLIT_PLUS_YEAR_QC,1,Distinct offering/program identities were incorrectly pooled in V1.1; V1.2 separates them before scoring.
