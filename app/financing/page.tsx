@@ -10,6 +10,10 @@ const scoreDistribution = [
 ];
 
 const annual = [
+  { year: 2008, n: 1, any: 0.00, risk: 0.00, material: 0.00, direct: 0.00 },
+  { year: 2010, n: 1, any: 0.00, risk: 0.00, material: 0.00, direct: 0.00 },
+  { year: 2011, n: 9, any: 33.33, risk: 33.33, material: 11.11, direct: 11.11 },
+  { year: 2012, n: 10, any: 40.00, risk: 30.00, material: 0.00, direct: 0.00 },
   { year: 2013, n: 80, any: 51.25, risk: 38.75, material: 15.00, direct: 10.00 },
   { year: 2014, n: 515, any: 41.17, risk: 29.13, material: 11.07, direct: 8.54 },
   { year: 2015, n: 483, any: 41.20, risk: 27.74, material: 10.77, direct: 7.45 },
@@ -42,7 +46,7 @@ function TrendChart() {
   const y = (value: number) => top + height - (value / 50) * height;
 
   return (
-    <div className="financing-chart-wrap" aria-label="Annual financing support prevalence, 2013 to 2026">
+    <div className="financing-chart-wrap" aria-label="Annual financing support prevalence, available Item 10 observations from 2008 to 2026; no paper-ready observation in 2009">
       <svg className="financing-trend-chart" viewBox="0 0 1020 340" role="img">
         <title>Annual financing support prevalence by risk threshold</title>
         {[0, 10, 20, 30, 40, 50].map((tick) => (
@@ -109,8 +113,8 @@ export default function FinancingPage() {
       <section className="financing-section financing-unit-section">
         <div className="shell">
           <div className="financing-section-heading compact"><div><p className="eyebrow">UNIT OF OBSERVATION</p><h2>Is this franchisor-level or contract-level?</h2></div><p><strong>Short answer:</strong> 主结果是 <b>franchise system × filing year（brand-year）</b>，既不是把每份州申报文件都当一条 observation，也不是每个 franchisor 永远只出现一次。</p></div>
-          <div className="financing-unit-grid"><article><span>01</span><h3>Raw document</h3><p>同一品牌同一年可能有多个州的 FDD、amendment 或 duplicate。它们是证据来源，不是回归 observation。</p></article><article><span>02</span><h3>Primary: brand-year</h3><p>先合并同一 canonical system × year 的文件，再形成一个年度融资分数。不同年份保留，因此可以研究 within-firm changes。</p></article><article><span>03</span><h3>Pure franchisor snapshot</h3><p>若老师需要“一家公司一行”，使用每个 system 最新的 paper-ready 年份；这适合横截面描述，但会丢失年度变化。</p></article></div>
-          <div className="financing-unit-comparison"><div><p className="eyebrow">SAME DATA, DIFFERENT DENOMINATORS</p><h3>Primary panel versus one-row-per-franchisor</h3><p>主表应该报告 brand-year，因为研究问题关心融资安排是否随时间变化。Latest-year franchisor snapshot 作为补充表，直接回答老师的 observation-level 问题。</p></div><div className="financing-unit-table-wrap"><table><thead><tr><th>Measure</th><th>Brand-year panel<br/><small>N = 13,067</small></th><th>Latest-year franchisor<br/><small>N = 4,722</small></th></tr></thead><tbody><tr><th>Any support (≥1)</th><td>33.25%</td><td>28.21%</td></tr><tr><th>Risk-bearing (≥2)</th><td>27.44%</td><td>23.32%</td></tr><tr><th>Material risk (≥3)</th><td>14.30%</td><td>12.11%</td></tr><tr><th>Direct funded (=4)</th><td>11.49%</td><td>9.76%</td></tr></tbody></table></div></div>
+          <div className="financing-unit-grid"><article><span>01</span><h3>Raw document</h3><p>同一品牌同一年可能有多个州的 FDD、amendment 或 duplicate。它们是证据来源，不是回归 observation。</p></article><article><span>02</span><h3>Primary: brand-year</h3><p>先合并同一 canonical system × year 的文件，再形成一个年度融资分数。不同年份保留，因此可以研究 within-firm changes。</p></article><article><span>03</span><h3>Pure franchisor snapshot</h3><p>“一家公司一行”，使用每个 system 最新的 paper-ready 年份。</p></article></div>
+          <div className="financing-unit-comparison"><div><p className="eyebrow">SAME DATA, DIFFERENT DENOMINATORS</p><h3>Primary panel versus one-row-per-franchisor</h3></div><div className="financing-unit-table-wrap"><table><thead><tr><th>Measure</th><th>Brand-year panel<br/><small>N = 13,067</small></th><th>Latest-year franchisor<br/><small>N = 4,722</small></th></tr></thead><tbody><tr><th>Any support (≥1)</th><td>33.25%</td><td>28.21%</td></tr><tr><th>Risk-bearing (≥2)</th><td>27.44%</td><td>23.32%</td></tr><tr><th>Material risk (≥3)</th><td>14.30%</td><td>12.11%</td></tr><tr><th>Direct funded (=4)</th><td>11.49%</td><td>9.76%</td></tr></tbody></table></div></div>
           <div className="financing-answer-box financing-unit-answer"><span>Suggested advisor wording</span><p>“The main distribution is based on franchise-system-year observations, not raw FDD filings. Multiple state filings for the same system and year are reconciled into one observation, while different years remain separate. For comparison, I also report a pure franchisor-level snapshot using each system’s latest paper-ready year.”</p></div>
         </div>
       </section>
@@ -196,7 +200,7 @@ export default function FinancingPage() {
       <section className="financing-section shell">
         <div className="financing-section-heading compact">
           <div><p className="eyebrow">TIME TREND</p><h2>Annual prevalence by financing-risk threshold</h2></div>
-          <p>图从 2013 年开始；2008–2012 年合计仅 21 个 observations，保留在下载数据中但不进入折线。圆点透明度较低的 2013、2019 与 2020 年样本量小于 200，不应把这些年份的波动单独解释为经济趋势。</p>
+          <p>折线现在显示 Item 10 production panel 中所有有 paper-ready observations 的年份：2008、2010–2026。2009 年没有 paper-ready observation。2008–2012 年合计只有 21 个 observations，因此这些早期点只用于完整展示 coverage，不应单独解释为经济趋势；所有 n&lt;200 的年份均以较浅圆点和背景带标记。</p>
         </div>
         <TrendChart />
         <div className="financing-year-samples" aria-label="Annual sample sizes">
