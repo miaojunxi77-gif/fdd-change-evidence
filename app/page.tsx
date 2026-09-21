@@ -161,6 +161,13 @@ export default function Home() {
           <p>在 13,222 个 identity-reconciled brand-years 中区分转介、延期付款、或有风险与直接出资，并报告年度趋势和 within-brand changes。</p>
           <Link className="text-link" href="/financing">查看融资风险编码结果 →</Link>
         </article>
+        <article>
+          <span className="route-number">04</span>
+          <p className="eyebrow">OUTLET GEOGRAPHY</p>
+          <h2>Item 20 门店地理</h2>
+          <p>11,644 个 canonical system-years、185,783 条州排名记录，覆盖 Primary State、各州门店数、company-owned footprint、co-location 以及 Item 10 × Item 20。</p>
+          <Link className="text-link" href="/geography">查看门店地理与州排名 →</Link>
+        </article>
       </section>
     </main>
   );

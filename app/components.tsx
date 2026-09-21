@@ -54,6 +54,7 @@ export function SiteHeader() {
                 key={item.href}
                 className={active ? "nav-link active" : "nav-link"}
                 href={item.href}
+                aria-current={active ? "page" : undefined}
                 onClick={() => setOpen(false)}
               >
                 {item.label}
@@ -71,7 +72,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div>
         <strong>FDD Contract Change Evidence Explorer</strong>
-        <p>Change evidence uses company × year-pair × Item units; financing measures use reconciled brand-years.</p>
+        <p>Change evidence uses company × year-pair × Item units; financing uses reconciled brand-years; geography uses canonical system × FDD year × state.</p>
       </div>
       <div className="footer-note">
         <span>Research prototype · September 2026</span>
