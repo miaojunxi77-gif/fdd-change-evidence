@@ -18,6 +18,7 @@ const navigation = [
   { href: "/substantive", label: "跨期实质变化" },
   { href: "/cases", label: "公司案例" },
   { href: "/financing", label: "融资支持面板" },
+  { href: "/geography", label: "门店地理分布" },
   { href: "/method", label: "方法与质量" },
 ];
 
