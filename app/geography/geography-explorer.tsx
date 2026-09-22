@@ -343,13 +343,15 @@ export default function GeographyExplorer({ basePath }: { basePath: string }) {
           <p>
             Primary State 是所选 Item 20 表中年末门店最多的州，不是总部、注册地或 filing state。
             严格样本排除 reconciliation conflict，并要求 franchised outlets 为正。
+            这里的 8,293 是跨全部 FDD 年度的“品牌 × 年度”观测数量，不是 8,293 个不同品牌；
+            同一个 canonical system 如果有 5 个年度的数据，就会贡献 5 条 brand-year observations。
           </p>
         </div>
         <div className="geo-kpis">
           <article><strong>{nfmt(metric("Strict positive brand-years"))}</strong><span>strict positive brand-years</span></article>
-          <article><strong>{pct(metric("Single-state share"))}</strong><span>single-state systems</span></article>
+          <article><strong>{pct(metric("Single-state share"))}</strong><span>single-state brand-years</span></article>
           <article><strong>{pct(metric("Median Top-1 state share"))}</strong><span>median Top-1 share</span></article>
-          <article><strong>{nfmt(metric("Median number of states"))}</strong><span>median states per system</span></article>
+          <article><strong>{nfmt(metric("Median number of states"))}</strong><span>median states per brand-year</span></article>
           <article><strong>{pct(metric("Top-1 share >= 50%"))}</strong><span>Top-1 share ≥ 50%</span></article>
           <article><strong>{pct(metric("Top-1 share >= 75%"))}</strong><span>Top-1 share ≥ 75%</span></article>
           <article><strong>{pct(metric("Top-1 share >= 90%"))}</strong><span>Top-1 share ≥ 90%</span></article>
@@ -370,6 +372,8 @@ export default function GeographyExplorer({ basePath }: { basePath: string }) {
             <div><p className="eyebrow">PRIMARY STATE</p><h2>Which state is assigned Top-1?</h2></div>
             <p>
               以下为全部 8,293 个 strict positive brand-years 的 deterministic PrimaryState。
+              每个 canonical system 在每个 FDD 年度单独计数，因此所有州的 count 加总正好等于 8,293；
+              例如同一品牌连续 5 年的 Primary State 都是 TX，就会给 TX 贡献 5 个 brand-years。
               {nfmt(summary.primaryState.tiedTopObservations)} 个（{pct(summary.primaryState.tiedTopShare)}）
               存在并列最大值；文件以州缩写字母顺序打破并列。
             </p>
@@ -395,7 +399,7 @@ export default function GeographyExplorer({ basePath }: { basePath: string }) {
               <dl>
                 <div><dt>Top three assignments</dt><dd>TX · CA · FL</dd></div>
                 <div><dt>Tied Top-1</dt><dd>{pct(summary.primaryState.tiedTopShare)}</dd></div>
-                <div><dt>Strict observations</dt><dd>{nfmt(summary.primaryState.observations)}</dd></div>
+                <div><dt>Strict brand-years</dt><dd>{nfmt(summary.primaryState.observations)}</dd></div>
               </dl>
             </article>
           </div>
