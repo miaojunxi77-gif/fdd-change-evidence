@@ -494,7 +494,7 @@ export default function GeographyExplorer({ basePath }: { basePath: string }) {
           <div className="geo-company-primary">
             <div>
               <h3>Company-Owned Primary State</h3>
-              <p>{nfmt(summary.companyPrimaryState.observations)} strict positive panel observations. {nfmt(summary.companyPrimaryState.tiedTopObservations)} ({pct(summary.companyPrimaryState.tiedTopShare)}) have a tied maximum.</p>
+              <p>仅正值且无地理冲突的 Table 4 观测会被分配 Company-Owned Primary State；并列最大州按州缩写字母顺序处理。</p>
             </div>
             <div className="geo-dark-bars">
               {summary.companyPrimaryState.states.slice(0, 12).map((row) => (
